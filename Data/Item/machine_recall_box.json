@@ -27,6 +27,7 @@
 "MaxStack": 0,
 "CannotDrop": false,
 "BagEffect": false,
+"CanUseOutsideOfDungeon": true,
 "ItemStates": [
 {
 "$type": "PMDC.Dungeon.MachineState, PMDC"
