@@ -8,7 +8,7 @@
 },
 "Comment": "",
 "Element": 0,
-"BlockType": -1,
+"BlockType": 0,
 "MinimapColor": "255, 255, 255, 255",
 "BlockDiagonal": true,
 "BlockLight": true,
