@@ -47,6 +47,15 @@
 "Comment": "",
 "SortOrder": 0
 },
+"unbreakable_floor": {
+"Name": {
+"DefaultText": "Variable-Texture Impassable Floor",
+"LocalTexts": {}
+},
+"Released": true,
+"Comment": "",
+"SortOrder": 0
+},
 "wall": {
 "Name": {
 "DefaultText": "Variable-Texture Blocked",
