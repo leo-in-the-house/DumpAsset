@@ -79,6 +79,8 @@ COMMON.MISSION_INCOMPLETE = 0
 COMMON.MISSION_COMPLETE = 1
 COMMON.MISSION_ARCHIVED = 2
 
+LoadGenType = luanet.import_type('RogueEssence.LevelGen.LoadGen')
+ChanceFloorGenType = luanet.import_type('RogueEssence.LevelGen.ChanceFloorGen')
 
 ----------------------------------------------------------
 -- Convenience Scription Functions
@@ -888,6 +890,21 @@ function COMMON.DungeonInteract(chara, target, action_cancel, turn_cancel)
   --"press 1 if you feel bad for [fainted mon]"
 
   
+end
+
+function COMMON.GetNoMissionFloors(current_segment)
+    local floor_ids = current_segment:GetFloorIDs()
+    local index = 0
+    local no_mission_floors = {}
+    local floor_count = current_segment.FloorCount
+    for i=0, floor_count - 1, 1 do
+        local map_gen = current_segment:GetMapGen(i)
+        if map_gen:IsAssignableTo(LoadGenType) or map_gen:IsAssignableTo(ChanceFloorGenType) then
+            no_mission_floors[index] = i
+            index = index + 1
+        end
+    end
+    return no_mission_floors
 end
 
 function COMMON.ShowTeamStorageMenu()
