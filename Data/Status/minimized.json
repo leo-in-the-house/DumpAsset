@@ -1,16 +1,10 @@
 ﻿{
-"Version": "0.7.21.0",
+"Version": "0.7.20.0",
 "Object": {
 "$type": "RogueEssence.Data.StatusData, RogueEssence",
 "Name": {
 "DefaultText": "Minimized",
-"LocalTexts": {
-"fr": "Lilliput",
-"de": "Komprimator",
-"es": "Reducción",
-"it": "Minimizzato",
-"zh-hans": "变小"
-}
+"LocalTexts": {}
 },
 "Desc": {
 "DefaultText": "",

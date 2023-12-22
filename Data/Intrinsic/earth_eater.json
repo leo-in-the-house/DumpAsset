@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.7.21.0",
+"Version": "0.7.20.0",
 "Object": {
 "$type": "RogueEssence.Data.IntrinsicData, RogueEssence",
 "Name": {
@@ -10,8 +10,7 @@
 "es": "Geofagia",
 "it": "Mangiaterra",
 "ja": "どしょく",
-"ja-jp": "どしょく",
-"zh-hans": "食土"
+"ja-jp": "どしょく"
 }
 },
 "Desc": {

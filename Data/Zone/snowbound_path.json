@@ -4,12 +4,7 @@
 "$type": "RogueEssence.Data.ZoneData, RogueEssence",
 "Name": {
 "DefaultText": "Snowbound Path",
-"LocalTexts": {
-"de": "Eingeschneiter Pfad",
-"es": "Paso Helado Errático",
-"it": "Passo Innevato",
-"zh-hans": "雪封小径"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -3844,13 +3839,13 @@
 "Min": 4,
 "Max": 9
 },
-"GenerateScale": {
-"Min": 6,
-"Max": 15
-},
 "AreaScale": {
 "Min": 2,
 "Max": 7
+},
+"GenerateScale": {
+"Min": 6,
+"Max": 15
 },
 "BlobStencil": {
 "$type": "RogueElements.BlobTilePercentStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -4481,13 +4476,13 @@
 "Min": 4,
 "Max": 9
 },
-"GenerateScale": {
-"Min": 6,
-"Max": 15
-},
 "AreaScale": {
 "Min": 2,
 "Max": 7
+},
+"GenerateScale": {
+"Min": 6,
+"Max": 15
 },
 "BlobStencil": {
 "$type": "RogueElements.BlobTilePercentStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -5118,13 +5113,13 @@
 "Min": 4,
 "Max": 9
 },
-"GenerateScale": {
-"Min": 6,
-"Max": 15
-},
 "AreaScale": {
 "Min": 2,
 "Max": 7
+},
+"GenerateScale": {
+"Min": 6,
+"Max": 15
 },
 "BlobStencil": {
 "$type": "RogueElements.BlobTilePercentStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -5755,13 +5750,13 @@
 "Min": 4,
 "Max": 9
 },
-"GenerateScale": {
-"Min": 6,
-"Max": 15
-},
 "AreaScale": {
 "Min": 2,
 "Max": 7
+},
+"GenerateScale": {
+"Min": 6,
+"Max": 15
 },
 "BlobStencil": {
 "$type": "RogueElements.BlobTilePercentStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -6883,13 +6878,13 @@
 "Min": 4,
 "Max": 9
 },
-"GenerateScale": {
-"Min": 6,
-"Max": 15
-},
 "AreaScale": {
 "Min": 2,
 "Max": 7
+},
+"GenerateScale": {
+"Min": 6,
+"Max": 15
 },
 "BlobStencil": {
 "$type": "RogueElements.BlobTilePercentStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -7694,13 +7689,13 @@
 "Min": 4,
 "Max": 9
 },
-"GenerateScale": {
-"Min": 6,
-"Max": 15
-},
 "AreaScale": {
 "Min": 2,
 "Max": 7
+},
+"GenerateScale": {
+"Min": 6,
+"Max": 15
 },
 "BlobStencil": {
 "$type": "RogueElements.BlobTilePercentStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -8403,13 +8398,13 @@
 "Min": 4,
 "Max": 9
 },
-"GenerateScale": {
-"Min": 6,
-"Max": 15
-},
 "AreaScale": {
 "Min": 2,
 "Max": 7
+},
+"GenerateScale": {
+"Min": 6,
+"Max": 15
 },
 "BlobStencil": {
 "$type": "RogueElements.BlobTilePercentStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -9112,13 +9107,13 @@
 "Min": 4,
 "Max": 9
 },
-"GenerateScale": {
-"Min": 6,
-"Max": 15
-},
 "AreaScale": {
 "Min": 2,
 "Max": 7
+},
+"GenerateScale": {
+"Min": 6,
+"Max": 15
 },
 "BlobStencil": {
 "$type": "RogueElements.BlobTilePercentStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -9821,13 +9816,13 @@
 "Min": 4,
 "Max": 9
 },
-"GenerateScale": {
-"Min": 6,
-"Max": 15
-},
 "AreaScale": {
 "Min": 2,
 "Max": 7
+},
+"GenerateScale": {
+"Min": 6,
+"Max": 15
 },
 "BlobStencil": {
 "$type": "RogueElements.BlobTilePercentStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -10530,13 +10525,13 @@
 "Min": 4,
 "Max": 9
 },
-"GenerateScale": {
-"Min": 6,
-"Max": 15
-},
 "AreaScale": {
 "Min": 2,
 "Max": 7
+},
+"GenerateScale": {
+"Min": 6,
+"Max": 15
 },
 "BlobStencil": {
 "$type": "RogueElements.BlobTilePercentStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -11239,13 +11234,13 @@
 "Min": 4,
 "Max": 9
 },
-"GenerateScale": {
-"Min": 6,
-"Max": 15
-},
 "AreaScale": {
 "Min": 2,
 "Max": 7
+},
+"GenerateScale": {
+"Min": 6,
+"Max": 15
 },
 "BlobStencil": {
 "$type": "RogueElements.BlobTilePercentStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -11643,13 +11638,8 @@
 ]
 },
 "Name": {
-"DefaultText": "Snowbound Path\\n{0}F",
-"LocalTexts": {
-"de": "Eingeschneiter Pfad\\nE{0}",
-"es": "Paso Helado Errático\\nP{0}",
-"it": "Passo Innevato\\nP{0}",
-"zh-hans": "雪封小径\\n{0}F"
-}
+"DefaultText": "Snowbound Path\n{0}F",
+"LocalTexts": {}
 },
 "Priority": {
 "str": [
@@ -20926,12 +20916,8 @@
 ]
 },
 "Name": {
-"DefaultText": "Glacial Path\\nB{0}F",
-"LocalTexts": {
-"de": "Gletscherpfad\\nU{0}",
-"it": "Sentiero Glaciale\\nP-{0}",
-"zh-hans": "冰河小径\\nB{0}F"
-}
+"DefaultText": "Glacial Path\nB{0}F",
+"LocalTexts": {}
 },
 "Priority": {
 "str": [
@@ -26071,13 +26057,7 @@
 "$type": "RogueEssence.LevelGen.MapNameIDStep`1[[RogueEssence.LevelGen.MapLoadContext, RogueEssence]], RogueEssence",
 "Name": {
 "DefaultText": "Secret Room",
-"LocalTexts": {
-"de": "Geheimer Raum",
-"es": "Piso Secreto",
-"pt": "Sala Secreta",
-"it": "Stanza Segreta",
-"zh-hans": "秘密之间"
-}
+"LocalTexts": {}
 },
 "IDOffset": 0
 }
@@ -26371,13 +26351,7 @@
 "$type": "RogueEssence.LevelGen.MapNameIDStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Name": {
 "DefaultText": "Mysterious Passage",
-"LocalTexts": {
-"de": "Mysteriöse Passage",
-"es": "Pasaje Misterioso",
-"pt": "Passagem Misteriosa",
-"it": "Passaggio Misterioso",
-"zh-hans": "秘密通道"
-}
+"LocalTexts": {}
 },
 "IDOffset": 0
 }
@@ -28705,13 +28679,7 @@
 "$type": "RogueEssence.LevelGen.MapNameIDStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Name": {
 "DefaultText": "Mysterious Passage",
-"LocalTexts": {
-"de": "Mysteriöse Passage",
-"es": "Pasaje Misterioso",
-"pt": "Passagem Misteriosa",
-"it": "Passaggio Misterioso",
-"zh-hans": "秘密通道"
-}
+"LocalTexts": {}
 },
 "IDOffset": 0
 }
@@ -31055,13 +31023,7 @@
 "$type": "RogueEssence.LevelGen.MapNameIDStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Name": {
 "DefaultText": "Mysterious Passage",
-"LocalTexts": {
-"de": "Mysteriöse Passage",
-"es": "Pasaje Misterioso",
-"pt": "Passagem Misteriosa",
-"it": "Passaggio Misterioso",
-"zh-hans": "秘密通道"
-}
+"LocalTexts": {}
 },
 "IDOffset": 0
 }
@@ -33417,13 +33379,7 @@
 "$type": "RogueEssence.LevelGen.MapNameIDStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Name": {
 "DefaultText": "Mysterious Passage",
-"LocalTexts": {
-"de": "Mysteriöse Passage",
-"es": "Pasaje Misterioso",
-"pt": "Passagem Misteriosa",
-"it": "Passaggio Misterioso",
-"zh-hans": "秘密通道"
-}
+"LocalTexts": {}
 },
 "IDOffset": 0
 }
@@ -35751,13 +35707,7 @@
 "$type": "RogueEssence.LevelGen.MapNameIDStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Name": {
 "DefaultText": "Mysterious Passage",
-"LocalTexts": {
-"de": "Mysteriöse Passage",
-"es": "Pasaje Misterioso",
-"pt": "Passagem Misteriosa",
-"it": "Passaggio Misterioso",
-"zh-hans": "秘密通道"
-}
+"LocalTexts": {}
 },
 "IDOffset": 0
 }
@@ -38101,13 +38051,7 @@
 "$type": "RogueEssence.LevelGen.MapNameIDStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Name": {
 "DefaultText": "Mysterious Passage",
-"LocalTexts": {
-"de": "Mysteriöse Passage",
-"es": "Pasaje Misterioso",
-"pt": "Passagem Misteriosa",
-"it": "Passaggio Misterioso",
-"zh-hans": "秘密通道"
-}
+"LocalTexts": {}
 },
 "IDOffset": 0
 }

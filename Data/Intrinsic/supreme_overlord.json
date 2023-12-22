@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.7.21.0",
+"Version": "0.7.20.0",
 "Object": {
 "$type": "RogueEssence.Data.IntrinsicData, RogueEssence",
 "Name": {
@@ -10,8 +10,7 @@
 "es": "General Supremo",
 "it": "Generale Supremo",
 "ja": "そうだいしょう",
-"ja-jp": "そうだいしょう",
-"zh-hans": "大将"
+"ja-jp": "そうだいしょう"
 }
 },
 "Desc": {

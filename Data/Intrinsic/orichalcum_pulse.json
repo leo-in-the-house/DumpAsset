@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.7.21.0",
+"Version": "0.7.20.0",
 "Object": {
 "$type": "RogueEssence.Data.IntrinsicData, RogueEssence",
 "Name": {
@@ -10,8 +10,7 @@
 "es": "Latido Oricalco",
 "it": "Ritmo d’Oricalco",
 "ja": "ひひいろのこどう",
-"ja-jp": "ひひいろのこどう",
-"zh-hans": "绯红脉动"
+"ja-jp": "ひひいろのこどう"
 }
 },
 "Desc": {

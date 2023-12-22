@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.7.21.0",
+"Version": "0.7.20.0",
 "Object": {
 "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[RogueEssence.Data.EntrySummary, RogueEssence]], System.Private.CoreLib",
 "adaptability": {
@@ -125,8 +125,7 @@
 "es": "Coraza Ira",
 "it": "Iraguscio",
 "ja": "いかりのこうら",
-"ja-jp": "いかりのこうら",
-"zh-hans": "愤怒甲壳"
+"ja-jp": "いかりのこうら"
 }
 },
 "Released": false,
@@ -180,8 +179,7 @@
 "es": "Cola Armadura",
 "it": "Codarmatura",
 "ja": "テイルアーマー",
-"ja-jp": "テイルアーマー",
-"zh-hans": "尾甲"
+"ja-jp": "テイルアーマー"
 }
 },
 "Released": false,
@@ -613,8 +611,7 @@
 "es": "Comandar",
 "it": "Torre di Comando",
 "ja": "しれいとう",
-"ja-jp": "しれいとう",
-"zh-hans": "发号施令"
+"ja-jp": "しれいとう"
 }
 },
 "Released": false,
@@ -706,8 +703,7 @@
 "es": "Unísono",
 "it": "Coprotagonismo",
 "ja": "きょうえん",
-"ja-jp": "きょうえん",
-"zh-hans": "同台共演"
+"ja-jp": "きょうえん"
 }
 },
 "Released": false,
@@ -742,8 +738,7 @@
 "es": "Rumia",
 "it": "Ruminante",
 "ja": "はんすう",
-"ja-jp": "はんすう",
-"zh-hans": "反刍"
+"ja-jp": "はんすう"
 }
 },
 "Released": false,
@@ -1120,8 +1115,7 @@
 "es": "Geofagia",
 "it": "Mangiaterra",
 "ja": "どしょく",
-"ja-jp": "どしょく",
-"zh-hans": "食土"
+"ja-jp": "どしょく"
 }
 },
 "Released": false,
@@ -1175,8 +1169,7 @@
 "es": "Dinamo",
 "it": "Convertivolt",
 "ja": "でんきにかえる",
-"ja-jp": "でんきにかえる",
-"zh-hans": "电力转换"
+"ja-jp": "でんきにかえる"
 }
 },
 "Released": false,
@@ -1534,8 +1527,7 @@
 "es": "Cuerpo Áureo",
 "it": "Corpo Aureo",
 "ja": "おうごんのからだ",
-"ja-jp": "おうごんのからだ",
-"zh-hans": "黄金之躯"
+"ja-jp": "おうごんのからだ"
 }
 },
 "Released": false,
@@ -1646,8 +1638,7 @@
 "es": "Perro Guardián",
 "it": "Cane da Guardia",
 "ja": "ばんけん",
-"ja-jp": "ばんけん",
-"zh-hans": "看门犬"
+"ja-jp": "ばんけん"
 }
 },
 "Released": false,
@@ -1701,8 +1692,7 @@
 "es": "Motor Hadrónico",
 "it": "Motore Adronico",
 "ja": "ハドロンエンジン",
-"ja-jp": "ハドロンエンジン",
-"zh-hans": "强子引擎"
+"ja-jp": "ハドロンエンジン"
 }
 },
 "Released": false,
@@ -2364,8 +2354,7 @@
 "es": "Olor Persistente",
 "it": "Odore Tenace",
 "ja": "とれないにおい",
-"ja-jp": "とれないにおい",
-"zh-hans": "甩不掉的气味"
+"ja-jp": "とれないにおい"
 }
 },
 "Released": false,
@@ -2799,8 +2788,7 @@
 "es": "Poder Fúngico",
 "it": "Micoforza",
 "ja": "きんしのちから",
-"ja-jp": "きんしのちから",
-"zh-hans": "菌丝之力"
+"ja-jp": "きんしのちから"
 }
 },
 "Released": false,
@@ -2944,8 +2932,7 @@
 "es": "Oportunista",
 "it": "Scrocco",
 "ja": "びんじょう",
-"ja-jp": "びんじょう",
-"zh-hans": "跟风"
+"ja-jp": "びんじょう"
 }
 },
 "Released": false,
@@ -2961,8 +2948,7 @@
 "es": "Latido Oricalco",
 "it": "Ritmo d’Oricalco",
 "ja": "ひひいろのこどう",
-"ja-jp": "ひひいろのこどう",
-"zh-hans": "绯红脉动"
+"ja-jp": "ひひいろのこどう"
 }
 },
 "Released": false,
@@ -3396,8 +3382,7 @@
 "es": "Paleosíntesis",
 "it": "Paleoattivazione",
 "ja": "こだいかっせい",
-"ja-jp": "こだいかっせい",
-"zh-hans": "古代活性"
+"ja-jp": "こだいかっせい"
 }
 },
 "Released": false,
@@ -3470,8 +3455,7 @@
 "es": "Sal Purificadora",
 "it": "Sale Purificante",
 "ja": "きよめのしお",
-"ja-jp": "きよめのしお",
-"zh-hans": "洁净之盐"
+"ja-jp": "きよめのしお"
 }
 },
 "Released": false,
@@ -3487,8 +3471,7 @@
 "es": "Carga Cuark",
 "it": "Carica Quark",
 "ja": "クォークチャージ",
-"ja-jp": "クォークチャージ",
-"zh-hans": "夸克充能"
+"ja-jp": "クォークチャージ"
 }
 },
 "Released": false,
@@ -3732,8 +3715,7 @@
 "es": "Transportarrocas",
 "it": "Portamassi",
 "ja": "いわはこび",
-"ja-jp": "いわはこび",
-"zh-hans": "搬岩"
+"ja-jp": "いわはこび"
 }
 },
 "Released": false,
@@ -3977,8 +3959,7 @@
 "es": "Disemillar",
 "it": "Spargisemi",
 "ja": "こぼれダネ",
-"ja-jp": "こぼれダネ",
-"zh-hans": "掉出种子"
+"ja-jp": "こぼれダネ"
 }
 },
 "Released": false,
@@ -4051,8 +4032,7 @@
 "es": "Cortante",
 "it": "Affilama",
 "ja": "きれあじ",
-"ja-jp": "きれあじ",
-"zh-hans": "锋锐"
+"ja-jp": "きれあじ"
 }
 },
 "Released": true,
@@ -4714,8 +4694,7 @@
 "es": "General Supremo",
 "it": "Generale Supremo",
 "ja": "そうだいしょう",
-"ja-jp": "そうだいしょう",
-"zh-hans": "大将"
+"ja-jp": "そうだいしょう"
 }
 },
 "Released": false,
@@ -4974,8 +4953,7 @@
 "es": "Termoscambio",
 "it": "Termoscambio",
 "ja": "ねつこうかん",
-"ja-jp": "ねつこうかん",
-"zh-hans": "热交换"
+"ja-jp": "ねつこうかん"
 }
 },
 "Released": false,
@@ -5086,8 +5064,7 @@
 "es": "Capa Tóxica",
 "it": "Mantossina",
 "ja": "どくげしょう",
-"ja-jp": "どくげしょう",
-"zh-hans": "毒满地"
+"ja-jp": "どくげしょう"
 }
 },
 "Released": false,
@@ -5462,8 +5439,7 @@
 "es": "Cuerpo Horneado",
 "it": "Bentostato",
 "ja": "こんがりボディ",
-"ja-jp": "こんがりボディ",
-"zh-hans": "焦香之躯"
+"ja-jp": "こんがりボディ"
 }
 },
 "Released": false,
@@ -5517,8 +5493,7 @@
 "es": "Energía Eólica",
 "it": "Energia Eolica",
 "ja": "ふうりょくでんき",
-"ja-jp": "ふうりょくでんき",
-"zh-hans": "风力发电"
+"ja-jp": "ふうりょくでんき"
 }
 },
 "Released": false,
@@ -5534,8 +5509,7 @@
 "es": "Surcavientos",
 "it": "Vento Propizio",
 "ja": "かぜのり",
-"ja-jp": "かぜのり",
-"zh-hans": "乘风"
+"ja-jp": "かぜのり"
 }
 },
 "Released": false,
@@ -5608,8 +5582,7 @@
 "es": "Cambio Heroico",
 "it": "Supercambio",
 "ja": "マイティチェンジ",
-"ja-jp": "マイティチェンジ",
-"zh-hans": "全能变身"
+"ja-jp": "マイティチェンジ"
 }
 },
 "Released": false,

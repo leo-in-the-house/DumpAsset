@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.7.21.0",
+"Version": "0.7.20.0",
 "Object": {
 "$type": "RogueEssence.Data.IntrinsicData, RogueEssence",
 "Name": {
@@ -10,8 +10,7 @@
 "es": "Poder Fúngico",
 "it": "Micoforza",
 "ja": "きんしのちから",
-"ja-jp": "きんしのちから",
-"zh-hans": "菌丝之力"
+"ja-jp": "きんしのちから"
 }
 },
 "Desc": {
