@@ -1,10 +1,13 @@
 ﻿{
-"Version": "0.7.22.0",
+"Version": "0.7.21.0",
 "Object": {
 "$type": "RogueEssence.Data.TileData, RogueEssence",
 "Name": {
 "DefaultText": "Script Trigger",
-"LocalTexts": {}
+"LocalTexts": {
+"de": "Script Auslöser",
+"zh-hans": "脚本触发器"
+}
 },
 "Desc": {
 "DefaultText": "",
