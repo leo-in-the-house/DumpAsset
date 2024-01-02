@@ -83,6 +83,17 @@ function canyon_camp.SetupNpcs()
   if SV.team_rivals.Status == 1 then
     GROUND:Unhide("Rival_1")
 	GROUND:Unhide("Rival_2")
+  elseif SV.team_rivals.Status == 2 then
+    GROUND:Unhide("Rival_2")
+	
+	local questname = "QuestRival1"
+    local quest = SV.missions.Missions[questname]
+	if quest ~= nil and quest.Complete == COMMON.MISSION_COMPLETE then
+	  GROUND:Unhide("Rival_1")
+	end
+  elseif SV.team_rivals.Status == 3 then
+    GROUND:Unhide("Rival_1")
+	GROUND:Unhide("Rival_2")
   elseif SV.team_rivals.Status == 8 then
     -- TODO cycling
   end
@@ -94,6 +105,9 @@ function canyon_camp.SetupNpcs()
     local quest = SV.missions.Missions[questname]
 	if quest ~= nil and quest.Complete == COMMON.MISSION_COMPLETE then
 	  GROUND:Unhide("NPC_Monk")
+	else
+	  local spar = CH('NPC_Spar')
+	  GROUND:TeleportTo(spar, 864, 360, Direction.DownLeft)
 	end
   elseif SV.team_meditate.Status == 4 then
     GROUND:Unhide("NPC_Monk")
@@ -110,16 +124,22 @@ function canyon_camp.SetupNpcs()
   
   if SV.team_solo.Status == 3 and SV.team_solo.SpokenTo == false then
     GROUND:Unhide("NPC_Solo")
+	local solo = CH('NPC_Solo')
+	GROUND:TeleportTo(solo, 1064, 400, Direction.Right)
   elseif SV.team_solo.Status == 4 then
 	local questname = "QuestWater"
     local quest = SV.missions.Missions[questname]
 	if quest ~= nil and quest.Complete == COMMON.MISSION_COMPLETE then
 	  GROUND:Unhide("NPC_Solo")
+	else
+	  local shortcut = CH('NPC_Shortcut')
+	  GROUND:TeleportTo(shortcut, 912, 384, Direction.Right)
 	end
   elseif SV.team_solo.Status == 5 then
     GROUND:Unhide("NPC_Solo")
   elseif SV.team_solo.Status == 6 then
     -- TODO cycling
+    GROUND:Unhide("NPC_Solo")
   end
   
   if SV.team_psychic.Status == 0 or SV.team_psychic.Status == 1 then
@@ -273,6 +293,90 @@ end
 -- Objects Callbacks
 --------------------------------------------------
 
+
+  
+function canyon_camp.Rival_1_Action(chara, activator)
+  DEBUG.EnableDbgCoro() --Enable debugging this coroutine
+  
+  local player = CH('PLAYER')
+
+  if SV.team_rivals.Status == 1 then
+  
+  UI:SetSpeaker(chara)--set the dialogue box's speaker to the character
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rival_1_Line_001']))
+  
+  SV.team_rivals.SpokenTo = true
+  
+  elseif SV.team_rivals.Status == 2 then
+  
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rival_1_Help_Line_001']))
+  
+    local receive_item = RogueEssence.Dungeon.InvItem("xcl_element_poison_silk")
+  COMMON.GiftItem(player, receive_item)
+  
+  COMMON.CompleteMission("QuestRival1")
+  
+  SV.team_rivals.Status = 3
+  
+  elseif SV.team_rivals.Status == 3 then
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rival_1_Help_Line_002']))
+  end
+  
+  
+  
+end
+  
+function canyon_camp.Rival_2_Action(chara, activator)
+  DEBUG.EnableDbgCoro() --Enable debugging this coroutine
+  
+  local player = CH('PLAYER')
+
+  if SV.team_rivals.Status == 1 then
+  
+  UI:SetSpeaker(chara)--set the dialogue box's speaker to the character
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rival_2_Line_001']))
+  
+  SV.team_rivals.SpokenTo = true
+  
+  elseif SV.team_rivals.Status == 2 then
+  
+  local questname = "QuestRival1"
+  local quest = SV.missions.Missions[questname]
+	
+  
+  if quest == nil then
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rival_2_Help_Line_001']))
+	
+	SV.missions.Missions[questname] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_RESCUE,
+      DestZone = "copper_quarry", DestSegment = 0, DestFloor = 6,
+      FloorUnknown = false,
+      TargetSpecies = RogueEssence.Dungeon.MonsterID("seviper", 0, "normal", Gender.Female),
+      ClientSpecies = RogueEssence.Dungeon.MonsterID("zangoose", 0, "normal", Gender.Female) }
+	
+  elseif quest.Complete == COMMON.MISSION_INCOMPLETE then
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rival_2_Help_Line_002']))
+  else
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rival_2_Help_Line_003']))
+  end
+  
+  elseif SV.team_rivals.Status == 3 then
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rival_2_Help_Line_003']))
+  end
+  
+end
+
 function canyon_camp.NPC_Seer_Action(chara, activator)
   DEBUG.EnableDbgCoro() --Enable debugging this coroutine
   GROUND:CharTurnToChar(chara,CH('PLAYER'))--make the chara turn to the player
@@ -328,9 +432,7 @@ function canyon_camp.NPC_Storehouse_Action(chara, activator)
         local receive_item = RogueEssence.Dungeon.InvItem("food_banana_big")
         COMMON.GiftItem(player, receive_item)
       --complete mission and move to done
-      quest.Complete = COMMON.MISSION_ARCHIVED
-      SV.missions.FinishedMissions[questname] = quest
-      SV.missions.Missions[questname] = nil
+	  COMMON.CompleteMission(questname)
       SV.supply_corps.Status = 7
       UI:WaitShowDialogue(STRINGS:Format(MapStrings['Storehouse_Line_005']))
     end
@@ -687,6 +789,198 @@ function canyon_camp.Argument()
   end
 end
 
+
+  
+function canyon_camp.NPC_Monk_Action(chara, activator)
+  DEBUG.EnableDbgCoro() --Enable debugging this coroutine
+  
+  if SV.team_meditate.Status == 1 then
+    GROUND:CharTurnToChar(chara, player)
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Monk_Line_001']))
+	SV.team_meditate.SpokenTo = true
+  elseif SV.team_meditate.Status == 3 then
+    canyon_camp.Fighting_Complete()
+  elseif SV.team_meditate.Status == 4 then
+    GROUND:CharTurnToChar(chara, player)
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Monk_Line_002']))
+  elseif SV.team_meditate.Status == 5 then
+    GROUND:CharTurnToChar(chara, player)
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Monk_Line_002']))
+  end
+end
+
+  
+function canyon_camp.NPC_Spar_Action(chara, activator)
+  DEBUG.EnableDbgCoro() --Enable debugging this coroutine
+  
+  local player = CH('PLAYER')
+  
+  if SV.team_meditate.Status == 0 then
+  
+    GROUND:CharTurnToChar(chara, player)
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Spar_Line_001']))
+  elseif SV.team_meditate.Status == 1 then
+    GROUND:CharTurnToChar(chara, player)
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Spar_Line_002']))
+  elseif SV.team_meditate.Status == 2 then
+    GROUND:CharTurnToChar(chara, player)
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Spar_Line_002']))
+  elseif SV.team_meditate.Status == 3 then
+  
+  local questname = "QuestFighting"
+  local quest = SV.missions.Missions[questname]
+	
+  local days = SV.team_meditate.DaysSinceCheckpoint + 4
+  
+  if quest == nil then
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Spar_Help_Line_001'], days))
+	
+	SV.missions.Missions[questname] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_RESCUE,
+      DestZone = "sleeping_caldera", DestSegment = 0, DestFloor = 8,
+      FloorUnknown = false,
+      TargetSpecies = RogueEssence.Dungeon.MonsterID("meditite", 0, "normal", Gender.Male),
+      ClientSpecies = RogueEssence.Dungeon.MonsterID("makuhita", 0, "normal", Gender.Male) }
+	
+  elseif quest.Complete == COMMON.MISSION_INCOMPLETE then
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Spar_Help_Line_001'], days))
+  else
+    canyon_camp.Fighting_Complete()
+  end
+  
+  elseif SV.team_meditate.Status == 4 then
+    GROUND:CharTurnToChar(chara, player)
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Spar_Line_003']))
+  elseif SV.team_meditate.Status == 5 then
+    GROUND:CharTurnToChar(chara, player)
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Spar_Line_003']))
+  end
+end
+
+
+function canyon_camp.Fighting_Complete()
+  local monk = CH('NPC_Monk')
+  local spar = CH('NPC_Spar')
+  local player = CH('PLAYER')
+  
+  UI:SetSpeaker(spar)
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Spar_Complete_Line_001']))
+  
+  UI:SetSpeaker(monk)
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Spar_Complete_Line_002']))
+  
+  UI:SetSpeaker(spar)
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Spar_Complete_Line_003']))
+  
+  local receive_item = RogueEssence.Dungeon.InvItem("xcl_element_fighting_silk")
+  COMMON.GiftItem(player, receive_item)
+  
+  COMMON.CompleteMission("QuestFighting")
+  
+  SV.team_meditate.Status = 4
+end
+
+
+  
+function canyon_camp.NPC_Shortcut_Action(chara, activator)
+  DEBUG.EnableDbgCoro() --Enable debugging this coroutine
+  
+  local player = CH('PLAYER')
+  
+  if SV.team_solo.Status < 4 then
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Shortcut_Line_001']))
+  elseif SV.team_solo.Status == 4 then
+
+  local questname = "QuestWater"
+  local quest = SV.missions.Missions[questname]
+	
+  if quest == nil then
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Shortcut_Quest_Line_001']))
+	
+	SV.missions.Missions[questname] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_RESCUE,
+      DestZone = "forsaken_desert", DestSegment = 0, DestFloor = 0,
+      FloorUnknown = false,
+      TargetSpecies = RogueEssence.Dungeon.MonsterID("prinplup", 0, "normal", Gender.Male),
+      ClientSpecies = RogueEssence.Dungeon.MonsterID("floatzel", 0, "normal", Gender.Male) }
+	
+  elseif quest.Complete == COMMON.MISSION_INCOMPLETE then
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Shortcut_Quest_Line_002']))
+  else
+    canyon_camp.Water_Complete()
+  end
+
+  elseif SV.team_solo.Status == 5 then
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Shortcut_Line_002']))
+  elseif SV.team_solo.Status == 6 then
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Shortcut_Line_002']))
+  end
+end
+
+function canyon_camp.NPC_Solo_Action(chara, activator)
+  
+  
+  if SV.team_solo.Status == 3 then
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Solo_Line_001']))
+	GROUND:Hide("NPC_Solo")
+    SV.team_solo.SpokenTo = true
+  elseif SV.team_solo.Status == 4 then
+    canyon_camp.Water_Complete()
+  elseif SV.team_solo.Status == 5 then
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Solo_Line_002']))
+  elseif SV.team_solo.Status == 6 then
+    --TODO: cycle?
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Solo_Line_002']))
+  end
+end
+
+
+function canyon_camp.Water_Complete()
+  local shortcut = CH('NPC_Shortcut')
+  local solo = CH('NPC_Solo')
+  local player = CH('PLAYER')
+  
+  UI:SetSpeaker(shortcut)
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Shortcut_Complete_Line_001']))
+  
+  UI:SetSpeaker(solo)
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Shortcut_Complete_Line_002']))
+  
+  local receive_item = RogueEssence.Dungeon.InvItem("xcl_element_water_silk")
+  COMMON.GiftItem(player, receive_item)
+  
+  
+  UI:SetSpeaker(shortcut)
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Shortcut_Complete_Line_003']))
+  
+  UI:SetSpeaker(solo)
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Shortcut_Complete_Line_004']))
+  
+  COMMON.CompleteMission("QuestWater")
+  
+  SV.team_solo.Status = 5
+end
+
 function canyon_camp.NPC_Seeker_Action(chara, activator)
   DEBUG.EnableDbgCoro() --Enable debugging this coroutine
   
@@ -722,15 +1016,6 @@ function canyon_camp.NPC_Hidden_Action(chara, activator)
   UI:WaitShowDialogue(STRINGS:Format(MapStrings['Hidden_Line_003']))
 end
   
-function canyon_camp.NPC_Shortcut_Action(chara, activator)
-  DEBUG.EnableDbgCoro() --Enable debugging this coroutine
-  
-  local player = CH('PLAYER')
-  UI:SetSpeaker(chara)
-  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Shortcut_Line_001']))
-  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Shortcut_Line_002']))
-end
-  
 function canyon_camp.NPC_NextCamp_Action(chara, activator)
   DEBUG.EnableDbgCoro() --Enable debugging this coroutine
   
@@ -739,12 +1024,119 @@ function canyon_camp.NPC_NextCamp_Action(chara, activator)
   UI:WaitShowDialogue(STRINGS:Format(MapStrings['NextCamp_Line_001']))
 end
   
+  
+function canyon_camp.NPC_Goals_Action(chara, activator)
+  DEBUG.EnableDbgCoro() --Enable debugging this coroutine
+  
+  local player = CH('PLAYER')
+  
+  if SV.team_psychic.Status == 0 then
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Goals_Line_001']))
+	
+  elseif SV.team_psychic.Status == 1 then
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Goals_Line_002']))
+  end
+end
+
+
 function canyon_camp.NPC_Strategy_Action(chara, activator)
   DEBUG.EnableDbgCoro() --Enable debugging this coroutine
   
   local player = CH('PLAYER')
-  UI:SetSpeaker(chara)
-  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Strategy_Line_001']))
+  
+  if SV.team_psychic.Status == 0 then
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Strategy_Line_001']))
+	
+  elseif SV.team_psychic.Status == 1 then
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Strategy_Line_002']))
+	
+  elseif SV.team_psychic.Status == 3 then
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Strategy_Line_003']))
+	
+	SV.team_psychic.SpokenTo = true
+  elseif SV.team_psychic.Status == 4 then
+	canyon_camp.Psychic_Complete()
+  elseif SV.team_psychic.Status == 5 then
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Strategy_Line_004']))
+	
+  elseif SV.team_psychic.Status == 6 then
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Strategy_Line_004']))
+	
+  end
+end
+
+function canyon_camp.NPC_Brains_Action(chara, activator)
+  DEBUG.EnableDbgCoro() --Enable debugging this coroutine
+  
+  local player = CH('PLAYER')
+  
+  if SV.team_psychic.Status == 3 then
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Brains_Line_001']))
+	
+  elseif SV.team_psychic.Status == 4 then
+	
+  local questname = "QuestPsychic"
+  local quest = SV.missions.Missions[questname]
+	
+  if quest == nil then
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Brains_Line_002']))
+	
+	SV.missions.Missions[questname] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_RESCUE,
+      DestZone = "relic_tower", DestSegment = 0, DestFloor = 8,
+      FloorUnknown = false,
+      TargetSpecies = RogueEssence.Dungeon.MonsterID("kirlia", 0, "normal", Gender.Male),
+      ClientSpecies = RogueEssence.Dungeon.MonsterID("girafarig", 0, "normal", Gender.Male) }
+	
+  elseif quest.Complete == COMMON.MISSION_INCOMPLETE then
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Brains_Line_003']))
+  else
+    canyon_camp.Psychic_Complete()
+  end
+	
+  elseif SV.team_psychic.Status == 5 then
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Brains_Line_004']))
+	
+  elseif SV.team_psychic.Status == 6 then
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Brains_Line_004']))
+	
+  end
+end
+
+function canyon_camp.Psychic_Complete()
+  local strategy = CH('NPC_Strategy')
+  local brains = CH('NPC_Brains')
+  local player = CH('PLAYER')
+  
+  UI:SetSpeaker(strategy)
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Strategy_Rescued_Line_001']))
+  
+  UI:SetSpeaker(brains)
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Strategy_Rescued_Line_002']))
+  
+  UI:SetSpeaker(strategy)
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Strategy_Rescued_Line_003']))
+  
+  local receive_item = RogueEssence.Dungeon.InvItem("xcl_element_psychic_silk")
+  COMMON.GiftItem(player, receive_item)
+  
+  
+  COMMON.CompleteMission("QuestPsychic")
+  
+  SV.team_psychic.Status = 5
 end
 
 function canyon_camp.NPC_Fairy_Action(chara, activator)

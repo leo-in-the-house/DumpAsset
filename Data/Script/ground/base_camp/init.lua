@@ -87,7 +87,7 @@ function base_camp.SetupNpcs()
   if SV.team_catch.Status == 1 then
     GROUND:Unhide("NPC_Catch_1")
 	GROUND:Unhide("NPC_Catch_2")
-  elseif SV.team_catch.Status == 5 then
+  elseif SV.team_catch.Status == 4 then
     -- TODO cycling
   end
   
@@ -498,18 +498,71 @@ function base_camp.Noctowl_Action(chara, activator)
 end
 
 
+function base_camp.NPC_Catch_1_Action(chara, activator)
+  DEBUG.EnableDbgCoro()
+  
+  base_camp.Catch_Action()
+end
+
+function base_camp.NPC_Catch_2_Action(chara, activator)
+  DEBUG.EnableDbgCoro()
+  base_camp.Catch_Action()
+  
+end
+
+function base_camp.Catch_Action()
+  DEBUG.EnableDbgCoro() --Enable debugging this coroutine
+  
+  local catch1 = CH('NPC_Catch_1')
+  local catch2 = CH('NPC_Catch_2')
+  local player = CH('PLAYER')
+  local itemAnim = nil
+  
+  GROUND:CharTurnToChar(player, catch1)
+  UI:SetSpeaker(catch1)
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Catch_Line_001']))
+  SOUND:PlayBattleSE("DUN_Throw_Start")
+  GROUND:CharSetAnim(catch1, "Rotate", false)
+  GAME:WaitFrames(18)
+  SOUND:PlayBattleSE("DUN_Throw_Arc")
+  itemAnim = RogueEssence.Content.ItemAnim(catch1.Bounds.Center, catch2.Bounds.Center, "Rock_Gray", 48, 1)
+  GROUND:PlayVFXAnim(itemAnim, RogueEssence.Content.DrawLayer.Normal)
+  
+  GROUND:CharTurnToChar(player, catch2)
+  GAME:WaitFrames(RogueEssence.Content.ItemAnim.ITEM_ACTION_TIME)
+	
+  SOUND:PlayBattleSE("DUN_Equip")
+  UI:SetSpeaker(catch2)
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Catch_Line_002']))
+  SOUND:PlayBattleSE("DUN_Throw_Start")
+  GROUND:CharSetAnim(catch2, "Rotate", false)
+  GAME:WaitFrames(18)
+  SOUND:PlayBattleSE("DUN_Throw_Arc")
+  itemAnim = RogueEssence.Content.ItemAnim(catch2.Bounds.Center, catch1.Bounds.Center, "Rock_Gray", 48, 1)
+  GROUND:PlayVFXAnim(itemAnim, RogueEssence.Content.DrawLayer.Normal)
+  
+  GROUND:CharTurnToChar(player, catch1)
+  GAME:WaitFrames(RogueEssence.Content.ItemAnim.ITEM_ACTION_TIME)
+  
+  SOUND:PlayBattleSE("DUN_Equip")
+  
+  SV.team_catch.SpokenTo = true
+end
+
 function base_camp.NPC_Steel_1_Action(chara, activator)
 
+  local player = CH('PLAYER')
+  
   local questname = "QuestSteel"
   local quest = SV.missions.Missions[questname]
 	
   
   if quest == nil then
     UI:SetSpeaker(chara)
-    GROUND:CharTurnToChar(chara,CH('PLAYER'))
+    GROUND:CharTurnToChar(chara,player)
 	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Steel_Line_001']))
 	
-	SV.missions.Missions["QuestSteel"] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_RESCUE,
+	SV.missions.Missions[questname] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_RESCUE,
       DestZone = "guildmaster_trail", DestSegment = 0, DestFloor = 14,
       FloorUnknown = false,
       TargetSpecies = RogueEssence.Dungeon.MonsterID("scizor", 0, "normal", Gender.Male),
@@ -517,7 +570,7 @@ function base_camp.NPC_Steel_1_Action(chara, activator)
 	
   elseif quest.Complete == COMMON.MISSION_INCOMPLETE then
     UI:SetSpeaker(chara)
-    GROUND:CharTurnToChar(chara,CH('PLAYER'))
+    GROUND:CharTurnToChar(chara,player)
 	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Steel_Line_002']))
   else
     base_camp.Steel_Complete()
@@ -551,11 +604,7 @@ function base_camp.Steel_Complete()
   GROUND:Hide("NPC_Steel_1")
   GROUND:Hide("NPC_Steel_2")
   
-  local questname = "QuestSteel"
-  local quest = SV.missions.Missions[questname]
-  quest.Complete = COMMON.MISSION_ARCHIVED
-  SV.missions.FinishedMissions["QuestSteel"] = quest
-  SV.missions.Missions["QuestSteel"] = nil
+  COMMON.CompleteMission("QuestSteel")
   
   SV.team_steel.Rescued = true
 end
@@ -590,6 +639,11 @@ function base_camp.NPC_Unlucky_Action(chara, activator)
   UI:WaitShowDialogue(STRINGS:Format(MapStrings['Unlucky_Line_001']))
   UI:SetSpeakerEmotion("Sad")
   UI:WaitShowDialogue(STRINGS:Format(MapStrings['Unlucky_Line_002']))
+  
+  
+  if SV.Experimental then
+    SV.team_kidnapped.SpokenTo = true
+  end
 end
 
 function base_camp.Statue_Center_Action(obj, activator)

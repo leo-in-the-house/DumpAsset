@@ -217,11 +217,14 @@
   <data name="Shortcut_Line_001" xml:space="preserve">
     <value>[tmp]It's rumored that the guildmasters took a shortcut to the summit of the mountain, where they lay in wait to bestow their title to a new team.[br]Where is this shortcut, you may ask?[br] Why,[pause=0] it's none other than Guildmaster Trail!</value>
   </data>
+  <data name="Shortcut_Line_002" xml:space="preserve">
+    <value>[tmp]Prinplup needs a partner.</value>
+  </data>
   <data name="Shortcut_Quest_Line_001" xml:space="preserve">
-    <value>[tmp]I'm worried about that Prinplup that marched into Forsaken Desert 1F. Can you go find him?</value>
+    <value>[tmp]I'm worried about that Prinplup that marched into Forsaken Desert 1F. Can you go find him? (he will spawn at an oasis when I program it in)</value>
   </data>
   <data name="Shortcut_Quest_Line_002" xml:space="preserve">
-    <value>[tmp]Find Prinplup in Forsaken Desert 1F.</value>
+    <value>[tmp]Find Prinplup in Forsaken Desert 1F.[br]You'll want to look for him at an oasis because there's no other way he'd still be alive.</value>
   </data>
   <data name="Shortcut_Complete_Line_001" xml:space="preserve">
     <value>[tmp]You should be careful out there in the desert!</value>
@@ -272,7 +275,7 @@
     <value>[tmp]I'm on my routine route in cliff camp!</value>
   </data>
   <data name="Strategy_Line_001" xml:space="preserve">
-    <value>[tmp]Sleeping Caldera has a way down, and a way up.[br]Let's fin the stairs up before we go down each floor.</value>
+    <value>[tmp]Sleeping Caldera has a way down, and a way up.[br]Let's find the stairs up before we go down each floor.</value>
   </data>
   <data name="Goals_Line_001" xml:space="preserve">
     <value>[tmp]It's just another challenge, bring it on!</value>
@@ -334,23 +337,32 @@
   <data name="Tutor_Taught" xml:space="preserve">
     <value>[tmp]By the way...[pause=0]\nI learned this move from a traveling move tutor.[br]He said he'd pass by base town after I spoke to him.</value>
   </data>
-  <data name="Train_Help_Line_001" xml:space="preserve">
+  <data name="Spar_Help_Line_001" xml:space="preserve">
     <value>[tmp]Meditite's always come back from Sleeping Caldera, but it's been {0} days.[br]Can you go check on him?</value>
   </data>
-  <data name="Train_Help_Line_002" xml:space="preserve">
+  <data name="Spar_Help_Line_002" xml:space="preserve">
     <value>[tmp]It's been {0} days since Meditite went down Sleeping Caldera.[br]I hope he's okay.</value>
   </data>
-  <data name="Train_Complete_Line_001" xml:space="preserve">
+  <data name="Spar_Complete_Line_001" xml:space="preserve">
     <value>[tmp]Hey glad you're safe and sound.</value>
   </data>
-  <data name="Train_Complete_Line_002" xml:space="preserve">
-    <value>[tmp]Admittedly I was too focused on my breakthrough to notice the cave erupting around me.</value>
+  <data name="Spar_Complete_Line_002" xml:space="preserve">
+    <value>[tmp]I was too focused on my goal to see anything else.[br]I am indebted to you for making em realize I was in danger.</value>
   </data>
-  <data name="Train_Complete_Line_003" xml:space="preserve">
-    <value>[tmp]Thanks for getting him out of it. Have this.</value>
+  <data name="Spar_Complete_Line_003" xml:space="preserve">
+    <value>[tmp]And thanks for getting him out of it too. Have this.</value>
   </data>
-  <data name="Train_Line_002" xml:space="preserve">
-    <value>[tmp]Be careful wherever you go, you hear?</value>
+  <data name="Spar_Line_001" xml:space="preserve">
+    <value>[tmp]The rocky ravines are great leg exercise!</value>
+  </data>
+  <data name="Spar_Line_002" xml:space="preserve">
+    <value>[tmp]Meditite's so disciplined, maybe I should try brain exercise.</value>
+  </data>
+  <data name="Spar_Line_003" xml:space="preserve">
+    <value>[tmp]Don't overexert yourself, you hear?</value>
+  </data>
+  <data name="Monk_Line_001" xml:space="preserve">
+    <value>[tmp]I have found a great spot to meditate, in Sleeping Caldera.</value>
   </data>
   <data name="Monk_Line_002" xml:space="preserve">
     <value>[tmp]Next, I want to seek the summit.</value>
@@ -365,9 +377,21 @@
     <value>[tmp]I can't stand that zangoose! I can't let her get ahead of me!</value>
   </data>
   <data name="Rival_2_Line_001" xml:space="preserve">
-    <value>[tmp]I can't stand that seviper! I can't let him get ahead of me!</value>
+    <value>[tmp]I can't stand that seviper! I can't let her get ahead of me!</value>
   </data>
-  <data name="Shortcut_Line_002" xml:space="preserve">
-    <value />
+  <data name="Rival_2_Help_Line_001" xml:space="preserve">
+    <value>[tmp]Hey I need your help. Please rescue Seviper from Copper Quarry.[br]That idiot got ahead of herself.</value>
+  </data>
+  <data name="Rival_2_Help_Line_002" xml:space="preserve">
+    <value>[tmp]Please rescue Seviper from Copper Quarry.[br]That idiot got ahead of herself.</value>
+  </data>
+  <data name="Rival_2_Help_Line_003" xml:space="preserve">
+    <value>[tmp]Thanks.[br]Don't tell her I put you up to this.</value>
+  </data>
+  <data name="Rival_1_Help_Line_001" xml:space="preserve">
+    <value>[tmp]Thanks for saving me! Here's your reward!</value>
+  </data>
+  <data name="Rival_1_Help_Line_002" xml:space="preserve">
+    <value>[tmp]I can't show any weakness when my rival's watching!</value>
   </data>
 </root>

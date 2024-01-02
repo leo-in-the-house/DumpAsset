@@ -58,10 +58,10 @@ end
 --------------------------------------------------
 function final_stop.SetupNpcs()
   
-  if SV.team_rivals.Status == 6 then
+  if SV.team_rivals.Status == 7 then
     GROUND:Unhide("Rival_1")
 	GROUND:Unhide("Rival_2")
-  elseif SV.team_rivals.Status == 8 then
+  elseif SV.team_rivals.Status == 9 then
     -- TODO cycling
   end
 
@@ -187,6 +187,24 @@ end
 -- Objects Callbacks
 --------------------------------------------------
 
+  
+function final_stop.Rival_1_Action(chara, activator)
+  DEBUG.EnableDbgCoro() --Enable debugging this coroutine
+  
+  UI:SetSpeaker(chara)--set the dialogue box's speaker to the character
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rival_1_Line_001']))
+  
+  SV.team_rivals.SpokenTo = true
+end
+  
+function final_stop.Rival_2_Action(chara, activator)
+  DEBUG.EnableDbgCoro() --Enable debugging this coroutine
+  
+  UI:SetSpeaker(chara)--set the dialogue box's speaker to the character
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rival_2_Line_001']))
+  
+  SV.team_rivals.SpokenTo = true
+end
 
 function final_stop.NPC_Dragon_1_Action(chara, activator)
   DEBUG.EnableDbgCoro() --Enable debugging this coroutine
@@ -354,7 +372,7 @@ function final_stop.NPC_Seer_Action(chara, activator)
       GROUND:CharTurnToChar(chara,CH('PLAYER'))
 	  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Seer_Help_Line_001']))
 	
-	  SV.missions.Missions["QuestFire"] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_RESCUE,
+	  SV.missions.Missions[questname] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_RESCUE,
         DestZone = "snowbound_path", DestSegment = 0, DestFloor = 10,
         FloorUnknown = false,
         TargetSpecies = RogueEssence.Dungeon.MonsterID("typhlosion", 1, "normal", Gender.Male),
@@ -429,12 +447,7 @@ function final_stop.Fire_Complete()
   local receive_item = RogueEssence.Dungeon.InvItem("xcl_element_fire_silk")
   COMMON.GiftItem(player, receive_item)
   
-  
-  local questname = "QuestFire"
-  local quest = SV.missions.Missions[questname]
-  quest.Complete = COMMON.MISSION_ARCHIVED
-  SV.missions.FinishedMissions["QuestFire"] = quest
-  SV.missions.Missions["QuestFire"] = nil
+  COMMON.CompleteMission("QuestFire")
   
   SV.team_firecracker.Status = 4
 end
@@ -455,9 +468,7 @@ function final_stop.NPC_Storehouse_Action(chara, activator)
       local receive_item = RogueEssence.Dungeon.InvItem("tm_focus_blast")
       COMMON.GiftItem(player, receive_item)
       --complete mission and move to done
-      quest.Complete = COMMON.MISSION_ARCHIVED
-      SV.missions.FinishedMissions[questname] = quest
-      SV.missions.Missions[questname] = nil
+	  COMMON.CompleteMission(questname)
       SV.supply_corps.Status = 17
       UI:WaitShowDialogue(STRINGS:Format(MapStrings['Storehouse_Line_002']))
     end

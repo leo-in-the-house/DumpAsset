@@ -45,25 +45,18 @@ end
 
 function rest_stop.SetupNpcs()
   
-  if SV.team_rivals.Status == 2 then
-    GROUND:Unhide("Rival_2")
-	
-	local questname = "QuestRival1"
-    local quest = SV.missions.Missions[questname]
-	if quest ~= nil and quest.Complete == COMMON.MISSION_COMPLETE then
-	  GROUND:Unhide("Rival_1")
-	end
-  elseif SV.team_rivals.Status == 3 then
+  
+  if SV.team_rivals.Status == 4 then
     GROUND:Unhide("Rival_1")
 	GROUND:Unhide("Rival_2")
-  elseif SV.team_rivals.Status == 4 then
+  elseif SV.team_rivals.Status == 5 then
     GROUND:Unhide("Rival_1")
-	local questname = "QuestRival4"
+	local questname = "QuestRival2"
     local quest = SV.missions.Missions[questname]
 	if quest ~= nil and quest.Complete == COMMON.MISSION_COMPLETE then
 	  GROUND:Unhide("Rival_2")
 	end
-  elseif SV.team_rivals.Status == 5 then
+  elseif SV.team_rivals.Status == 6 then
     GROUND:Unhide("Rival_1")
 	GROUND:Unhide("Rival_2")
   elseif SV.team_rivals.Status == 8 then
@@ -234,6 +227,91 @@ end
 -- Objects Callbacks
 --------------------------------------------------
 
+
+function rest_stop.Rival_1_Action(chara, activator)
+  DEBUG.EnableDbgCoro() --Enable debugging this coroutine
+  
+  local player = CH('PLAYER')
+
+  if SV.team_rivals.Status == 4 then
+  
+  UI:SetSpeaker(chara)--set the dialogue box's speaker to the character
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rival_1_Line_001']))
+  
+  SV.team_rivals.SpokenTo = true
+  
+  elseif SV.team_rivals.Status == 5 then
+  
+  local questname = "QuestRival2"
+  local quest = SV.missions.Missions[questname]
+	
+  
+  if quest == nil then
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rival_1_Help_Line_001']))
+	
+	SV.missions.Missions[questname] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_RESCUE,
+      DestZone = "thunderstruck_pass", DestSegment = 0, DestFloor = 8,
+      FloorUnknown = false,
+      TargetSpecies = RogueEssence.Dungeon.MonsterID("zangoose", 0, "normal", Gender.Female),
+      ClientSpecies = RogueEssence.Dungeon.MonsterID("seviper", 0, "normal", Gender.Female) }
+	
+  elseif quest.Complete == COMMON.MISSION_INCOMPLETE then
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rival_1_Help_Line_002']))
+  else
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rival_1_Help_Line_003']))
+  end
+  
+  elseif SV.team_rivals.Status == 6 then
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rival_1_Help_Line_003']))
+  end
+  
+  
+end
+  
+function rest_stop.Rival_2_Action(chara, activator)
+  DEBUG.EnableDbgCoro() --Enable debugging this coroutine
+  
+  local player = CH('PLAYER')
+
+  if SV.team_rivals.Status == 4 then
+  
+  UI:SetSpeaker(chara)--set the dialogue box's speaker to the character
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rival_2_Line_001']))
+  
+  SV.team_rivals.SpokenTo = true
+  
+  elseif SV.team_rivals.Status == 5 then
+  
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rival_2_Help_Line_001']))
+  
+    local receive_item = RogueEssence.Dungeon.InvItem("xcl_element_normal_silk")
+  COMMON.GiftItem(player, receive_item)
+  
+  COMMON.CompleteMission("QuestRival2")
+  
+  SV.team_rivals.Status = 6
+  
+  elseif SV.team_rivals.Status == 6 then
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rival_2_Help_Line_002']))
+  end
+  
+  
+  
+end
+
+
 function rest_stop.NPC_Dragon_1_Action(chara, activator)
   DEBUG.EnableDbgCoro() --Enable debugging this coroutine
   rest_stop.DragonTalk()
@@ -274,7 +352,7 @@ function rest_stop.DragonTalk()
       UI:SetSpeaker(dragon3)
       UI:WaitShowDialogue(STRINGS:Format(MapStrings['Dragon_Line_001']))
 	  
-	  SV.missions.Missions["QuestDragon"] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_RESCUE,
+	  SV.missions.Missions[questname] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_RESCUE,
       DestZone = "snowbound_path", DestSegment = 0, DestFloor = 14,
       FloorUnknown = false,
       TargetSpecies = RogueEssence.Dungeon.MonsterID("charizard", 0, "normal", Gender.Male),
@@ -323,14 +401,7 @@ function rest_stop.Dragon_Complete()
   local receive_item = RogueEssence.Dungeon.InvItem("xcl_element_dragon_silk")
   COMMON.GiftItem(player, receive_item)
   
-  UI:SetSpeaker(dragon1)
-  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Dragon_Rescue_Line_002']))
-  
-  local questname = "QuestDragon"
-  local quest = SV.missions.Missions[questname]
-  quest.Complete = COMMON.MISSION_ARCHIVED
-  SV.missions.FinishedMissions["QuestDragon"] = quest
-  SV.missions.Missions["QuestDragon"] = nil
+  COMMON.CompleteMission("QuestDragon")
   
   SV.team_dragon.Status = 4
 end
@@ -392,9 +463,7 @@ function rest_stop.NPC_Storehouse_Action(chara, activator)
       local receive_item = RogueEssence.Dungeon.InvItem("tm_sludge_bomb")
       COMMON.GiftItem(player, receive_item)
       --complete mission and move to done
-      quest.Complete = COMMON.MISSION_ARCHIVED
-      SV.missions.FinishedMissions[questname] = quest
-      SV.missions.Missions[questname] = nil
+	  COMMON.CompleteMission(questname)
       SV.supply_corps.Status = 13
     end
   elseif SV.supply_corps.Status == 13 then
@@ -485,7 +554,7 @@ function rest_stop.Rock_Boss(chara, activator)
     GROUND:CharTurnToChar(chara,CH('PLAYER'))
 	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Rock_Boss_Line_001']))
 	
-	SV.missions.Missions["QuestRock"] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_RESCUE,
+	SV.missions.Missions[questname] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_RESCUE,
       DestZone = "veiled_ridge", DestSegment = 0, DestFloor = 10,
       FloorUnknown = false,
       TargetSpecies = RogueEssence.Dungeon.MonsterID("exploud", 0, "normal", Gender.Male),
@@ -589,14 +658,118 @@ function rest_stop.Rock_Complete()
   GROUND:Hide("Boss_3")
   GROUND:Hide("Boss_4")
   
-  
-  local questname = "QuestRock"
-  local quest = SV.missions.Missions[questname]
-  quest.Complete = COMMON.MISSION_ARCHIVED
-  SV.missions.FinishedMissions["QuestRock"] = quest
-  SV.missions.Missions["QuestRock"] = nil
+  COMMON.CompleteMission("QuestRock")
   
   SV.rest_stop.BossSolved = true
+end
+
+
+function rest_stop.NPC_Strategy_Action(chara, activator)
+  DEBUG.EnableDbgCoro() --Enable debugging this coroutine
+  
+  local player = CH('PLAYER')
+  
+  if SV.team_psychic.Status == 2 then
+  
+    if SV.team_psychic.SpokenTo then
+      UI:SetSpeaker(chara)
+      UI:WaitShowDialogue(STRINGS:Format(MapStrings['Strategy_Line_002']))
+	else
+      rest_stop.Separate()
+	end
+	
+  elseif SV.team_psychic.Status == 6 then
+    --cycle?
+  end
+end
+
+function rest_stop.NPC_Goals_Action(chara, activator)
+  DEBUG.EnableDbgCoro() --Enable debugging this coroutine
+  
+  local player = CH('PLAYER')
+  
+  if SV.team_psychic.Status == 2 then
+  
+    if SV.team_psychic.SpokenTo then
+      UI:SetSpeaker(chara)
+      UI:WaitShowDialogue(STRINGS:Format(MapStrings['Goals_Line_002']))
+	else
+      rest_stop.Separate()
+	end
+	
+  elseif SV.team_dark.Status == 1 then
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Goals_Line_003']))
+	
+  elseif SV.team_dark.Status == 3 then
+    
+  local questname = "QuestIce"
+  local quest = SV.missions.Missions[questname]
+	
+  if quest == nil then
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Goals_Help_Line_001']))
+	
+	SV.missions.Missions[questname] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_RESCUE,
+      DestZone = "treacherous_mountain", DestSegment = 0, DestFloor = 9,
+      FloorUnknown = false,
+      TargetSpecies = RogueEssence.Dungeon.MonsterID("ninetales", 1, "normal", Gender.Male),
+      ClientSpecies = RogueEssence.Dungeon.MonsterID("sneasel", 0, "normal", Gender.Male) }
+	
+  elseif quest.Complete == COMMON.MISSION_INCOMPLETE then
+    UI:SetSpeaker(chara)
+    GROUND:CharTurnToChar(chara,player)
+	UI:WaitShowDialogue(STRINGS:Format(MapStrings['Goals_Help_Line_002']))
+  else
+    rest_stop.Ice_Complete()
+  end
+	
+  elseif SV.team_dark.Status == 4 then
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Goals_Line_004']))
+	
+  elseif SV.team_dark.Status == 5 then
+    UI:SetSpeaker(chara)
+    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Goals_Line_004']))
+	
+  end
+end
+
+function rest_stop.Separate()
+  local strategy = CH('NPC_Strategy')
+  local goals = CH('NPC_Goals')
+  local player = CH('PLAYER')
+  
+  UI:SetSpeaker(strategy)
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Strategy_Line_001']))
+  
+  UI:SetSpeaker(goals)
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Goals_Line_001']))
+  
+  UI:SetSpeaker(strategy)
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Strategy_Line_002']))
+  
+  UI:SetSpeaker(goals)
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Goals_Line_002']))
+  
+  SV.team_psychic.SpokenTo = true
+end
+
+function rest_stop.Ice_Complete()
+  local goals = CH('NPC_Goals')
+  local player = CH('PLAYER')
+  
+  UI:SetSpeaker(goals)
+  UI:WaitShowDialogue(STRINGS:Format(MapStrings['Goals_Done_Line_001']))
+  
+  local receive_item = RogueEssence.Dungeon.InvItem("xcl_element_ice_silk")
+  COMMON.GiftItem(player, receive_item)
+  
+  
+  COMMON.CompleteMission("QuestIce")
+  
+  SV.team_dark.Status = 5
 end
 
 function rest_stop.North_Exit_Touch(obj, activator)
