@@ -60,7 +60,7 @@ require 'origin.common_tutor'
 
 --Automatically load the appropriate localization for the specified package, or defaults to english!
 function COMMON.AutoLoadLocalizedStrings()
-  PrintInfo("AutoLoading Strings!..")
+  PrintInfo("WARNING: AutoLoadLocalizedStrings IS DEPRECATED.  PLEASE USE STRINGS.MapStrings INSTEAD.  MORE INFO AT: https://wiki.pmdo.pmdcollab.org/Lua_Script_Migration#Deprecated_MapStrings")
   --Get the package path
   local packagepath = SCRIPT:CurrentScriptDir()
   
@@ -676,6 +676,7 @@ function COMMON.ThiefReturn()
   local check_status = _DUNGEON:GetMapStatus(thief_check_idx)
   
   local index_from = check_status.StatusStates:Get(luanet.ctype(MapIndexType))
+  UI:SetSpeakerEmotion("Angry")
   UI:WaitShowDialogue(STRINGS:Format(RogueEssence.StringKey(string.format("TALK_SHOP_SUSPECT_%04d", index_from.Index)):ToLocal()))
   _DUNGEON:LogMsg(STRINGS:Format(RogueEssence.StringKey(string.format("TALK_SHOP_THIEF_RETURN_%04d", index_from.Index)):ToLocal()))
   

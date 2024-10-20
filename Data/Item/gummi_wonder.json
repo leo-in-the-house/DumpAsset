@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.1.0",
+"Version": "0.8.5.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
@@ -9,6 +9,8 @@
 "de": "Wundergummi",
 "it": "Gommaincanto",
 "ko": "이상한구미",
+"ja": "ふしぎなグミ",
+"ja-jp": "ふしぎなグミ",
 "zh-hans": "不可思议软糖"
 }
 },

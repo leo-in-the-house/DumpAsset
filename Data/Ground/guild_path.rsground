@@ -1,14 +1,17 @@
 ﻿{
-"Version": "0.8.1.0",
+"Version": "0.8.5.0",
 "Object": {
 "$type": "RogueEssence.Ground.GroundMap, RogueEssence",
 "TexSize": 3,
 "Name": {
 "DefaultText": "Guildmaster Path",
 "LocalTexts": {
+"fr": "Chemin du maître de guilde",
 "de": "Gildenmeister-Pfad",
 "es": "Sendero del Maestro",
 "it": "Sentiero del Maestro",
+"ja": "マスターのはし",
+"ja-jp": "マスターの橋",
 "zh-hans": "公会会长之径"
 }
 },

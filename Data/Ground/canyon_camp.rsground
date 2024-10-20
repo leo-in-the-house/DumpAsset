@@ -1,14 +1,17 @@
 ﻿{
-"Version": "0.8.1.0",
+"Version": "0.8.5.0",
 "Object": {
 "$type": "RogueEssence.Ground.GroundMap, RogueEssence",
 "TexSize": 1,
 "Name": {
 "DefaultText": "Ravine Camp",
 "LocalTexts": {
+"fr": "Camp du ravin",
 "de": "Schlucht-Lager",
 "es": "Campamento Desfiladero",
 "it": "Campo Crepaccio",
+"ja": "けいこくのキャンプ",
+"ja-jp": "渓谷のキャンプ",
 "zh-hans": "峡谷营地"
 }
 },

@@ -1,14 +1,17 @@
 ﻿{
-"Version": "0.8.1.0",
+"Version": "0.8.5.0",
 "Object": {
 "$type": "RogueEssence.Ground.GroundMap, RogueEssence",
 "TexSize": 3,
 "Name": {
 "DefaultText": "Cave Shelter",
 "LocalTexts": {
+"fr": "Grotte du refuge",
 "de": "Höhlenzuflucht",
 "es": "Cueva Refugio",
 "it": "Rifugio Montanaro",
+"ja": "どうくつのシェルター",
+"ja-jp": "洞窟のシェルター",
 "zh-hans": "洞穴庇护所"
 }
 },

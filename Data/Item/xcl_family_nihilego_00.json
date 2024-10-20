@@ -1,14 +1,18 @@
 ﻿{
-"Version": "0.8.1.0",
+"Version": "0.8.5.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Ultra Hat",
-"LocalTexts": {}
+"LocalTexts": {
+"it": "Ultracappello",
+"zh-hans": "究极伞帽"
+}
 },
 "Desc": {
 "DefaultText": "An exclusive item for Nihilego. When kept in the bag, the Pokémon's Psychic-type moves inflict the Poisoned status.",
 "LocalTexts": {
+"fr": "Un object exclusif pour Zéroïd. When kept in the bag, the Pokémon's Psychic-type moves inflict the Poisoned status.",
 "fr-ca": "Un object exclusif pour Nihilego When kept in the bag, the Pokémon's Psychic-type moves inflict the Poisoned status.",
 "de": "Ein exklusives Item für Anego. Wenn es innerhalb des Beutels getragen wird, verursachen Vergiftet-Typ Attacken des Pokémon das Statusproblem Psycho.",
 "es": "Un objeto exclusivo para Nihilego. When kept in the bag, the Pokémon's Psychic-type moves inflict the Poisoned status.",

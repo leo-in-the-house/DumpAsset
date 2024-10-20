@@ -1,14 +1,17 @@
 ﻿{
-"Version": "0.8.1.0",
+"Version": "0.8.5.0",
 "Object": {
 "$type": "RogueEssence.Ground.GroundMap, RogueEssence",
 "TexSize": 3,
 "Name": {
 "DefaultText": "Moonlit Chamber",
 "LocalTexts": {
+"fr": "Salle au clair de lune",
 "de": "Mondhelle Kammer",
 "es": "Cámara Luz de Luna",
 "it": "Camera Brillaluna",
+"ja": "つきのチャンバー",
+"ja-jp": "月のチャンバー",
 "zh-hans": "月光厅堂"
 }
 },

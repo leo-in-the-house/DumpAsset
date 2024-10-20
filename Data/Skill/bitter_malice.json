@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.1.0",
+"Version": "0.8.5.0",
 "Object": {
 "$type": "RogueEssence.Data.SkillData, RogueEssence",
 "Name": {
@@ -14,26 +14,94 @@
 }
 },
 "Desc": {
-"DefaultText": "",
+"DefaultText": "The user attacks the target with spine-chilling resentment. This may also leave the target frozen.",
 "LocalTexts": {}
 },
-"Released": false,
+"Released": true,
 "Comment": "",
 "IndexNum": 841,
-"BaseCharges": 10,
+"BaseCharges": 11,
 "Strikes": 1,
 "HitboxAction": {
-"$type": "RogueEssence.Dungeon.AttackAction, RogueEssence",
-"HitTiles": false,
-"BurstTiles": 0,
+"$type": "RogueEssence.Dungeon.OffsetAction, RogueEssence",
 "Emitter": {
-"$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
-"LocHeight": 0
+"$type": "RogueEssence.Content.MultiCircleSquareEmitter, RogueEssence",
+"LocHeight": 0,
+"finished": false,
+"Emitters": [
+{
+"$type": "RogueEssence.Content.CircleSquareAreaEmitter, RogueEssence",
+"LocHeight": 0,
+"Anims": [
+{
+"$type": "RogueEssence.Content.StaticAnim, RogueEssence",
+"Anim": {
+"AnimIndex": "Dark_Pulse_Particle",
+"FrameTime": 3,
+"StartFrame": -1,
+"EndFrame": -1,
+"AnimDir": -1,
+"Alpha": 255,
+"AnimFlip": 0
 },
-"WideAngle": 0,
+"TotalTime": 0,
+"Cycles": 1,
+"FrameOffset": 0
+},
+{
+"$type": "RogueEssence.Content.StaticAnim, RogueEssence",
+"Anim": {
+"AnimIndex": "Dark_Pulse_Ranger",
+"FrameTime": 3,
+"StartFrame": -1,
+"EndFrame": -1,
+"AnimDir": -1,
+"Alpha": 255,
+"AnimFlip": 0
+},
+"TotalTime": 0,
+"Cycles": 1,
+"FrameOffset": 0
+}
+],
+"ParticlesPerTile": 1.5,
+"RangeDiff": -12,
+"Layer": 0
+},
+{
+"$type": "RogueEssence.Content.CircleSquareAreaEmitter, RogueEssence",
+"LocHeight": 12,
+"Anims": [
+{
+"$type": "RogueEssence.Content.StaticAnim, RogueEssence",
+"Anim": {
+"AnimIndex": "Spite",
+"FrameTime": 3,
+"StartFrame": -1,
+"EndFrame": -1,
+"AnimDir": -1,
+"Alpha": 255,
+"AnimFlip": 0
+},
+"TotalTime": 0,
+"Cycles": 1,
+"FrameOffset": 0
+}
+],
+"ParticlesPerTile": 0.7,
+"RangeDiff": 0,
+"Layer": 2
+}
+]
+},
+"HitTiles": true,
+"BurstTiles": 0,
+"HitArea": 3,
+"Range": 2,
+"Speed": 8,
 "CharAnimData": {
 "$type": "RogueEssence.Dungeon.CharAnimFrameType, RogueEssence",
-"ActionType": 5
+"ActionType": 36
 },
 "TargetAlignments": 4,
 "TileEmitter": {
@@ -43,7 +111,7 @@
 "PreActions": [],
 "ActionFX": {
 "Delay": 0,
-"Sound": "",
+"Sound": "DUN_Foggy",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
 "LocHeight": 0
@@ -54,7 +122,7 @@
 "MaxShakeTime": 0
 }
 },
-"LagBehindTime": 0
+"LagBehindTime": 5
 },
 "Explosion": {
 "TargetAlignments": 4,
@@ -91,7 +159,11 @@
 "SkillStates": [
 {
 "$type": "RogueEssence.Dungeon.BasePowerState, RogueEssence",
-"Power": 75
+"Power": 60
+},
+{
+"$type": "PMDC.Dungeon.AdditionalEffectState, PMDC",
+"EffectChance": 35
 }
 ],
 "BeforeTryActions": [],
@@ -108,6 +180,29 @@
 },
 "Value": {
 "$type": "PMDC.Dungeon.DamageFormulaEvent, PMDC"
+}
+},
+{
+"Key": {
+"str": [
+0
+]
+},
+"Value": {
+"$type": "PMDC.Dungeon.AdditionalEvent, PMDC",
+"BaseEvents": [
+{
+"$type": "PMDC.Dungeon.StatusBattleEvent, PMDC",
+"StatusID": "freeze",
+"AffectTarget": true,
+"SilentCheck": true,
+"Anonymous": false,
+"TriggerMsg": {
+"Key": null
+},
+"Anims": []
+}
+]
 }
 }
 ],
