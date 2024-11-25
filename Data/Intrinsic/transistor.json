@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.5.0",
+"Version": "0.8.7.0",
 "Object": {
 "$type": "RogueEssence.Data.IntrinsicData, RogueEssence",
 "Name": {
@@ -93,8 +93,8 @@
 "Value": {
 "$type": "PMDC.Dungeon.MultiplyElementEvent, PMDC",
 "MultElement": "electric",
-"Numerator": 11,
-"Denominator": 10,
+"Numerator": 6,
+"Denominator": 5,
 "Anims": [],
 "Msg": false
 }

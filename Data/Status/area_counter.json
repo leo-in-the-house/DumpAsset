@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.5.0",
+"Version": "0.8.7.0",
 "Object": {
 "$type": "RogueEssence.Data.StatusData, RogueEssence",
 "Name": {
@@ -23,7 +23,7 @@
 "Comment": "",
 "MenuName": true,
 "CarryOver": false,
-"Emoticon": "Shield_DarkBlue",
+"Emoticon": "Sword_Shield_Green",
 "DropEmoticon": "",
 "FreeEmote": "",
 "DrawEffect": -1,

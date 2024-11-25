@@ -1,11 +1,11 @@
 ﻿{
-"Version": "0.8.5.0",
+"Version": "0.8.7.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Flutter Cape",
 "LocalTexts": {
-"zh-hans": "振发披肩"
+"zh-hans": "振翼披肩"
 }
 },
 "Desc": {

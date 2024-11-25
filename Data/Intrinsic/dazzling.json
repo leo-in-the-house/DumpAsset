@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.5.0",
+"Version": "0.8.7.0",
 "Object": {
 "$type": "RogueEssence.Data.IntrinsicData, RogueEssence",
 "Name": {
@@ -18,7 +18,9 @@
 },
 "Desc": {
 "DefaultText": "The Pokémon dazzles its opponents, reducing their Attack Range.",
-"LocalTexts": {}
+"LocalTexts": {
+"zh-hans": "让对手吓一跳，使对手的攻击范围降低。"
+}
 },
 "Released": true,
 "Comment": "",

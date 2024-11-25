@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.5.0",
+"Version": "0.8.7.0",
 "Object": {
 "$type": "RogueEssence.Ground.GroundMap, RogueEssence",
 "TexSize": 3,
@@ -21026,6 +21026,7 @@
 "EntName": "Noctowl",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 184,
 "Y": 284
@@ -21077,6 +21078,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -21120,6 +21122,7 @@
 "EntName": "Family_Sister",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 168,
 "Y": 192
@@ -21171,6 +21174,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -21214,6 +21218,7 @@
 "EntName": "Family_Mother",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 192,
 "Y": 192
@@ -21265,6 +21270,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -21308,6 +21314,7 @@
 "EntName": "Family_Father",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 216,
 "Y": 184
@@ -21359,6 +21366,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -21402,6 +21410,7 @@
 "EntName": "Family_Brother",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 144,
 "Y": 184
@@ -21453,6 +21462,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -21496,6 +21506,7 @@
 "EntName": "Family_Pet",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 240,
 "Y": 176
@@ -21547,6 +21558,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -21590,6 +21602,7 @@
 "EntName": "Family_Grandma",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 216,
 "Y": 216
@@ -21641,6 +21654,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -21684,6 +21698,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 2,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -21726,6 +21741,7 @@
 "Direction": 0,
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 2,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -21768,6 +21784,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -21810,6 +21827,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -21852,6 +21870,7 @@
 "Direction": 6,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -21894,6 +21913,7 @@
 "Direction": 6,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -21936,6 +21956,7 @@
 "Direction": 6,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -21978,6 +21999,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -22020,6 +22042,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -22062,6 +22085,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -22104,6 +22128,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -22146,6 +22171,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -22188,6 +22214,7 @@
 "Direction": 6,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -22230,6 +22257,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -22314,6 +22342,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -22346,6 +22375,7 @@
 "Direction": 4,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -22402,6 +22432,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -22434,6 +22465,7 @@
 "Direction": 6,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -22490,6 +22522,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -22522,6 +22555,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -22540,6 +22574,7 @@
 "Direction": 4,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "Collider": {
 "X": 184,
@@ -22553,6 +22588,7 @@
 "Direction": 4,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "Collider": {
 "X": 184,
@@ -22566,6 +22602,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "Collider": {
 "X": 104,

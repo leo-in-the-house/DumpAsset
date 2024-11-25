@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.5.0",
+"Version": "0.8.7.0",
 "Object": {
 "$type": "RogueEssence.Data.IntrinsicData, RogueEssence",
 "Name": {
@@ -18,7 +18,9 @@
 },
 "Desc": {
 "DefaultText": "Its majesty pressures opposing Pokémon, reducing their Attack Range.",
-"LocalTexts": {}
+"LocalTexts": {
+"zh-hans": "向对手施加威慑力，能使对手的攻击范围降低。"
+}
 },
 "Released": true,
 "Comment": "",

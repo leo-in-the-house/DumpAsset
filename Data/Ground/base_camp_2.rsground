@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.5.0",
+"Version": "0.8.7.0",
 "Object": {
 "$type": "RogueEssence.Ground.GroundMap, RogueEssence",
 "TexSize": 1,
@@ -307754,6 +307754,7 @@
 "EntName": "Shop_Owner",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 240,
 "Y": 496
@@ -307805,6 +307806,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -307848,6 +307850,7 @@
 "EntName": "Tutor_Owner",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 352,
 "Y": 512
@@ -307899,6 +307902,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -307942,6 +307946,7 @@
 "EntName": "Swap_Owner",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 464,
 "Y": 512
@@ -307993,6 +307998,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -308036,6 +308042,7 @@
 "EntName": "Appraisal_Owner",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 580,
 "Y": 496
@@ -308087,6 +308094,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -308130,6 +308138,7 @@
 "EntName": "Locator_Owner",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 240,
 "Y": 128
@@ -308181,6 +308190,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -308224,6 +308234,7 @@
 "EntName": "Music_Owner",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 240,
 "Y": 128
@@ -308275,6 +308286,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -308318,6 +308330,7 @@
 "EntName": "Juice_Owner",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 576,
 "Y": 126
@@ -308369,6 +308382,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -308412,6 +308426,7 @@
 "EntName": "NPC_Elder",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 120,
 "Y": 96
@@ -308463,6 +308478,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -308506,6 +308522,7 @@
 "EntName": "NPC_Catch_2",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 192,
 "Y": 328
@@ -308557,6 +308574,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -308600,6 +308618,7 @@
 "EntName": "NPC_Food",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 152,
 "Y": 600
@@ -308651,6 +308670,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -308694,6 +308714,7 @@
 "EntName": "NPC_Queen",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 512,
 "Y": 625
@@ -308745,6 +308766,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -308788,6 +308810,7 @@
 "EntName": "NPC_King",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 536,
 "Y": 608
@@ -308839,6 +308862,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -308882,6 +308906,7 @@
 "EntName": "NPC_Catch_1",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 112,
 "Y": 400
@@ -308933,6 +308958,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -308976,6 +309002,7 @@
 "EntName": "NPC_Nonbeliever",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 728,
 "Y": 192
@@ -309027,6 +309054,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -309070,6 +309098,7 @@
 "EntName": "NPC_Treasure",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 696,
 "Y": 352
@@ -309121,6 +309150,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -309164,6 +309194,7 @@
 "EntName": "NPC_Broke",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 720,
 "Y": 112
@@ -309215,6 +309246,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -309258,6 +309290,7 @@
 "EntName": "NPC_Hesitant",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 688,
 "Y": 144
@@ -309309,6 +309342,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -309352,6 +309386,7 @@
 "EntName": "NPC_Settling",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 360,
 "Y": 304
@@ -309403,6 +309438,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -309446,6 +309482,7 @@
 "EntName": "NPC_Interactive",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 440,
 "Y": 328
@@ -309497,6 +309534,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -309540,6 +309578,7 @@
 "EntName": "NPC_Solo",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 440,
 "Y": 216
@@ -309591,6 +309630,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -309634,6 +309674,7 @@
 "EntName": "NPC_Deliver",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 584,
 "Y": 88
@@ -309685,6 +309726,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -309728,6 +309770,7 @@
 "EntName": "NPC_Carry",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 616,
 "Y": 88
@@ -309779,6 +309822,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -309822,6 +309866,7 @@
 "EntName": "NPC_Storehouse",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 640,
 "Y": 96
@@ -309873,6 +309918,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -309916,6 +309962,7 @@
 "EntName": "Family_Sister",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 664,
 "Y": 608
@@ -309967,6 +310014,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -310010,6 +310058,7 @@
 "EntName": "Family_Mother",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 632,
 "Y": 608
@@ -310061,6 +310110,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -310104,6 +310154,7 @@
 "EntName": "Family_Father",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 600,
 "Y": 608
@@ -310155,6 +310206,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -310198,6 +310250,7 @@
 "EntName": "Family_Brother",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 608,
 "Y": 632
@@ -310249,6 +310302,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -310292,6 +310346,7 @@
 "EntName": "Family_Pet",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 640,
 "Y": 632
@@ -310343,6 +310398,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -310386,6 +310442,7 @@
 "EntName": "Family_Grandma",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 576,
 "Y": 632
@@ -310437,6 +310494,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -310480,6 +310538,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -310522,6 +310581,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -310564,6 +310624,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 2,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -310606,6 +310667,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 2,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -310648,6 +310710,7 @@
 "Direction": 0,
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -310690,6 +310753,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -310732,6 +310796,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -310774,6 +310839,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -310816,6 +310882,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -310858,6 +310925,7 @@
 "Direction": 0,
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -310900,6 +310968,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -310942,6 +311011,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -310984,6 +311054,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 2,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -311068,6 +311139,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -311100,6 +311172,7 @@
 "Direction": 5,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -311156,6 +311229,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -311188,6 +311262,7 @@
 "Direction": 3,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -311244,6 +311319,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -311276,6 +311352,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -311332,6 +311409,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -311364,6 +311442,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -311420,6 +311499,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -311452,6 +311532,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -311508,6 +311589,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -311540,6 +311622,7 @@
 "Direction": 3,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -311596,6 +311679,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -311628,6 +311712,7 @@
 "Direction": 1,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -311684,6 +311769,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -311716,6 +311802,7 @@
 "Direction": 7,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -311772,6 +311859,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -311804,6 +311892,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -311860,6 +311949,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -311892,6 +311982,7 @@
 "Direction": 5,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -311948,6 +312039,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -311980,6 +312072,7 @@
 "Direction": 3,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -312036,6 +312129,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -312068,6 +312162,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -312124,6 +312219,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -312156,6 +312252,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -312212,6 +312309,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -312244,6 +312342,7 @@
 "Direction": 7,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -312300,6 +312399,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -312332,6 +312432,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -312388,6 +312489,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -312420,6 +312522,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -312476,6 +312579,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -312508,6 +312612,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -312564,6 +312669,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -312596,6 +312702,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -312652,6 +312759,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -312684,6 +312792,7 @@
 "Direction": 7,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -312740,6 +312849,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -312772,6 +312882,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -312828,6 +312939,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -312860,6 +312972,7 @@
 "Direction": 7,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -312916,6 +313029,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -312948,6 +313062,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -313004,6 +313119,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -313036,6 +313152,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -313092,6 +313209,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -313124,6 +313242,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -313180,6 +313299,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -313212,6 +313332,7 @@
 "Direction": 6,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -313268,6 +313389,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -313300,6 +313422,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -313318,6 +313441,7 @@
 "Direction": 6,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "Collider": {
 "X": 4,
@@ -313331,6 +313455,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "Collider": {
 "X": 152,
@@ -313344,6 +313469,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "Collider": {
 "X": 408,

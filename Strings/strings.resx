@@ -334,13 +334,13 @@
     <value></value>
     <comment></comment>  </data>
   <data name="_ENUM_SkillDefault_All" xml:space="preserve">
-    <value></value>
+    <value>On</value>
     <comment></comment>  </data>
   <data name="_ENUM_SkillDefault_Attacks" xml:space="preserve">
-    <value></value>
+    <value>Attacks Only</value>
     <comment></comment>  </data>
   <data name="_ENUM_SkillDefault_None" xml:space="preserve">
-    <value></value>
+    <value>Off</value>
     <comment></comment>  </data>
   <data name="_ENUM_Stat_Attack" xml:space="preserve">
     <value></value>
@@ -1324,7 +1324,7 @@
     <value>Music</value>
     <comment>Label for the music volume in the Settings menu</comment>  </data>
   <data name="MENU_SETTINGS_SKILL_DEFAULT" xml:space="preserve">
-    <value>Default Moves</value>
+    <value>Switch New Moves</value>
     <comment></comment>  </data>
   <data name="MENU_SETTINGS_SOUND" xml:space="preserve">
     <value>Sounds</value>
@@ -1523,6 +1523,9 @@
     <comment></comment>  </data>
   <data name="MENU_TEAM_PROMOTE_NONE" xml:space="preserve">
     <value>None</value>
+    <comment></comment>  </data>
+  <data name="MENU_TEAM_PROMOTE_SHORT" xml:space="preserve">
+    <value>Evo</value>
     <comment></comment>  </data>
   <data name="MENU_TEAM_PROMOTION" xml:space="preserve">
     <value>Evolution:</value>

@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.5.0",
+"Version": "0.8.7.0",
 "Object": {
 "$type": "RogueEssence.Data.SkillData, RogueEssence",
 "Name": {
@@ -15,7 +15,9 @@
 },
 "Desc": {
 "DefaultText": "The user shoots mystical beams from its eyes to inflict damage. The target is hit twice in a row.",
-"LocalTexts": {}
+"LocalTexts": {
+"zh-hans": "从两眼发射出神奇的光线攻击。连续2次给予伤害。"
+}
 },
 "Released": true,
 "Comment": "",

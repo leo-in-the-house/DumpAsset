@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.5.0",
+"Version": "0.8.7.0",
 "Object": {
 "$type": "RogueEssence.Ground.GroundMap, RogueEssence",
 "TexSize": 3,
@@ -48566,6 +48566,7 @@
 "EntName": "Snorlax",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 316,
 "Y": 248
@@ -48617,6 +48618,7 @@
 "BaseIntrinsics": [
 "none"
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -48662,6 +48664,7 @@
 "EntName": "NPC_Deliver",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 304,
 "Y": 344
@@ -48713,6 +48716,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -48756,6 +48760,7 @@
 "EntName": "NPC_Child",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 152,
 "Y": 352
@@ -48807,6 +48812,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -48850,6 +48856,7 @@
 "EntName": "NPC_Carry",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 328,
 "Y": 344
@@ -48901,6 +48908,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -48944,6 +48952,7 @@
 "EntName": "NPC_Camps",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 184,
 "Y": 200
@@ -48995,6 +49004,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -49038,6 +49048,7 @@
 "EntName": "NPC_Parent",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 176,
 "Y": 336
@@ -49089,6 +49100,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -49132,6 +49144,7 @@
 "EntName": "NPC_Storehouse",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 336,
 "Y": 368
@@ -49183,6 +49196,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -49226,6 +49240,7 @@
 "EntName": "Speedster_2",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 360,
 "Y": 128
@@ -49277,6 +49292,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -49320,6 +49336,7 @@
 "EntName": "Speedster_1",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 376,
 "Y": 152
@@ -49371,6 +49388,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -49414,6 +49432,7 @@
 "EntName": "NPC_Elder",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 244,
 "Y": 152
@@ -49465,6 +49484,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -49508,6 +49528,7 @@
 "EntName": "NPC_Catch_2",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 272,
 "Y": 368
@@ -49559,6 +49580,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -49602,6 +49624,7 @@
 "EntName": "NPC_Catch_1",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 216,
 "Y": 312
@@ -49653,6 +49676,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -49696,6 +49720,7 @@
 "EntName": "NPC_Unlucky",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 152,
 "Y": 200
@@ -49747,6 +49772,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -49790,6 +49816,7 @@
 "EntName": "NPC_Solo",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 244,
 "Y": 104
@@ -49841,6 +49868,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -49884,6 +49912,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 2,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -49926,6 +49955,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 2,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -49968,6 +49998,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -50010,6 +50041,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -50052,6 +50084,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -50094,6 +50127,7 @@
 "Direction": 6,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -50136,6 +50170,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -50270,7 +50305,7 @@
 "FullnessRemainder": 0,
 "MaxFullness": 0,
 "StatusEffects": {},
-"MustHitNext": false,
+"MissChain": 0,
 "EXPMarked": false,
 "Tactic": null,
 "Mobility": 0,
@@ -50340,6 +50375,7 @@
 "BaseIntrinsics": [
 "none"
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -50374,6 +50410,7 @@
 "Direction": 7,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -50480,7 +50517,7 @@
 "FullnessRemainder": 0,
 "MaxFullness": 0,
 "StatusEffects": {},
-"MustHitNext": false,
+"MissChain": 0,
 "EXPMarked": false,
 "Tactic": null,
 "Mobility": 0,
@@ -50550,6 +50587,7 @@
 "BaseIntrinsics": [
 "none"
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -50584,6 +50622,7 @@
 "Direction": 7,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -50690,7 +50729,7 @@
 "FullnessRemainder": 0,
 "MaxFullness": 0,
 "StatusEffects": {},
-"MustHitNext": false,
+"MissChain": 0,
 "EXPMarked": false,
 "Tactic": null,
 "Mobility": 0,
@@ -50760,6 +50799,7 @@
 "BaseIntrinsics": [
 "none"
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -50794,6 +50834,7 @@
 "Direction": 6,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -50812,6 +50853,7 @@
 "Direction": 4,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "Collider": {
 "X": 244,
@@ -50825,6 +50867,7 @@
 "Direction": 4,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "Collider": {
 "X": 244,
@@ -50838,6 +50881,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "Collider": {
 "X": 244,
@@ -50851,6 +50895,7 @@
 "Direction": 4,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "Collider": {
 "X": 316,

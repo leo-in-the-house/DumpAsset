@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.5.0",
+"Version": "0.8.7.0",
 "Object": {
 "$type": "RogueEssence.Ground.GroundMap, RogueEssence",
 "TexSize": 3,
@@ -10,7 +10,7 @@
 "de": "Höhle im tückischem Gebirge",
 "ja": "キケンなどうくつ",
 "ja-jp": "キケンなどうくつ",
-"zh-hans": "奸诈山峰洞窟"
+"zh-hans": "奸诈山洞"
 }
 },
 "Released": false,
@@ -57472,6 +57472,7 @@
 "EntName": "Salamence",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 244,
 "Y": 152
@@ -57523,6 +57524,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -57568,6 +57570,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "Collider": {
 "X": 244,

@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.5.0",
+"Version": "0.8.7.0",
 "Object": {
 "$type": "RogueEssence.Ground.GroundMap, RogueEssence",
 "TexSize": 1,
@@ -386242,6 +386242,7 @@
 "EntName": "NPC_Dragon_2",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 504,
 "Y": 328
@@ -386293,6 +386294,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -386336,6 +386338,7 @@
 "EntName": "NPC_Dragon_1",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 480,
 "Y": 344
@@ -386387,6 +386390,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -386430,6 +386434,7 @@
 "EntName": "NPC_Dragon_3",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 528,
 "Y": 344
@@ -386481,6 +386486,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -386524,6 +386530,7 @@
 "EntName": "NPC_Seeker",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 360,
 "Y": 432
@@ -386575,6 +386582,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -386618,6 +386626,7 @@
 "EntName": "NPC_Shiny",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 496,
 "Y": 480
@@ -386669,6 +386678,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -386712,6 +386722,7 @@
 "EntName": "NPC_Storehouse",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 800,
 "Y": 328
@@ -386763,6 +386774,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -386806,6 +386818,7 @@
 "EntName": "NPC_Shortcut",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 760,
 "Y": 416
@@ -386857,6 +386870,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -386900,6 +386914,7 @@
 "EntName": "NPC_NextCamp",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 432,
 "Y": 168
@@ -386951,6 +386966,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -386994,6 +387010,7 @@
 "EntName": "NPC_Hidden",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 944,
 "Y": 224
@@ -387045,6 +387062,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -387088,6 +387106,7 @@
 "EntName": "NPC_Tutor",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 288,
 "Y": 248
@@ -387139,6 +387158,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -387182,6 +387202,7 @@
 "EntName": "NPC_Fairy",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 792,
 "Y": 160
@@ -387233,6 +387254,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -387276,6 +387298,7 @@
 "EntName": "NPC_Argue_1",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 552,
 "Y": 225
@@ -387327,6 +387350,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -387370,6 +387394,7 @@
 "EntName": "NPC_Argue_2",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 560,
 "Y": 200
@@ -387421,6 +387446,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -387464,6 +387490,7 @@
 "EntName": "NPC_Goals",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 872,
 "Y": 184
@@ -387515,6 +387542,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -387558,6 +387586,7 @@
 "EntName": "NPC_Strategy",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 840,
 "Y": 208
@@ -387609,6 +387638,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -387652,6 +387682,7 @@
 "EntName": "NPC_Carry",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 784,
 "Y": 344
@@ -387703,6 +387734,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -387746,6 +387778,7 @@
 "EntName": "NPC_Deliver",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 760,
 "Y": 344
@@ -387797,6 +387830,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -387840,6 +387874,7 @@
 "EntName": "NPC_Protege",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 504,
 "Y": 368
@@ -387891,6 +387926,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -387934,6 +387970,7 @@
 "EntName": "NPC_Seer",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 312,
 "Y": 464
@@ -387985,6 +388022,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -388028,6 +388066,7 @@
 "EntName": "NPC_Conjurer",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 288,
 "Y": 488
@@ -388079,6 +388118,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -388122,6 +388162,7 @@
 "EntName": "NPC_Protege_Tutor",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 504,
 "Y": 368
@@ -388173,6 +388214,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -388216,6 +388258,7 @@
 "EntName": "Rival_2",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 600,
 "Y": 336
@@ -388267,6 +388310,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -388310,6 +388354,7 @@
 "EntName": "Rival_1",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 608,
 "Y": 200
@@ -388361,6 +388406,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -388404,6 +388450,7 @@
 "EntName": "NPC_Monk",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 872,
 "Y": 344
@@ -388455,6 +388502,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -388498,6 +388546,7 @@
 "EntName": "NPC_Spar",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 896,
 "Y": 344
@@ -388549,6 +388598,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -388592,6 +388642,7 @@
 "EntName": "NPC_Solo",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 784,
 "Y": 416
@@ -388643,6 +388694,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -388686,6 +388738,7 @@
 "EntName": "NPC_Brains",
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 888,
 "Y": 208
@@ -388737,6 +388790,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -388780,6 +388834,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 2,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -388822,6 +388877,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 2,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -388864,6 +388920,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -388906,6 +388963,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -388948,6 +389006,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -388990,6 +389049,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389032,6 +389092,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389074,6 +389135,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389116,6 +389178,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389158,6 +389221,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389200,6 +389264,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389242,6 +389307,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389284,6 +389350,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389326,6 +389393,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389368,6 +389436,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389410,6 +389479,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389452,6 +389522,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389494,6 +389565,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389536,6 +389608,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389578,6 +389651,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389620,6 +389694,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389662,6 +389737,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389704,6 +389780,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389746,6 +389823,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389788,6 +389866,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389830,6 +389909,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389872,6 +389952,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389914,6 +389995,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389956,6 +390038,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -389998,6 +390081,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390040,6 +390124,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390082,6 +390167,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390124,6 +390210,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390166,6 +390253,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390208,6 +390296,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390250,6 +390339,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390292,6 +390382,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390334,6 +390425,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390376,6 +390468,7 @@
 "Direction": 6,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390418,6 +390511,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390460,6 +390554,7 @@
 "Direction": 6,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390502,6 +390597,7 @@
 "Direction": 6,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390544,6 +390640,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390586,6 +390683,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390628,6 +390726,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390670,6 +390769,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390712,6 +390812,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390754,6 +390855,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390796,6 +390898,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390838,6 +390941,7 @@
 "Direction": 6,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390880,6 +390984,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -390964,6 +391069,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -390996,6 +391102,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -391052,6 +391159,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -391084,6 +391192,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -391140,6 +391249,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -391172,6 +391282,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -391190,6 +391301,7 @@
 "Direction": 6,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "Collider": {
 "X": 4,
@@ -391203,6 +391315,7 @@
 "Direction": 6,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "Collider": {
 "X": 836,
@@ -391216,6 +391329,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "Collider": {
 "X": 1132,

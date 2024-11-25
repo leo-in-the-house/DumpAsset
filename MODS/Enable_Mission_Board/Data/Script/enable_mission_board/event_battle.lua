@@ -75,14 +75,14 @@ function RescueCheck(context, targetName, mission)
             UI:SetSpeakerEmotion("Joyous")
             UI:WaitShowDialogue("Thank you for rescuing me! This place was so scary! I can't wait to see my family again!")
         elseif mission.Special == MISSION_GEN.SPECIAL_CLIENT_FRIEND then
-            UI:WaitShowDialogue("Oh, my friend sent you to rescue me? Thank goodness! We'll see you at the guild later to say thanks!")
+            UI:WaitShowDialogue("Oh, my friend sent you to rescue me? Thank goodness! We'll see you in town later to say thanks!")
         elseif mission.Special == MISSION_GEN.SPECIAL_CLIENT_RIVAL then
-            UI:WaitShowDialogue("Tch, my rival sent you to rescue me, huh? Well, thank you. We'll reward you later at the guild.")
+            UI:WaitShowDialogue("Tch, my rival sent you to rescue me, huh? Well, thank you. We'll reward you later in town.")
         elseif mission.Special == MISSION_GEN.SPECIAL_CLIENT_LOVER then
             UI:SetSpeakerEmotion("Joyous")
             UI:WaitShowDialogue("Oh, my beloved " .. _DATA:GetMonster(mission.Client):GetColoredName() .. " sent you to rescue me? I can't wait to reunite with them!")
         else
-            UI:WaitShowDialogue("Thanks for the rescue!\nI'll see you at the guild after with your reward!")
+            UI:WaitShowDialogue("Thanks for the rescue!\nI'll see you in town after with your reward!")
         end
         GAME:WaitFrames(20)
         UI:ResetSpeaker()
@@ -145,7 +145,7 @@ function DeliveryCheck(context, targetName, mission)
             end
             GAME:WaitFrames(20)
             UI:SetSpeaker(context.Target)
-            UI:WaitShowDialogue("Thanks for the " .. item_name .. "!\n I'll see you at the guild after with your reward!")
+            UI:WaitShowDialogue("Thanks for the " .. item_name .. "!\n I'll see you in town after with your reward!")
             GAME:WaitFrames(20)
             UI:ResetSpeaker()
             UI:WaitShowDialogue(targetName .. " escaped from the dungeon!")
@@ -190,7 +190,7 @@ function BATTLE_SCRIPT.EscortReached(owner, ownerChar, context, args)
         local mission = SV.TakenBoard[tbl.Mission]
         local escort = COMMON.FindMissionEscort(tbl.Mission)
         local escortName = _DATA:GetMonster(mission.Client):GetColoredName()
-        if escort then
+        if escort and not escort.Dead then
             local oldDir = context.Target.CharDir
             DUNGEON:CharTurnToChar(context.Target, context.User)
             UI:ResetSpeaker()
@@ -211,9 +211,6 @@ function BATTLE_SCRIPT.EscortReached(owner, ownerChar, context, args)
                 UI:WaitShowDialogue(STRINGS:Format(RogueEssence.StringKey("MISSION_ESCORT_DEPART"):ToLocal(), escortName))
                 GAME:WaitFrames(20)
 
-                --Set max team size to 4 as the guest is no longer "taking" up a party slot
-                RogueEssence.Dungeon.ExplorerTeam.MAX_TEAM_SLOTS = 4
-
                 -- warp out
                 TASK:WaitTask(_DUNGEON:ProcessBattleFX(escort, escort, _DATA.SendHomeFX))
                 _DUNGEON:RemoveChar(escort)
@@ -227,6 +224,8 @@ function BATTLE_SCRIPT.EscortReached(owner, ownerChar, context, args)
             else
                 UI:WaitShowDialogue(STRINGS:Format(RogueEssence.StringKey("MISSION_ESCORT_UNAVAILABLE"):ToLocal(), escortName))
             end
+		else
+			UI:WaitShowDialogue(STRINGS:Format(RogueEssence.StringKey("MISSION_ESCORT_UNAVAILABLE"):ToLocal(), escortName))
         end
     end
 end

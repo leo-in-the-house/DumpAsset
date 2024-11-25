@@ -1,10 +1,12 @@
 ﻿{
-"Version": "0.8.5.0",
+"Version": "0.8.7.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Bundle Scope",
-"LocalTexts": {}
+"LocalTexts": {
+"zh-hans": "包袱分析镜"
+}
 },
 "Desc": {
 "DefaultText": "An exclusive item for Iron Bundle. When kept in the bag, items thrown by the Pokémon will pierce through enemies.",

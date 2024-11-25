@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.5.0",
+"Version": "0.8.7.0",
 "Object": {
 "$type": "RogueEssence.Ground.GroundMap, RogueEssence",
 "TexSize": 3,
@@ -36399,6 +36399,7 @@
 "EntName": "Mew",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 180,
 "Y": 360
@@ -36450,6 +36451,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -36493,6 +36495,7 @@
 "EntName": "Caterpie",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 220,
 "Y": 360
@@ -36544,6 +36547,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -36587,6 +36591,7 @@
 "EntName": "Butterfree",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 240,
 "Y": 360
@@ -36638,6 +36643,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -36681,6 +36687,7 @@
 "EntName": "Illumise",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 220,
 "Y": 390
@@ -36732,6 +36739,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -36775,6 +36783,7 @@
 "EntName": "Volbeat",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 240,
 "Y": 390
@@ -36826,6 +36835,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -36869,6 +36879,7 @@
 "EntName": "Magnezone",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 240,
 "Y": 420
@@ -36920,6 +36931,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -36963,6 +36975,7 @@
 "EntName": "Hungrybox",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 280,
 "Y": 360
@@ -37014,6 +37027,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -37057,6 +37071,7 @@
 "EntName": "Poochy",
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "serializationLoc": {
 "X": 285,
 "Y": 208
@@ -37108,6 +37123,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -37151,6 +37167,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -37193,6 +37210,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -37235,6 +37253,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -37277,6 +37296,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -37319,6 +37339,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -37361,6 +37382,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 2,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -37403,6 +37425,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 3,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -37445,6 +37468,7 @@
 "Direction": 0,
 "EntEnabled": false,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 3,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -37487,6 +37511,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 1,
 "ObjectAnim": {
 "$type": "RogueEssence.Content.ObjAnimData, RogueEssence",
@@ -37571,6 +37596,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -37603,6 +37629,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -37659,6 +37686,7 @@
 "BaseIntrinsics": [
 "magic_bounce"
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -37691,6 +37719,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -37747,6 +37776,7 @@
 "BaseIntrinsics": [
 ""
 ],
+"FormIntrinsicSlot": -1,
 "Relearnables": {},
 "Discriminator": 0,
 "MetAt": "",
@@ -37779,6 +37809,7 @@
 "Direction": 2,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "EntityCallbacks": [
 0
@@ -37797,6 +37828,7 @@
 "Direction": 0,
 "EntEnabled": true,
 "EntOrder": 0,
+"InteractOrder": 0,
 "triggerType": 0,
 "Collider": {
 "X": 240,

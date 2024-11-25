@@ -1,10 +1,12 @@
 ﻿{
-"Version": "0.8.5.0",
+"Version": "0.8.7.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Bundle Guard",
-"LocalTexts": {}
+"LocalTexts": {
+"zh-hans": "包袱护符"
+}
 },
 "Desc": {
 "DefaultText": "An exclusive item for Iron Bundle. When kept in the bag, the Pokémon becomes immune to the Poisoned status.",

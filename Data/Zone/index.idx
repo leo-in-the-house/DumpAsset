@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.5.0",
+"Version": "0.8.7.0",
 "Object": {
 "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[RogueEssence.Data.EntrySummary, RogueEssence]], System.Private.CoreLib",
 "ambush_forest": {
@@ -2544,7 +2544,7 @@ null,
 "de": "Tückisches Gebirge",
 "es": "Montaña Traicionera",
 "it": "Montagna Infida",
-"zh-hans": "奸诈山峰"
+"zh-hans": "奸诈山"
 }
 },
 "Released": true,

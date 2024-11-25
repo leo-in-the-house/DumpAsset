@@ -1,12 +1,12 @@
 ﻿{
-"Version": "0.8.5.0",
+"Version": "0.8.7.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Truth Lens",
 "LocalTexts": {
 "it": "Verolenti",
-"zh-hans": "真实之镜"
+"zh-hans": "真实眼镜"
 }
 },
 "Desc": {

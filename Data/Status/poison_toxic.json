@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.5.0",
+"Version": "0.8.7.0",
 "Object": {
 "$type": "RogueEssence.Data.StatusData, RogueEssence",
 "Name": {
@@ -175,7 +175,7 @@
 "$type": "PMDC.Dungeon.ExceptionStatusContextEvent, PMDC",
 "States": [
 {
-"assembly": "PMDC, Version=0.8.5.0, Culture=neutral, PublicKeyToken=null",
+"assembly": "PMDC, Version=0.8.7.0, Culture=neutral, PublicKeyToken=null",
 "type": "PMDC.Dungeon.Corrosion"
 }
 ],
@@ -198,7 +198,7 @@
 "$type": "PMDC.Dungeon.ExceptionStatusContextEvent, PMDC",
 "States": [
 {
-"assembly": "PMDC, Version=0.8.5.0, Culture=neutral, PublicKeyToken=null",
+"assembly": "PMDC, Version=0.8.7.0, Culture=neutral, PublicKeyToken=null",
 "type": "PMDC.Dungeon.Corrosion"
 }
 ],
@@ -282,7 +282,7 @@
 "Toxic": false,
 "ReducedDamage": true,
 "HPFraction": 16,
-"HealHPFraction": 12
+"HealHPFraction": 8
 }
 }
 ],
@@ -299,7 +299,7 @@
 "Toxic": false,
 "AffectNonFocused": false,
 "HPFraction": 16,
-"RestoreHPFraction": 12
+"RestoreHPFraction": 4
 }
 },
 {
@@ -338,7 +338,7 @@
 "$type": "PMDC.Dungeon.PoisonEvent, PMDC",
 "Toxic": true,
 "HPFraction": 16,
-"RestoreHPFraction": 12
+"RestoreHPFraction": 4
 }
 ]
 }
