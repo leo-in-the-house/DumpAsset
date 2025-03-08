@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[RogueEssence.Data.EntrySummary, RogueEssence]], System.Private.CoreLib",
 "ambush_forest": {
@@ -51,14 +51,7 @@ null,
 ],
 "Name": {
 "DefaultText": "Ambush Forest",
-"LocalTexts": {
-"de": "Auflauerwald",
-"es": "Bosque Emboscada",
-"it": "Foresta Agguato",
-"ja": "マチブのもり",
-"ja-jp": "マチブの森",
-"zh-hans": "埋伏森林"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -67,11 +60,11 @@ null,
 "barren_tundra": {
 "$type": "RogueEssence.Data.ZoneEntrySummary, RogueEssence",
 "ExpPercent": 100,
-"Level": 35,
+"Level": 40,
 "LevelCap": false,
 "KeepSkills": false,
 "TeamRestrict": false,
-"TeamSize": 2,
+"TeamSize": 3,
 "MoneyRestrict": false,
 "BagRestrict": 0,
 "KeepTreasure": true,
@@ -116,14 +109,7 @@ null,
 ],
 "Name": {
 "DefaultText": "Barren Tundra",
-"LocalTexts": {
-"de": "Karge Tundra",
-"es": "Tundra Árido",
-"it": "Tundra Desolata",
-"ja": "あれたはてたツンドラ",
-"ja-jp": "荒れ果てたツンドラ",
-"zh-hans": "寂寥苔原"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -166,14 +152,7 @@ null
 ],
 "Name": {
 "DefaultText": "Bramble Woods",
-"LocalTexts": {
-"de": "Brombeerwald",
-"es": "Bosque Zarza",
-"it": "Foresta Rovospino",
-"ja": "いばらのもり",
-"ja-jp": "いばらの森",
-"zh-hans": "荆棘树林"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -182,7 +161,7 @@ null
 "bravery_road": {
 "$type": "RogueEssence.Data.ZoneEntrySummary, RogueEssence",
 "ExpPercent": 100,
-"Level": 30,
+"Level": 20,
 "LevelCap": true,
 "KeepSkills": false,
 "TeamRestrict": false,
@@ -192,7 +171,7 @@ null
 "KeepTreasure": false,
 "BagSize": -1,
 "Rescues": 2,
-"CountedFloors": 10,
+"CountedFloors": 12,
 "Rogue": 1,
 "Grounds": [],
 "Maps": [
@@ -206,19 +185,14 @@ null
 6,
 7,
 8,
-9
+9,
+10,
+11
 ]
 ],
 "Name": {
 "DefaultText": "Bravery Road",
-"LocalTexts": {
-"de": "Pass der Tapferkeit",
-"es": "Sendero Valentía",
-"it": "Sentiero Coraggio",
-"ja": "ブレイブロード",
-"ja-jp": "ブレイブロード",
-"zh-hans": "无畏之路"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -258,12 +232,7 @@ null
 ],
 "Name": {
 "DefaultText": "Castaway Cave",
-"LocalTexts": {
-"de": "Schiffbrüchigen-Höhle",
-"ja": "まよいのどうくつ",
-"ja-jp": "迷いの洞窟",
-"zh-hans": "漂泊洞窟"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -316,14 +285,7 @@ null
 ],
 "Name": {
 "DefaultText": "Cave of Solace",
-"LocalTexts": {
-"de": "Höhle des Trostes",
-"es": "Cueva Consuelo",
-"it": "Caverna Ristoro",
-"ja": "コドクのどうくつ",
-"ja-jp": "コドクの洞窟",
-"zh-hans": "舒缓洞窟"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -367,14 +329,7 @@ null
 ],
 "Name": {
 "DefaultText": "Cave of Whispers",
-"LocalTexts": {
-"de": "Höhle des Geflüsters",
-"es": "Cueva de los Susurros",
-"it": "Grotta dei Sussurri",
-"ja": "ささやきのどうくつ",
-"ja-jp": "ささやきの洞窟",
-"zh-hans": "低语洞窟"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -434,14 +389,7 @@ null
 ],
 "Name": {
 "DefaultText": "Champion's Road",
-"LocalTexts": {
-"de": "Pass des Champions",
-"es": "Ruta del Campeón",
-"it": "Percorso dei Campioni",
-"ja": "コパニンロード",
-"ja-jp": "コパニンロード",
-"zh-hans": "冠军之路"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -490,14 +438,7 @@ null
 ],
 "Name": {
 "DefaultText": "Copper Quarry",
-"LocalTexts": {
-"de": "Kupfersteinbruch",
-"es": "Cantera Bronce",
-"it": "Miniera di Rame",
-"ja": "サイドーどうざん",
-"ja-jp": "サイドー銅山",
-"zh-hans": "采铜矿场"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -686,14 +627,7 @@ null
 ],
 "Name": {
 "DefaultText": "Debug Zone",
-"LocalTexts": {
-"de": "Debug Zone",
-"es": "Zona de Debug",
-"it": "Zona di Debug",
-"ja": "でばっくぞぉーん",
-"ja-jp": "でばっくぞぉーん",
-"zh-hans": "Debug区域"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -740,11 +674,7 @@ null
 ],
 "Name": {
 "DefaultText": "Depleted Basin",
-"LocalTexts": {
-"ja": "ハテアレぼんち",
-"ja-jp": "ハテアレ盆地",
-"zh-hans": "枯竭盆地"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -790,14 +720,7 @@ null
 ],
 "Name": {
 "DefaultText": "Deserted Fortress",
-"LocalTexts": {
-"de": "Verlassene Festung",
-"es": "Fortaleza Desolada",
-"it": "Fortezza Desolata",
-"ja": "カッポラようさい",
-"ja-jp": "カッポラ要塞",
-"zh-hans": "空寂要塞"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -837,14 +760,7 @@ null
 ],
 "Name": {
 "DefaultText": "Energy Garden",
-"LocalTexts": {
-"de": "Energiegarten",
-"es": "Jardín Energía",
-"it": "Giardino Energetico",
-"ja": "げんきのはなぞの",
-"ja-jp": "げんきのはなぞの",
-"zh-hans": "元气花园"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -875,14 +791,7 @@ null
 ],
 "Name": {
 "DefaultText": "Eon Island",
-"LocalTexts": {
-"de": "Äoneninsel",
-"es": "Isla Eón",
-"it": "Isola Eone",
-"ja": "イオーネとう",
-"ja-jp": "イオーネ島",
-"zh-hans": "永恒岛"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -924,14 +833,7 @@ null
 ],
 "Name": {
 "DefaultText": "Faded Trail",
-"LocalTexts": {
-"de": "Verbleichender Pfad",
-"es": "Sendero Desvanecido ",
-"it": "Sentiero Sbiadito",
-"ja": "いろあせたさんどう",
-"ja-jp": "色あせた山道",
-"zh-hans": "消逝山道"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -971,11 +873,7 @@ null
 ],
 "Name": {
 "DefaultText": "Faultline Ridge",
-"LocalTexts": {
-"de": "Grat der Bruchlinie",
-"it": "Crepaccio della Faglia",
-"zh-hans": "断层山脊"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -1021,12 +919,7 @@ null
 ],
 "Name": {
 "DefaultText": "Fertile Valley",
-"LocalTexts": {
-"de": "Fruchtbares Tal",
-"es": "Valle Fértil",
-"it": "Valle Fertile",
-"zh-hans": "丰饶山谷"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -1066,12 +959,7 @@ null
 ],
 "Name": {
 "DefaultText": "Flyaway Cliffs",
-"LocalTexts": {
-"de": "Ausflugsklippen",
-"es": "Acantilado Nido",
-"it": "Colline del Volo",
-"zh-hans": "飞翔悬崖"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -1107,18 +995,13 @@ null
 ],
 "Name": {
 "DefaultText": "Forsaken Desert",
-"LocalTexts": {
-"de": "Verlassene Wüste",
-"es": "Desierto Abandonado",
-"it": "Deserto Abbandonato",
-"zh-hans": "落寂沙漠"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
 "SortOrder": 0
 },
-"geode_underpass": {
+"geode_crevice": {
 "$type": "RogueEssence.Data.ZoneEntrySummary, RogueEssence",
 "ExpPercent": 100,
 "Level": 20,
@@ -1126,13 +1009,13 @@ null
 "KeepSkills": false,
 "TeamRestrict": false,
 "TeamSize": 2,
-"MoneyRestrict": false,
+"MoneyRestrict": true,
 "BagRestrict": 8,
 "KeepTreasure": true,
 "BagSize": -1,
 "Rescues": 2,
-"CountedFloors": 12,
-"Rogue": 1,
+"CountedFloors": 14,
+"Rogue": 2,
 "Grounds": [],
 "Maps": [
 [
@@ -1147,19 +1030,16 @@ null
 8,
 9,
 10,
-11
+11,
+12,
+13
 ]
 ],
 "Name": {
-"DefaultText": "Geode Underpass",
-"LocalTexts": {
-"de": "Geodenunterführung",
-"es": "Galería Geoda",
-"it": "Galleria Geode",
-"zh-hans": "紫晶地道"
-}
+"DefaultText": "Geode Crevice",
+"LocalTexts": {}
 },
-"Released": false,
+"Released": true,
 "Comment": "",
 "SortOrder": 0
 },
@@ -1212,13 +1092,7 @@ null
 ],
 "Name": {
 "DefaultText": "Guildmaster Island",
-"LocalTexts": {
-"fr": "Île du Maître de la Guilde",
-"de": "Gildenmeister-Insel",
-"es": "Isla Maestro",
-"it": "Isola del Maestro Gilda",
-"zh-hans": "公会会长之岛"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -1278,12 +1152,7 @@ null
 ],
 "Name": {
 "DefaultText": "Guildmaster Trail",
-"LocalTexts": {
-"de": "Gildenmeister-Pfad",
-"es": "Sendero del Maestro",
-"it": "Sentiero del Maestro Gilda",
-"zh-hans": "公会会长之路"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -1302,7 +1171,7 @@ null
 "KeepTreasure": false,
 "BagSize": -1,
 "Rescues": 2,
-"CountedFloors": 12,
+"CountedFloors": 14,
 "Rogue": 1,
 "Grounds": [],
 "Maps": [
@@ -1318,17 +1187,14 @@ null
 8,
 9,
 10,
-11
+11,
+12,
+13
 ]
 ],
 "Name": {
 "DefaultText": "Hope Road",
-"LocalTexts": {
-"de": "Pass der Hoffnung",
-"es": "Travesía Esperanza",
-"it": "Viale Speranza",
-"zh-hans": "希望之路"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -1359,12 +1225,7 @@ null
 ],
 "Name": {
 "DefaultText": "Inscribed Cave",
-"LocalTexts": {
-"de": "Beschriftete Höhle",
-"es": "Cueva Inscrita",
-"it": "Caverna Incisa",
-"zh-hans": "刻文洞穴"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -1395,12 +1256,7 @@ null
 ],
 "Name": {
 "DefaultText": "Labyrinth of the Lost",
-"LocalTexts": {
-"de": "Labyrinth der Verlorenen",
-"es": "LABERINTO DE LOS PERDIDOS",
-"it": "Labirinto dei Dispersi",
-"zh-hans": "迷失迷阵"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -1459,49 +1315,9 @@ null
 ],
 "Name": {
 "DefaultText": "Lava Floe Island",
-"LocalTexts": {
-"de": "Lavascholleninsel",
-"it": "Isola Banchisa di Lava",
-"zh-hans": "熔岩浮冰岛"
-}
+"LocalTexts": {}
 },
 "Released": true,
-"Comment": "",
-"SortOrder": 0
-},
-"lost_seas": {
-"$type": "RogueEssence.Data.ZoneEntrySummary, RogueEssence",
-"ExpPercent": 100,
-"Level": 50,
-"LevelCap": false,
-"KeepSkills": false,
-"TeamRestrict": false,
-"TeamSize": -1,
-"MoneyRestrict": true,
-"BagRestrict": -1,
-"KeepTreasure": false,
-"BagSize": -1,
-"Rescues": 2,
-"CountedFloors": 3,
-"Rogue": 1,
-"Grounds": [],
-"Maps": [
-[
-0,
-1,
-2
-]
-],
-"Name": {
-"DefaultText": "Lost Seas",
-"LocalTexts": {
-"de": "Verlorene Seen",
-"es": "Mares Olvidados",
-"it": "Mare Perduto",
-"zh-hans": "迷失之海"
-}
-},
-"Released": false,
 "Comment": "",
 "SortOrder": 0
 },
@@ -1555,12 +1371,7 @@ null
 ],
 "Name": {
 "DefaultText": "Moonlit Courtyard",
-"LocalTexts": {
-"de": "Mondheller Innenhof",
-"es": "Patio Luz de Luna",
-"it": "Prato Brillaluna",
-"zh-hans": "月光庭院"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -1610,11 +1421,7 @@ null
 ],
 "Name": {
 "DefaultText": "Overgrown Wilds",
-"LocalTexts": {
-"de": "Überwachsene Wildnis",
-"it": "Bosco Selvaggio",
-"zh-hans": "杂草原野"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -1645,12 +1452,7 @@ null
 ],
 "Name": {
 "DefaultText": "Prism Isles",
-"LocalTexts": {
-"de": "Prismeninseln",
-"es": "Islas Prisma",
-"it": "Isole Prisma",
-"zh-hans": "棱镜群岛"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -1694,12 +1496,7 @@ null
 ],
 "Name": {
 "DefaultText": "Relic Tower",
-"LocalTexts": {
-"de": "Reliktenturm",
-"es": "Torre Reliquia",
-"it": "Torre Reliquia",
-"zh-hans": "遗迹之塔"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -1752,12 +1549,7 @@ null
 ],
 "Name": {
 "DefaultText": "Royal Halls",
-"LocalTexts": {
-"de": "Königliche Hallen",
-"es": "Salones Reales",
-"it": "Sale Reali",
-"zh-hans": "庄严大厅"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -1855,12 +1647,7 @@ null
 ],
 "Name": {
 "DefaultText": "Sacred Tower",
-"LocalTexts": {
-"de": "Heiliger Turm",
-"es": "Torreón Sagrado",
-"it": "Torre Sacra",
-"zh-hans": "神圣之塔"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -1930,12 +1717,7 @@ null
 ],
 "Name": {
 "DefaultText": "Secret Garden",
-"LocalTexts": {
-"de": "Geheimer Garten",
-"es": "Jardín Secreto",
-"it": "Giardino Segreto",
-"zh-hans": "秘密花园"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -1982,11 +1764,7 @@ null
 ],
 "Name": {
 "DefaultText": "Sickly Hollow",
-"LocalTexts": {
-"de": "Kränkliche Bodensenke",
-"it": "Valle Malsana",
-"zh-hans": "毒疫洞穴"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -2032,12 +1810,7 @@ null
 ],
 "Name": {
 "DefaultText": "Sleeping Caldera",
-"LocalTexts": {
-"de": "Schlafende Caldera",
-"es": "Caldera Durmiente",
-"it": "Caldera Dormiente",
-"zh-hans": "沉睡火山口"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -2094,12 +1867,7 @@ null
 ],
 "Name": {
 "DefaultText": "Snowbound Path",
-"LocalTexts": {
-"de": "Eingeschneiter Pfad",
-"es": "Paso Helado Errático",
-"it": "Passo Innevato",
-"zh-hans": "雪封小径"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -2130,12 +1898,7 @@ null
 ],
 "Name": {
 "DefaultText": "Starfall Heights",
-"LocalTexts": {
-"de": "Sternenfallhöhen",
-"es": "Alto Lluevestrella",
-"it": "Alture Cometa",
-"zh-hans": "星陨高地"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -2253,12 +2016,7 @@ null
 ],
 "Name": {
 "DefaultText": "The Abyss",
-"LocalTexts": {
-"de": "Die Kluft",
-"es": "El Abismo",
-"it": "L'Abisso",
-"zh-hans": "深渊"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -2291,11 +2049,7 @@ null
 ],
 "Name": {
 "DefaultText": "The NeverEnding Tale",
-"LocalTexts": {
-"de": "Die niemalsendende Geschichte",
-"it": "La Storia Senza Fine",
-"zh-hans": "无尽篇章"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -2353,12 +2107,7 @@ null
 ],
 "Name": {
 "DefaultText": "The Sky",
-"LocalTexts": {
-"de": "Der Himmel",
-"es": "El Cielo",
-"it": "Il Cielo",
-"zh-hans": "天空"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -2402,12 +2151,7 @@ null
 ],
 "Name": {
 "DefaultText": "Thunderstruck Pass",
-"LocalTexts": {
-"de": "Donnerschlag-Übergang",
-"es": "Senda Atónita",
-"it": "Sentiero Picchiatuono",
-"zh-hans": "雷霆山口"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -2420,14 +2164,14 @@ null
 "LevelCap": true,
 "KeepSkills": false,
 "TeamRestrict": false,
-"TeamSize": 1,
+"TeamSize": 2,
 "MoneyRestrict": false,
-"BagRestrict": 16,
+"BagRestrict": 8,
 "KeepTreasure": true,
 "BagSize": -1,
 "Rescues": 2,
-"CountedFloors": 8,
-"Rogue": 1,
+"CountedFloors": 9,
+"Rogue": 2,
 "Grounds": [],
 "Maps": [
 [
@@ -2438,19 +2182,15 @@ null
 4,
 5,
 6,
-7
+7,
+8
 ]
 ],
 "Name": {
 "DefaultText": "Tiny Tunnel",
-"LocalTexts": {
-"de": "Winziger Tunnel",
-"es": "Túnel Pequeño",
-"it": "Piccola Galleria",
-"zh-hans": "小小地道"
-}
+"LocalTexts": {}
 },
-"Released": false,
+"Released": true,
 "Comment": "",
 "SortOrder": 0
 },
@@ -2480,12 +2220,7 @@ null
 ],
 "Name": {
 "DefaultText": "Training Maze",
-"LocalTexts": {
-"de": "Trainings Labyrinth",
-"es": "Laberinto Entrenamiento",
-"it": "Labirinto Allenamento",
-"zh-hans": "训练迷宫"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -2540,12 +2275,7 @@ null,
 ],
 "Name": {
 "DefaultText": "Treacherous Mountain",
-"LocalTexts": {
-"de": "Tückisches Gebirge",
-"es": "Montaña Traicionera",
-"it": "Montagna Infida",
-"zh-hans": "奸诈山"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -2592,12 +2322,7 @@ null
 ],
 "Name": {
 "DefaultText": "Trickster Woods",
-"LocalTexts": {
-"de": "Betrügerischer Wald",
-"es": "Arboleda Embaucadora",
-"it": "Bosco Imbroglio",
-"zh-hans": "戏法森林"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -2633,14 +2358,187 @@ null
 ],
 "Name": {
 "DefaultText": "Tropical Path",
-"LocalTexts": {
-"de": "Tropischer Pfad",
-"es": "Paso Tropical",
-"it": "Passaggio Tropicale",
-"zh-hans": "热带小径"
-}
+"LocalTexts": {}
 },
 "Released": true,
+"Comment": "",
+"SortOrder": 0
+},
+"uncharted_waters": {
+"$type": "RogueEssence.Data.ZoneEntrySummary, RogueEssence",
+"ExpPercent": 100,
+"Level": 50,
+"LevelCap": false,
+"KeepSkills": false,
+"TeamRestrict": false,
+"TeamSize": -1,
+"MoneyRestrict": true,
+"BagRestrict": -1,
+"KeepTreasure": false,
+"BagSize": -1,
+"Rescues": 2,
+"CountedFloors": 104,
+"Rogue": 1,
+"Grounds": [],
+"Maps": [
+[
+0,
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+8
+],
+[
+0,
+1,
+2,
+3,
+4,
+5
+],
+[
+0,
+1,
+2
+],
+[
+0,
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9
+],
+[
+0,
+1,
+2,
+3,
+4,
+5,
+6,
+7
+],
+[
+0,
+1,
+2,
+3,
+4,
+5,
+6
+],
+[
+0,
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+8
+],
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+1,
+2,
+3,
+4,
+5,
+6,
+7
+],
+[
+0,
+1,
+2,
+3,
+4,
+5
+],
+[
+0,
+1,
+2,
+3,
+4,
+5,
+6
+],
+[
+0,
+1,
+2,
+3,
+4,
+5
+],
+[
+0,
+1,
+2,
+3,
+4,
+5,
+6
+],
+[
+0,
+1,
+2,
+3,
+4
+],
+[
+0,
+1,
+2,
+3,
+4
+],
+null,
+null,
+null,
+null,
+null,
+null,
+null,
+null,
+null,
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"Name": {
+"DefaultText": "Uncharted Waters",
+"LocalTexts": {}
+},
+"Released": false,
 "Comment": "",
 "SortOrder": 0
 },
@@ -2694,12 +2592,7 @@ null
 ],
 "Name": {
 "DefaultText": "Veiled Ridge",
-"LocalTexts": {
-"de": "Verdeckter Grat",
-"es": "Ladera Velada",
-"it": "Crinale Velato",
-"zh-hans": "朦胧山脊"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -2712,7 +2605,7 @@ null
 "LevelCap": false,
 "KeepSkills": false,
 "TeamRestrict": false,
-"TeamSize": -1,
+"TeamSize": 2,
 "MoneyRestrict": true,
 "BagRestrict": 0,
 "KeepTreasure": true,
@@ -2743,12 +2636,7 @@ null
 ],
 "Name": {
 "DefaultText": "Wayward Wetlands",
-"LocalTexts": {
-"de": "Launische Auen",
-"es": "Humedales Caprichosos",
-"it": "Acquitrini Capriccio",
-"zh-hans": "任性湿地"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -2767,7 +2655,7 @@ null
 "KeepTreasure": false,
 "BagSize": -1,
 "Rescues": 2,
-"CountedFloors": 10,
+"CountedFloors": 12,
 "Rogue": 1,
 "Grounds": [],
 "Maps": [
@@ -2781,17 +2669,14 @@ null
 6,
 7,
 8,
-9
+9,
+10,
+11
 ]
 ],
 "Name": {
 "DefaultText": "Wisdom Road",
-"LocalTexts": {
-"de": "Pass der Weisheit",
-"es": "Sendero Sabiduría",
-"it": "Strada della Saggezza",
-"zh-hans": "智慧之路"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",

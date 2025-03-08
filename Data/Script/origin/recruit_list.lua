@@ -153,14 +153,15 @@ end
 -- Menu that displays the recruitment list to the player
 RecruitmentListMenu = Class('RecruitmentListMenu')
 
-function RecruitmentListMenu:initialize()
+function RecruitmentListMenu:initialize(label)
     assert(self, "RecruitmentListMenu:initialize(): self is nil!")
+    label = label or "RECRUITS_MENU_LUA"
 
     self.ENTRY_LINES = 10
     self.ENTRY_COLUMNS = 2
     self.ENTRY_LIMIT = self.ENTRY_LINES * self.ENTRY_COLUMNS
 
-    self.menu = RogueEssence.Menu.ScriptableMenu(32, 32, 256, 176, function(input) self:Update(input) end)
+    self.menu = RogueEssence.Menu.ScriptableMenu(label, 32, 32, 256, 176, function(input) self:Update(input) end)
     self.dirPressed = false
     self.list = RECRUIT_LIST.compileCurrentList()
     self.page = 0
@@ -170,22 +171,22 @@ function RecruitmentListMenu:initialize()
 end
 
 function RecruitmentListMenu:DrawMenu()
-    self.menu.MenuElements:Clear()
+    self.menu.Elements:Clear()
     --Standard menu divider. Reuse this whenever you need a menu divider at the top for a title.
-    self.menu.MenuElements:Add(RogueEssence.Menu.MenuDivider(RogueElements.Loc(8, 8 + 12), self.menu.Bounds.Width - 8 * 2))
+    self.menu.Elements:Add(RogueEssence.Menu.MenuDivider(RogueElements.Loc(8, 8 + 12), self.menu.Bounds.Width - 8 * 2))
 
-    self.menu.MenuElements:Add(RogueEssence.Menu.MenuText(RogueEssence.StringKey("MENU_RECRUITMENT_TITLE"):ToLocal(), RogueElements.Loc(16, 8)))
+    self.menu.Elements:Add(RogueEssence.Menu.MenuText(RogueEssence.StringKey("MENU_RECRUITMENT_TITLE"):ToLocal(), RogueElements.Loc(16, 8)))
 
     -- add a special message if there are no entries or recruiting is disabled altogether
     if #self.list<1 then
-        self.menu.MenuElements:Add(RogueEssence.Menu.MenuText(RogueEssence.StringKey("MENU_RECRUITMENT_NONE"):ToLocal(), RogueElements.Loc(16, 24)))
+        self.menu.Elements:Add(RogueEssence.Menu.MenuText(RogueEssence.StringKey("MENU_RECRUITMENT_NONE"):ToLocal(), RogueElements.Loc(16, 24)))
         return
     end
 
     --Add page number if it has more than one
     if self.PAGE_MAX>1 then
         local pagenum = "("..tostring(self.page+1).."/"..tostring(self.PAGE_MAX)..")"
-        self.menu.MenuElements:Add(RogueEssence.Menu.MenuText(pagenum, RogueElements.Loc(self.menu.Bounds.Width - 8, 8),RogueElements.DirH.Right))
+        self.menu.Elements:Add(RogueEssence.Menu.MenuText(pagenum, RogueElements.Loc(self.menu.Bounds.Width - 8, 8),RogueElements.DirH.Right))
     end
 
     --how many entries we have populated so far
@@ -213,7 +214,7 @@ function RecruitmentListMenu:DrawMenu()
         local x = xpad + xdist * col
         local y = ypad + ydist * line
         local text = RECRUIT_LIST.colorName(self.list[i].species, self.list[i].mode, self.list[i].asterisk)
-        self.menu.MenuElements:Add(RogueEssence.Menu.MenuText(text, RogueElements.Loc(x, y)))
+        self.menu.Elements:Add(RogueEssence.Menu.MenuText(text, RogueElements.Loc(x, y)))
         count = count + 1
     end
 end

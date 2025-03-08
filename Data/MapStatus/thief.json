@@ -1,15 +1,10 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.MapStatusData, RogueEssence",
 "Name": {
 "DefaultText": "Thief",
-"LocalTexts": {
-"de": "Dieb",
-"es": "Ladrón",
-"it": "Ladro",
-"zh-hans": "盗贼"
-}
+"LocalTexts": {}
 },
 "Desc": {
 "DefaultText": "",
@@ -106,7 +101,7 @@
 },
 "Value": {
 "$type": "PMDC.Dungeon.MapStatusBGMEvent, PMDC",
-"BGM": "C07. Outlaw.ogg"
+"BGM": "Outlaw.ogg"
 }
 },
 {

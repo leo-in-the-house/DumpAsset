@@ -1,24 +1,16 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.IntrinsicData, RogueEssence",
 "Name": {
 "DefaultText": "Cud Chew",
-"LocalTexts": {
-"fr": "Ruminant",
-"de": "Wiederkäuer",
-"es": "Rumia",
-"it": "Ruminante",
-"ja": "はんすう",
-"ja-jp": "はんすう",
-"zh-hans": "反刍"
-}
-},
-"Desc": {
-"DefaultText": "",
 "LocalTexts": {}
 },
-"Released": false,
+"Desc": {
+"DefaultText": "When the Pokémon eats a berry, it will regurgitate that berry several turns later and eat it one more time.",
+"LocalTexts": {}
+},
+"Released": true,
 "Comment": "",
 "IndexNum": 291,
 "ProximityEvent": {
@@ -75,7 +67,31 @@
 "BeforeHittings": [],
 "BeforeBeingHits": [],
 "AfterHittings": [],
-"AfterBeingHits": [],
+"AfterBeingHits": [
+{
+"Key": {
+"str": [
+0
+]
+},
+"Value": {
+"$type": "PMDC.Dungeon.BerryNeededEvent, PMDC",
+"BaseEvents": [
+{
+"$type": "PMDC.Dungeon.StatusItemBattleEvent, PMDC",
+"StatusID": "cud_chew",
+"AffectTarget": true,
+"SilentCheck": false,
+"Anonymous": false,
+"TriggerMsg": {
+"Key": null
+},
+"Anims": []
+}
+]
+}
+}
+],
 "OnHitTiles": [],
 "AfterActions": [],
 "UserElementEffects": [],

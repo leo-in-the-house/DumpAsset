@@ -1,31 +1,14 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Flash Tag",
-"LocalTexts": {
-"fr": "Marque Flash",
-"de": "Blitzmarke",
-"es": "Nota Flash",
-"it": "Taccaflash",
-"ko": "섬광호신부",
-"ja": "せんこうのおふだ",
-"zh-hans": "闪亮标签"
-}
+"LocalTexts": {}
 },
 "Desc": {
-"DefaultText": "An exclusive item for the Shinx family. When kept in the bag, it changes the Pokémon's regular attack into a dash.",
-"LocalTexts": {
-"fr": "Un objet exclusif pour la famille de Lixy. When kept in the bag, it changes the Pokémon's regular attack into a dash.",
-"fr-ca": "Un objet exclusif pour la famille de Shinx. When kept in the bag, it changes the Pokémon's regular attack into a dash.",
-"de": "Ein exklusives Item für die Sheinux Familie. Wenn es innerhalb des Beutels getragen wird, wird der reguläre Angriff des Pokémon durch einen Sprintangriff ersetzt. ",
-"es": "Un objeto exclusivo para la familia Shinx. When kept in the bag, it changes the Pokémon's regular attack into a dash.",
-"pt": "Um item exclusivo para a familia Shinx. When kept in the bag, it changes the Pokémon's regular attack into a dash.",
-"it": "Uno strumento esclusivo per la famiglia di Shinx. When kept in the bag, it changes the Pokémon's regular attack into a dash.",
-"ko": "꼬링크 라인에게 한정된 아이템. When kept in the bag, it changes the Pokémon's regular attack into a dash.",
-"zh-hans": "小猫怪一家的专属道具。放在包里时，普通攻击会变为冲撞类。"
-}
+"DefaultText": "A rare treasure for the Shinx family. When kept in the bag, the Pokémon will counter damage from regular attacks and thrown items.",
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -77,6 +60,7 @@
 "PreActions": [],
 "ActionFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -106,6 +90,7 @@
 "IntroFX": [],
 "ExplodeFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -135,6 +120,7 @@
 "IntroFX": [],
 "HitFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -214,102 +200,84 @@
 "OnRefresh": [],
 "BeforeTryActions": [],
 "BeforeActions": [],
-"OnActions": [
+"OnActions": [],
+"BeforeHittings": [],
+"BeforeBeingHits": [],
+"AfterHittings": [],
+"AfterBeingHits": [
 {
 "Key": {
 "str": [
--3
+0
 ]
 },
 "Value": {
 "$type": "PMDC.Dungeon.FamilyBattleEvent, PMDC",
 "BaseEvent": {
-"$type": "PMDC.Dungeon.RegularAttackNeededEvent, PMDC",
-"BaseEvent": {
-"$type": "PMDC.Dungeon.ChangeActionEvent, PMDC",
-"NewAction": {
-"$type": "RogueEssence.Dungeon.DashAction, RogueEssence",
+"$type": "PMDC.Dungeon.CounterNonSkillEvent, PMDC",
+"Numerator": 1,
+"Denominator": 2,
+"Anims": [
+{
+"Emitter": {
+"$type": "RogueEssence.Content.SingleEmitter, RogueEssence",
+"LocHeight": 0,
+"finished": false,
+"Offset": 0,
 "Anim": {
-"AnimIndex": "",
-"FrameTime": 1,
+"$type": "RogueEssence.Content.ColumnAnim, RogueEssence",
+"Anim": {
+"AnimIndex": "Column_Blue",
+"FrameTime": 3,
+"StartFrame": -1,
+"EndFrame": -1,
+"AnimDir": -1,
+"Alpha": 192,
+"AnimFlip": 0
+},
+"TotalTime": 0,
+"Cycles": 1
+},
+"Layer": 2,
+"UseDest": false
+},
+"Sound": "DUN_Light_Screen",
+"AffectTarget": true,
+"Delay": 10
+},
+{
+"Emitter": {
+"$type": "RogueEssence.Content.SingleEmitter, RogueEssence",
+"LocHeight": 0,
+"finished": false,
+"Offset": 0,
+"Anim": {
+"$type": "RogueEssence.Content.StaticAnim, RogueEssence",
+"Anim": {
+"AnimIndex": "Hit_Neutral",
+"FrameTime": 3,
 "StartFrame": -1,
 "EndFrame": -1,
 "AnimDir": -1,
 "Alpha": 255,
 "AnimFlip": 0
 },
-"AnimOffset": 0,
-"Emitter": {
-"$type": "RogueEssence.Content.EmptyAttachEmitter, RogueEssence"
+"TotalTime": 0,
+"Cycles": 1,
+"FrameOffset": 0
 },
-"WideAngle": 0,
-"SnapBack": false,
-"CharAnim": 5,
-"AppearanceMod": 0,
-"HitTiles": true,
-"Range": 2,
-"StopAtHit": true,
-"StopAtWall": true,
-"TargetAlignments": 4,
-"TileEmitter": {
-"$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
-"LocHeight": 0
+"Layer": 2,
+"UseDest": false
 },
-"PreActions": [
-{
-"Delay": 0,
-"Sound": "DUN_Attack",
-"Emitter": {
-"$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
-"LocHeight": 0
-},
-"ScreenMovement": {
-"MinShake": 0,
-"MaxShake": 0,
-"MaxShakeTime": 0
+"Sound": "DUN_Hit_Neutral",
+"AffectTarget": false,
+"Delay": 0
 }
-}
-],
-"ActionFX": {
-"Delay": 0,
-"Sound": "",
-"Emitter": {
-"$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
-"LocHeight": 0
-},
-"ScreenMovement": {
-"MinShake": 0,
-"MaxShake": 0,
-"MaxShakeTime": 0
-}
-},
-"LagBehindTime": 0
-}
-}
-}
-}
-},
-{
-"Key": {
-"str": [
--3
 ]
-},
-"Value": {
-"$type": "PMDC.Dungeon.FamilyBattleEvent, PMDC",
-"BaseEvent": {
-"$type": "PMDC.Dungeon.RegularAttackNeededEvent, PMDC",
-"BaseEvent": {
-"$type": "PMDC.Dungeon.TraitorEvent, PMDC"
-}
 }
 }
 }
 ],
-"BeforeHittings": [],
-"BeforeBeingHits": [],
-"AfterHittings": [],
-"AfterBeingHits": [],
 "OnHitTiles": [],
 "AfterActions": [],
 "UserElementEffects": [],

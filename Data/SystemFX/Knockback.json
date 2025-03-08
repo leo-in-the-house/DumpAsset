@@ -1,8 +1,9 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Content.BattleFX, RogueEssence",
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "DUN_Throw_Spike",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",

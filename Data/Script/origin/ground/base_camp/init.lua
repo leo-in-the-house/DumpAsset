@@ -39,10 +39,10 @@ function base_camp.Enter(map)
   
   if not SV.base_camp.IntroComplete then
     base_camp.PrepareFirstTimeVisit()
-	GAME:FadeIn(20)
+    GAME:FadeIn(20)
   elseif SV.guildmaster_trail.FloorsCleared >= 30 and SV.guildmaster_trail.Rewarded == false then
     base_camp.RewardDialogue()
-	SV.guildmaster_trail.Rewarded = true
+    SV.guildmaster_trail.Rewarded = true
     SV.base_camp.ExpositionComplete = true
   elseif not SV.base_camp.ExpositionComplete then	
     base_camp.SetupNpcs()
@@ -51,7 +51,7 @@ function base_camp.Enter(map)
   else
     base_camp.SetupNpcs()
 	
-	base_camp.CheckMissions()
+    base_camp.CheckMissions()
 	
     GAME:FadeIn(20)
   end
@@ -347,7 +347,7 @@ end
 
 function base_camp.North_Exit_Touch(obj, activator)
   DEBUG.EnableDbgCoro() --Enable debugging this coroutine
-  local dungeon_entrances = { 'tropical_path', 'faultline_ridge', 'tiny_tunnel', 'guildmaster_trail' }
+  local dungeon_entrances = { 'tropical_path', 'faultline_ridge', 'guildmaster_trail' }
   local ground_entrances = {{Flag=SV.forest_camp.ExpositionComplete,Zone='guildmaster_island',ID=3,Entry=0},
   {Flag=SV.cliff_camp.ExpositionComplete,Zone='guildmaster_island',ID=4,Entry=0},
   {Flag=SV.canyon_camp.ExpositionComplete,Zone='guildmaster_island',ID=5,Entry=0},
@@ -394,7 +394,7 @@ function base_camp.Ferry_Action(obj, activator)
     UI:WaitShowDialogue(STRINGS:Format(STRINGS.MapStrings['Ferry_Line_001']))
 	SV.base_camp.FerryIntroduced = true
   end
-  local dungeon_entrances = { 'lava_floe_island', 'castaway_cave', 'eon_island', 'lost_seas', 'inscribed_cave', 'prism_isles' }
+  local dungeon_entrances = { 'lava_floe_island', 'castaway_cave', 'eon_island', 'uncharted_waters', 'inscribed_cave', 'prism_isles' }
   local ground_entrances = {}
   
   UI:WaitShowDialogue(STRINGS:Format(STRINGS.MapStrings['Ferry_Line_002']))

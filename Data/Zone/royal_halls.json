@@ -1,15 +1,10 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.ZoneData, RogueEssence",
 "Name": {
 "DefaultText": "Royal Halls",
-"LocalTexts": {
-"de": "Königliche Hallen",
-"es": "Salones Reales",
-"it": "Sale Reali",
-"zh-hans": "庄严大厅"
-}
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -270,6 +265,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -840,6 +836,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -1410,6 +1407,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -1980,6 +1978,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -2550,6 +2549,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -3120,6 +3120,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -3690,6 +3691,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -4260,6 +4262,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -4830,6 +4833,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -5400,6 +5404,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -5970,6 +5975,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -6540,6 +6546,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -7110,6 +7117,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -7680,6 +7688,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -8250,6 +8259,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -8820,6 +8830,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -9390,6 +9401,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -9960,6 +9972,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -10530,6 +10543,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -11100,6 +11114,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -11670,6 +11685,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -12240,6 +12256,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -12810,6 +12827,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -13380,6 +13398,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -13950,6 +13969,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -14300,13 +14320,8 @@
 ]
 },
 "Name": {
-"DefaultText": "Royal Halls\\nB{0}F",
-"LocalTexts": {
-"de": "Königliche Hallen\\nE{0}",
-"es": "Salones Reales\\nP-{0}",
-"it": "Sale Reali\\nP-{0}",
-"zh-hans": "庄严大厅\\nB{0}F"
-}
+"DefaultText": "Royal Halls\nB{0}F",
+"LocalTexts": {}
 },
 "Priority": {
 "str": [
@@ -14331,7 +14346,7 @@
 },
 "ModStates": [
 {
-"assembly": "PMDC, Version=0.8.7.0, Culture=neutral, PublicKeyToken=null",
+"assembly": "PMDC, Version=0.8.8.0, Culture=neutral, PublicKeyToken=null",
 "type": "PMDC.Dungeon.CoinModGenState"
 }
 ]

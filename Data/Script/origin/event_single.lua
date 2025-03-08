@@ -12,7 +12,7 @@ function SINGLE_CHAR_SCRIPT.CastawayCaveAltMusic(owner, ownerChar, context, args
   if not SV.castaway_cave.TookTreasure then
     --keep the map music as is
   else
-	_ZONE.CurrentMap.Music = "B24. Castaway Cave 2.ogg"
+	_ZONE.CurrentMap.Music = "Castaway Cave 2.ogg"
   end
   
   SOUND:PlayBGM(_ZONE.CurrentMap.Music, true)
@@ -43,7 +43,7 @@ function SINGLE_CHAR_SCRIPT.SleepingCalderaAltData(owner, ownerChar, context, ar
     --keep the map music as is
   else
 	_ZONE.CurrentMap.Name = RogueEssence.LocalText(STRINGS:Format(RogueEssence.StringKey("TITLE_ENRAGED_CALDERA"):ToLocal(), _ZONE.CurrentMap.ID + 1))
-	_ZONE.CurrentMap.Music = "B11. Enraged Caldera.ogg"
+	_ZONE.CurrentMap.Music = "Enraged Caldera.ogg"
   end
   
   SOUND:PlayBGM(_ZONE.CurrentMap.Music, true)
@@ -361,6 +361,69 @@ function SINGLE_CHAR_SCRIPT.UpdateEscort(owner, ownerChar, context, args)
   end
 end
 
+function SINGLE_CHAR_SCRIPT.LegendFloor(owner, ownerChar, context, args)
+  if context.User ~= nil then
+    return
+  end
+  SOUND:PlayBGM("Luminous Spring.ogg", true)
+  GAME:WaitFrames(20)
+  UI:ResetSpeaker()
+  local item_data = _DATA:GetItem("loot_music_box")
+  UI:WaitShowDialogue(STRINGS:Format(RogueEssence.StringKey("DLG_LEGEND_FLOOR"):ToLocal(), item_data:GetColoredName()))
+  GAME:WaitFrames(1)
+end
+
+function SINGLE_CHAR_SCRIPT.OnRoamingDeath(owner, ownerChar, context, args)
+	
+	local tbl = LTBL(context.User)
+	if tbl.Roaming == args.Roaming then
+    context.User.Dead = false
+    SOUND:PlayBGM(_ZONE.CurrentMap.Music, true)
+    GAME:WaitFrames(20)
+		
+    DUNGEON:CharTurnToChar(context.User, _DATA.Save.ActiveTeam.Leader)
+    UI:SetSpeaker(context.User)
+    UI:WaitShowDialogue(STRINGS:Format(RogueEssence.StringKey("TALK_LEGEND_CHASE_001"):ToLocal()))
+    
+    local actionScript = RogueEssence.Dungeon.BattleScriptEvent(args.ActionScript)
+    context.User.MaxHPBonus = 0
+    context.User.AtkBonus = 0
+    context.User.DefBonus = 0
+    context.User.MAtkBonus = 0
+    context.User.MDefBonus = 0
+    context.User.SpeedBonus = 0
+    TASK:WaitTask(PMDC.Dungeon.BaseRecruitmentEvent.DungeonRecruit(owner, ownerChar, context.User, actionScript))
+    SV.roaming_legends[args.Roaming] = true
+	end
+end
+
+function SINGLE_CHAR_SCRIPT.RoamingFleeStairsCheck(owner, ownerChar, context, args)
+	local stairs_tbl = { }
+	stairs_tbl["stairs_back_down"] = true
+	stairs_tbl["stairs_back_up"] = true
+	stairs_tbl["stairs_exit_down"] = true
+	stairs_tbl["stairs_exit_up"] = true
+	stairs_tbl["stairs_go_up"] = true
+	stairs_tbl["stairs_go_down"] = true
+
+	local found_outlaw = COMMON.FindNpcWithTable(true, "Roaming", args.Roaming)
+
+	if found_outlaw then
+		local map = _ZONE.CurrentMap;
+		local charLoc = found_outlaw.CharLoc
+		local tile = map:GetTile(charLoc)
+		local tile_effect_id = tile.Effect.ID
+		if tile and stairs_tbl[tile_effect_id] == true then
+			GAME:WaitFrames(20)
+			found_outlaw.Dead = true
+			UI:ResetSpeaker()
+			UI:WaitShowDialogue(STRINGS:Format(RogueEssence.StringKey("DLG_LEGEND_FLOOR_GONE"):ToLocal(), found_outlaw:GetDisplayName(true)))
+			SOUND:PlayBGM(_ZONE.CurrentMap.Music, true)
+			GAME:WaitFrames(20)
+		end
+	end
+end
+
 function SINGLE_CHAR_SCRIPT.DestinationFloor(owner, ownerChar, context, args)
   if context.User ~= nil then
     return
@@ -368,6 +431,7 @@ function SINGLE_CHAR_SCRIPT.DestinationFloor(owner, ownerChar, context, args)
   SOUND:PlayFanfare("Fanfare/Note")
   UI:ResetSpeaker()
   UI:WaitShowDialogue(STRINGS:Format(RogueEssence.StringKey("DLG_MISSION_DESTINATION"):ToLocal()))
+  GAME:WaitFrames(1)
 end
 
 
@@ -377,7 +441,7 @@ function SINGLE_CHAR_SCRIPT.SidequestOutlawFloor(owner, ownerChar, context, args
   end
   
   if not args.Silent then
-    SOUND:PlayBGM("C07. Outlaw.ogg", false)
+    SOUND:PlayBGM("Outlaw.ogg", false)
     UI:ResetSpeaker()
     UI:WaitShowDialogue(STRINGS:Format(RogueEssence.StringKey("DLG_MISSION_OUTLAW"):ToLocal()))
   end
@@ -441,6 +505,137 @@ function SINGLE_CHAR_SCRIPT.OutlawClearCheck(owner, ownerChar, context, args)
 end
 
 
+function SINGLE_CHAR_SCRIPT.SeaCradle(owner, ownerChar, context, args)
+  
+  if context.User ~= _DATA.Save.ActiveTeam.Leader then
+    return
+  end
+  
+  SOUND:PlayBGM("", true)
+  GAME:WaitFrames(20)
+  
+  UI:ResetSpeaker()
+  UI:WaitShowDialogue(STRINGS:Format(RogueEssence.StringKey("MSG_CURRENT"):ToLocal()))
+  
+  -- if there's an item, act on it
+  local item_slot = GAME:FindPlayerItem("egg_mystery", true, true)
+  if item_slot:IsValid() then
+    -- take the item out (dropped) with a destination of one tile up
+    local inv_item = nil
+    if item_slot.IsEquipped then
+      inv_item = GAME:GetPlayerEquippedItem(item_slot.Slot)
+      GAME:TakePlayerEquippedItem(item_slot.Slot)
+    else
+      inv_item = GAME:GetPlayerBagItem(item_slot.Slot)
+      GAME:TakePlayerBagItem(item_slot.Slot)
+    end
+    
+    -- choose a location free of characters
+    local start_loc = context.User.CharLoc
+    local end_loc = context.User.CharLoc + RogueElements.DirExt.GetLoc(context.User.CharDir)
+    
+    local mob_data = RogueEssence.Dungeon.CharData()
+    mob_data.BaseForm = RogueEssence.Dungeon.MonsterID("manaphy", 0, "normal", Gender.Genderless)
+    mob_data.Level = 1;
+    mob_data.BaseSkills[0] = RogueEssence.Dungeon.SlotSkill("tail_glow")
+    mob_data.BaseSkills[1] = RogueEssence.Dungeon.SlotSkill("bubble")
+    mob_data.BaseSkills[2] = RogueEssence.Dungeon.SlotSkill("water_sport")
+    mob_data.BaseIntrinsics[0] = "hydration"
+    local new_mob = RogueEssence.Dungeon.Character(mob_data)
+    local tactic = _DATA:GetAITactic("stick_together")
+    new_mob.Tactic = RogueEssence.Data.AITactic(tactic)
+    new_mob.CharLoc = end_loc
+    new_mob.CharDir = new_dir
+    new_mob.Discriminator = 256 * 3
+    
+    local result_locs = _ZONE.CurrentMap:FindNearLocs(new_mob, end_loc, 1)
+    end_loc = result_locs[0]
+    new_mob.CharLoc = end_loc
+    
+    SOUND:PlayBattleSE("EVT_Egg_Single")
+    GAME:WaitFrames(90)
+    SOUND:PlayBattleSE("EVT_Egg_Single")
+    GAME:WaitFrames(20)
+    SOUND:PlayBattleSE("EVT_Egg_Single")
+    GAME:WaitFrames(10)
+    UI:WaitShowDialogue(STRINGS:Format(RogueEssence.StringKey("MSG_CURRENT_OPEN"):ToLocal(), inv_item:GetDisplayName(), _DATA.Save.ActiveTeam.Name))
+    
+    SOUND:PlayBattleSE("EVT_Egg_Single")
+    
+    local item_anim = RogueEssence.Content.ItemAnim(start_loc * RogueEssence.Content.GraphicsManager.TileSize + RogueElements.Loc(RogueEssence.Content.GraphicsManager.TileSize / 2), end_loc * RogueEssence.Content.GraphicsManager.TileSize + RogueElements.Loc(RogueEssence.Content.GraphicsManager.TileSize / 2), "Egg_Sea", RogueEssence.Content.GraphicsManager.TileSize / 2, 1)
+    _DUNGEON:CreateAnim(item_anim, RogueEssence.Content.DrawLayer.Normal)
+    GAME:WaitFrames(20)
+    
+	  local arrive_anim = RogueEssence.Content.StaticAnim(RogueEssence.Content.AnimData("Egg_Sea_Hatch", 2), 1)
+	  arrive_anim:SetupEmitted(end_loc * RogueEssence.Content.GraphicsManager.TileSize + RogueElements.Loc(RogueEssence.Content.GraphicsManager.TileSize / 2), 4, RogueElements.Dir8.Down)
+	  DUNGEON:PlayVFXAnim(arrive_anim, RogueEssence.Content.DrawLayer.Front)
+    
+    SOUND:PlayBattleSE("EVT_Egg_Single")
+    GAME:WaitFrames(20)
+    
+    SOUND:PlayBattleSE("EVT_Egg_Hatch")
+    
+    GAME:WaitFrames(40)
+    -- hatching will be a fade to white, where the cradle will just be deleted, and manaphy will occupy the spot
+    
+    GAME:FadeOut(true, 24)
+    
+    for ii = 0, _DATA.Save.ActiveTeam.Players.Count - 1, 1 do
+      local member = _DATA.Save.ActiveTeam.Players[ii]
+      local new_dir = _ZONE.CurrentMap:ApproximateClosestDir8(member.CharLoc, end_loc)
+      member.CharDir = new_dir
+    end
+    
+    local new_team = RogueEssence.Dungeon.MonsterTeam()
+    new_team.Players:Add(new_mob)
+    
+    _ZONE.CurrentMap.MapTeams:Add(new_team)
+    new_mob:RefreshTraits()
+    
+    --remove the item on the ground
+    
+    GAME:WaitFrames(60)
+    SOUND:PlayBGM(_ZONE.CurrentMap.Music, true)
+    GAME:FadeIn(60)
+    
+    TASK:WaitTask(_DUNGEON:SpecialIntro(new_mob))
+    TASK:WaitTask(new_mob:OnMapStart())
+    
+    UI:SetSpeaker(new_mob)
+    
+    local dest_dir = RogueElements.DirExt.Reverse(context.User.CharDir)
+    -- turn downleft, downright
+    new_mob.CharDir = RogueElements.DirExt.AddAngles(dest_dir, RogueElements.Dir8.DownLeft)
+    UI:WaitShowDialogue(STRINGS:Format(RogueEssence.StringKey("TALK_LEGEND_SEA_001"):ToLocal()))
+    new_mob.CharDir = RogueElements.DirExt.AddAngles(dest_dir, RogueElements.Dir8.DownRight)
+    -- look straight
+    GAME:WaitFrames(30)
+    -- question
+    new_mob.CharDir = dest_dir
+    local emoteData = _DATA:GetEmote("question")
+    new_mob:StartEmote(RogueEssence.Content.Emote(emoteData.Anim, emoteData.LocHeight, 1))
+    SOUND:PlayBattleSE("EVT_Emote_Confused")
+    DUNGEON:CharTurnToChar(new_mob, context.User)
+    GAME:WaitFrames(60)
+    -- glowing
+    emoteData = _DATA:GetEmote("glowing")
+    new_mob:StartEmote(RogueEssence.Content.Emote(emoteData.Anim, emoteData.LocHeight, 4))
+    -- "mama!  mama!"
+    UI:SetSpeakerEmotion("Happy")
+    UI:WaitShowDialogue(STRINGS:Format(RogueEssence.StringKey("TALK_LEGEND_SEA_002"):ToLocal()))
+    -- it's still in the dungeon, and it's level 1.  You should probably send it back
+    
+    local actionScript = RogueEssence.Dungeon.BattleScriptEvent(args.ActionScript)
+    TASK:WaitTask(PMDC.Dungeon.BaseRecruitmentEvent.DungeonRecruit(owner, ownerChar, new_mob, actionScript))
+    
+  else
+    
+    SOUND:PlayBGM(_ZONE.CurrentMap.Music, true)
+    GAME:WaitFrames(1)
+  end
+  
+  
+end
 
 function SINGLE_CHAR_SCRIPT.ShowTileName(owner, ownerChar, context, args)
 
@@ -1083,7 +1278,7 @@ function SINGLE_CHAR_SCRIPT.TileTestChange(owner, ownerChar, context, args)
 
 	  SINGLE_CHAR_SCRIPT.SetTileData("rescue_team_maze_wall", "rescue_team_maze_floor", "rescue_team_maze_secondary")
 	elseif SV.test_grounds.Tileset == 60 then
-	  SOUND:PlayBGM("B04. Tropical Path.ogg", true)
+	  SOUND:PlayBGM("Tropical Path.ogg", true)
 
 	  SINGLE_CHAR_SCRIPT.SetTileData("beach_cave_wall", "beach_cave_floor", "beach_cave_secondary")
 	elseif SV.test_grounds.Tileset == 61 then
@@ -1123,7 +1318,7 @@ function SINGLE_CHAR_SCRIPT.TileTestChange(owner, ownerChar, context, args)
 
 	  SINGLE_CHAR_SCRIPT.SetTileData("unused_steam_cave_wall", "unused_steam_cave_floor", "unused_steam_cave_secondary")
 	elseif SV.test_grounds.Tileset == 73 then
-	  SOUND:PlayBGM("B10. Thunderstruck Pass.ogg", true)
+	  SOUND:PlayBGM("Thunderstruck Pass.ogg", true)
 
 	  SINGLE_CHAR_SCRIPT.SetTileData("amp_plains_wall", "amp_plains_floor", "amp_plains_secondary")
 	elseif SV.test_grounds.Tileset == 74 then
@@ -1154,7 +1349,7 @@ function SINGLE_CHAR_SCRIPT.TileTestChange(owner, ownerChar, context, args)
 
 	  SINGLE_CHAR_SCRIPT.SetTileData("crystal_crossing_wall", "crystal_crossing_floor", "crystal_crossing_secondary")
 	elseif SV.test_grounds.Tileset == 83 then
-	  SOUND:PlayBGM("B29. Treacherous Mountain.ogg", true)
+	  SOUND:PlayBGM("Treacherous Mountain.ogg", true)
 
 	  SINGLE_CHAR_SCRIPT.SetTileData("chasm_cave_1_wall", "chasm_cave_1_floor", "chasm_cave_1_floor")
 	elseif SV.test_grounds.Tileset == 84 then
@@ -1255,7 +1450,7 @@ function SINGLE_CHAR_SCRIPT.TileTestChange(owner, ownerChar, context, args)
 
 	  SINGLE_CHAR_SCRIPT.SetTileData("golden_chamber_wall", "golden_chamber_floor", "golden_chamber_secondary")
 	elseif SV.test_grounds.Tileset == 116 then
-	  SOUND:PlayBGM("B22. Overgrown Wilds.ogg", true)
+	  SOUND:PlayBGM("Overgrown Wilds.ogg", true)
 
 	  SINGLE_CHAR_SCRIPT.SetTileData("mystery_jungle_1_wall", "mystery_jungle_1_floor", "mystery_jungle_1_secondary")
 	elseif SV.test_grounds.Tileset == 117 then
@@ -1295,7 +1490,7 @@ function SINGLE_CHAR_SCRIPT.TileTestChange(owner, ownerChar, context, args)
 
 	  SINGLE_CHAR_SCRIPT.SetTileData("steel_aegis_cave_wall", "steel_aegis_cave_floor", "steel_aegis_cave_secondary")
 	elseif SV.test_grounds.Tileset == 129 then
-	  SOUND:PlayBGM("B03. Demonstration 3.ogg", true)
+	  SOUND:PlayBGM("Demonstration 3.ogg", true)
 
 	  SINGLE_CHAR_SCRIPT.SetTileData("murky_forest_wall", "murky_forest_floor", "murky_forest_secondary")
 	elseif SV.test_grounds.Tileset == 130 then

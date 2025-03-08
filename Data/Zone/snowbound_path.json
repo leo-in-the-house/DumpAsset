@@ -1,15 +1,10 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.ZoneData, RogueEssence",
 "Name": {
 "DefaultText": "Snowbound Path",
-"LocalTexts": {
-"de": "Eingeschneiter Pfad",
-"es": "Paso Helado Errático",
-"it": "Passo Innevato",
-"zh-hans": "雪封小径"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -42,7 +37,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B33. Snowbound Path.ogg",
+"Music": "Snowbound Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -241,6 +236,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -294,16 +290,16 @@
 "Value": {
 "$type": "RogueEssence.LevelGen.MapDictTextureStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "TextureMap": {
-"floor": "sky_peak_7th_pass_floor",
-"unbreakable": "sky_peak_7th_pass_wall",
-"wall": "sky_peak_7th_pass_wall",
-"water": "sky_peak_7th_pass_secondary",
-"lava": "sky_peak_7th_pass_secondary",
-"pit": "sky_peak_7th_pass_secondary",
-"water_poison": "sky_peak_7th_pass_secondary",
+"floor": "snow_path_floor",
+"unbreakable": "snow_path_wall",
+"wall": "snow_path_wall",
+"water": "snow_path_secondary",
+"lava": "snow_path_secondary",
+"pit": "snow_path_secondary",
+"water_poison": "snow_path_secondary",
 "grass": "tall_grass_white"
 },
-"BlankBG": "sky_peak_7th_pass_wall",
+"BlankBG": "snow_path_wall",
 "LayeredGround": true,
 "IndependentGround": false,
 "GroundElement": "ice"
@@ -369,6 +365,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -1142,7 +1139,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B33. Snowbound Path.ogg",
+"Music": "Snowbound Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -1341,6 +1338,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -1394,16 +1392,16 @@
 "Value": {
 "$type": "RogueEssence.LevelGen.MapDictTextureStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "TextureMap": {
-"floor": "sky_peak_7th_pass_floor",
-"unbreakable": "sky_peak_7th_pass_wall",
-"wall": "sky_peak_7th_pass_wall",
-"water": "sky_peak_7th_pass_secondary",
-"lava": "sky_peak_7th_pass_secondary",
-"pit": "sky_peak_7th_pass_secondary",
-"water_poison": "sky_peak_7th_pass_secondary",
+"floor": "snow_path_floor",
+"unbreakable": "snow_path_wall",
+"wall": "snow_path_wall",
+"water": "snow_path_secondary",
+"lava": "snow_path_secondary",
+"pit": "snow_path_secondary",
+"water_poison": "snow_path_secondary",
 "grass": "tall_grass_white"
 },
-"BlankBG": "sky_peak_7th_pass_wall",
+"BlankBG": "snow_path_wall",
 "LayeredGround": true,
 "IndependentGround": false,
 "GroundElement": "ice"
@@ -1469,6 +1467,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -2242,7 +2241,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B33. Snowbound Path.ogg",
+"Music": "Snowbound Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -2441,6 +2440,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -2494,16 +2494,16 @@
 "Value": {
 "$type": "RogueEssence.LevelGen.MapDictTextureStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "TextureMap": {
-"floor": "sky_peak_7th_pass_floor",
-"unbreakable": "sky_peak_7th_pass_wall",
-"wall": "sky_peak_7th_pass_wall",
-"water": "sky_peak_7th_pass_secondary",
-"lava": "sky_peak_7th_pass_secondary",
-"pit": "sky_peak_7th_pass_secondary",
-"water_poison": "sky_peak_7th_pass_secondary",
+"floor": "snow_path_floor",
+"unbreakable": "snow_path_wall",
+"wall": "snow_path_wall",
+"water": "snow_path_secondary",
+"lava": "snow_path_secondary",
+"pit": "snow_path_secondary",
+"water_poison": "snow_path_secondary",
 "grass": "tall_grass_white"
 },
-"BlankBG": "sky_peak_7th_pass_wall",
+"BlankBG": "snow_path_wall",
 "LayeredGround": true,
 "IndependentGround": false,
 "GroundElement": "ice"
@@ -2569,6 +2569,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -3342,7 +3343,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B33. Snowbound Path.ogg",
+"Music": "Snowbound Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -3541,6 +3542,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -3594,16 +3596,16 @@
 "Value": {
 "$type": "RogueEssence.LevelGen.MapDictTextureStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "TextureMap": {
-"floor": "sky_peak_7th_pass_floor",
-"unbreakable": "sky_peak_7th_pass_wall",
-"wall": "sky_peak_7th_pass_wall",
-"water": "sky_peak_7th_pass_secondary",
-"lava": "sky_peak_7th_pass_secondary",
-"pit": "sky_peak_7th_pass_secondary",
-"water_poison": "sky_peak_7th_pass_secondary",
+"floor": "snow_path_floor",
+"unbreakable": "snow_path_wall",
+"wall": "snow_path_wall",
+"water": "snow_path_secondary",
+"lava": "snow_path_secondary",
+"pit": "snow_path_secondary",
+"water_poison": "snow_path_secondary",
 "grass": "tall_grass_white"
 },
-"BlankBG": "sky_peak_7th_pass_wall",
+"BlankBG": "snow_path_wall",
 "LayeredGround": true,
 "IndependentGround": false,
 "GroundElement": "ice"
@@ -3669,6 +3671,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -4442,11 +4445,28 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B33. Snowbound Path.ogg",
+"Music": "Snowbound Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
 "ClampCamera": false
+}
+},
+{
+"Key": {
+"str": [
+-6
+]
+},
+"Value": {
+"$type": "PMDC.LevelGen.DefaultMapStatusStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
+"SetterID": "default_weather",
+"DefaultMapStatus": [
+"snow",
+"clear",
+"clear",
+"clear"
+]
 }
 },
 {
@@ -4641,6 +4661,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -4694,16 +4715,16 @@
 "Value": {
 "$type": "RogueEssence.LevelGen.MapDictTextureStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "TextureMap": {
-"floor": "sky_peak_7th_pass_floor",
-"unbreakable": "sky_peak_7th_pass_wall",
-"wall": "sky_peak_7th_pass_wall",
-"water": "sky_peak_7th_pass_secondary",
-"lava": "sky_peak_7th_pass_secondary",
-"pit": "sky_peak_7th_pass_secondary",
-"water_poison": "sky_peak_7th_pass_secondary",
+"floor": "snow_path_floor",
+"unbreakable": "snow_path_wall",
+"wall": "snow_path_wall",
+"water": "snow_path_secondary",
+"lava": "snow_path_secondary",
+"pit": "snow_path_secondary",
+"water_poison": "snow_path_secondary",
 "grass": "tall_grass_white"
 },
-"BlankBG": "sky_peak_7th_pass_wall",
+"BlankBG": "snow_path_wall",
 "LayeredGround": true,
 "IndependentGround": false,
 "GroundElement": "ice"
@@ -4769,6 +4790,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -5542,11 +5564,28 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B33. Snowbound Path.ogg",
+"Music": "Snowbound Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
 "ClampCamera": false
+}
+},
+{
+"Key": {
+"str": [
+-6
+]
+},
+"Value": {
+"$type": "PMDC.LevelGen.DefaultMapStatusStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
+"SetterID": "default_weather",
+"DefaultMapStatus": [
+"snow",
+"clear",
+"clear",
+"clear"
+]
 }
 },
 {
@@ -5741,6 +5780,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -5794,16 +5834,16 @@
 "Value": {
 "$type": "RogueEssence.LevelGen.MapDictTextureStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "TextureMap": {
-"floor": "sky_peak_7th_pass_floor",
-"unbreakable": "sky_peak_7th_pass_wall",
-"wall": "sky_peak_7th_pass_wall",
-"water": "sky_peak_7th_pass_secondary",
-"lava": "sky_peak_7th_pass_secondary",
-"pit": "sky_peak_7th_pass_secondary",
-"water_poison": "sky_peak_7th_pass_secondary",
+"floor": "snow_path_floor",
+"unbreakable": "snow_path_wall",
+"wall": "snow_path_wall",
+"water": "snow_path_secondary",
+"lava": "snow_path_secondary",
+"pit": "snow_path_secondary",
+"water_poison": "snow_path_secondary",
 "grass": "tall_grass_white"
 },
-"BlankBG": "sky_peak_7th_pass_wall",
+"BlankBG": "snow_path_wall",
 "LayeredGround": true,
 "IndependentGround": false,
 "GroundElement": "ice"
@@ -5869,6 +5909,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -6642,11 +6683,28 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B33. Snowbound Path.ogg",
+"Music": "Snowbound Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
 "ClampCamera": false
+}
+},
+{
+"Key": {
+"str": [
+-6
+]
+},
+"Value": {
+"$type": "PMDC.LevelGen.DefaultMapStatusStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
+"SetterID": "default_weather",
+"DefaultMapStatus": [
+"snow",
+"clear",
+"clear",
+"clear"
+]
 }
 },
 {
@@ -6841,6 +6899,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -6894,16 +6953,16 @@
 "Value": {
 "$type": "RogueEssence.LevelGen.MapDictTextureStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "TextureMap": {
-"floor": "sky_peak_7th_pass_floor",
-"unbreakable": "sky_peak_7th_pass_wall",
-"wall": "sky_peak_7th_pass_wall",
-"water": "sky_peak_7th_pass_secondary",
-"lava": "sky_peak_7th_pass_secondary",
-"pit": "sky_peak_7th_pass_secondary",
-"water_poison": "sky_peak_7th_pass_secondary",
+"floor": "snow_path_floor",
+"unbreakable": "snow_path_wall",
+"wall": "snow_path_wall",
+"water": "snow_path_secondary",
+"lava": "snow_path_secondary",
+"pit": "snow_path_secondary",
+"water_poison": "snow_path_secondary",
 "grass": "tall_grass_white"
 },
-"BlankBG": "sky_peak_7th_pass_wall",
+"BlankBG": "snow_path_wall",
 "LayeredGround": true,
 "IndependentGround": false,
 "GroundElement": "ice"
@@ -6969,6 +7028,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -7742,11 +7802,28 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B33. Snowbound Path.ogg",
+"Music": "Snowbound Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 1,
 "CharSight": 1,
 "ClampCamera": false
+}
+},
+{
+"Key": {
+"str": [
+-6
+]
+},
+"Value": {
+"$type": "PMDC.LevelGen.DefaultMapStatusStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
+"SetterID": "default_weather",
+"DefaultMapStatus": [
+"snow",
+"clear",
+"clear",
+"clear"
+]
 }
 },
 {
@@ -7927,6 +8004,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -8037,16 +8115,16 @@
 "Value": {
 "$type": "RogueEssence.LevelGen.MapDictTextureStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "TextureMap": {
-"floor": "mt_faraway_2_floor",
-"unbreakable": "mt_faraway_2_wall",
-"wall": "mt_faraway_2_wall",
-"water": "mt_faraway_2_secondary",
-"lava": "mt_faraway_2_secondary",
-"pit": "mt_faraway_2_secondary",
-"water_poison": "mt_faraway_2_secondary",
+"floor": "sky_peak_7th_pass_floor",
+"unbreakable": "sky_peak_7th_pass_wall",
+"wall": "sky_peak_7th_pass_wall",
+"water": "sky_peak_7th_pass_secondary",
+"lava": "sky_peak_7th_pass_secondary",
+"pit": "sky_peak_7th_pass_secondary",
+"water_poison": "sky_peak_7th_pass_secondary",
 "grass": "tall_grass_white"
 },
-"BlankBG": "mt_faraway_2_wall",
+"BlankBG": "sky_peak_7th_pass_wall",
 "LayeredGround": true,
 "IndependentGround": false,
 "GroundElement": "ice"
@@ -8112,6 +8190,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -8885,11 +8964,28 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B33. Snowbound Path.ogg",
+"Music": "Snowbound Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 1,
 "CharSight": 1,
 "ClampCamera": false
+}
+},
+{
+"Key": {
+"str": [
+-6
+]
+},
+"Value": {
+"$type": "PMDC.LevelGen.DefaultMapStatusStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
+"SetterID": "default_weather",
+"DefaultMapStatus": [
+"snow",
+"clear",
+"clear",
+"clear"
+]
 }
 },
 {
@@ -9070,6 +9166,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -9180,16 +9277,16 @@
 "Value": {
 "$type": "RogueEssence.LevelGen.MapDictTextureStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "TextureMap": {
-"floor": "mt_faraway_2_floor",
-"unbreakable": "mt_faraway_2_wall",
-"wall": "mt_faraway_2_wall",
-"water": "mt_faraway_2_secondary",
-"lava": "mt_faraway_2_secondary",
-"pit": "mt_faraway_2_secondary",
-"water_poison": "mt_faraway_2_secondary",
+"floor": "sky_peak_7th_pass_floor",
+"unbreakable": "sky_peak_7th_pass_wall",
+"wall": "sky_peak_7th_pass_wall",
+"water": "sky_peak_7th_pass_secondary",
+"lava": "sky_peak_7th_pass_secondary",
+"pit": "sky_peak_7th_pass_secondary",
+"water_poison": "sky_peak_7th_pass_secondary",
 "grass": "tall_grass_white"
 },
-"BlankBG": "mt_faraway_2_wall",
+"BlankBG": "sky_peak_7th_pass_wall",
 "LayeredGround": true,
 "IndependentGround": false,
 "GroundElement": "ice"
@@ -9255,6 +9352,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -10028,11 +10126,28 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B33. Snowbound Path.ogg",
+"Music": "Snowbound Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 1,
 "CharSight": 1,
 "ClampCamera": false
+}
+},
+{
+"Key": {
+"str": [
+-6
+]
+},
+"Value": {
+"$type": "PMDC.LevelGen.DefaultMapStatusStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
+"SetterID": "default_weather",
+"DefaultMapStatus": [
+"snow",
+"clear",
+"clear",
+"clear"
+]
 }
 },
 {
@@ -10213,6 +10328,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -10323,16 +10439,16 @@
 "Value": {
 "$type": "RogueEssence.LevelGen.MapDictTextureStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "TextureMap": {
-"floor": "mt_faraway_2_floor",
-"unbreakable": "mt_faraway_2_wall",
-"wall": "mt_faraway_2_wall",
-"water": "mt_faraway_2_secondary",
-"lava": "mt_faraway_2_secondary",
-"pit": "mt_faraway_2_secondary",
-"water_poison": "mt_faraway_2_secondary",
+"floor": "sky_peak_7th_pass_floor",
+"unbreakable": "sky_peak_7th_pass_wall",
+"wall": "sky_peak_7th_pass_wall",
+"water": "sky_peak_7th_pass_secondary",
+"lava": "sky_peak_7th_pass_secondary",
+"pit": "sky_peak_7th_pass_secondary",
+"water_poison": "sky_peak_7th_pass_secondary",
 "grass": "tall_grass_white"
 },
-"BlankBG": "mt_faraway_2_wall",
+"BlankBG": "sky_peak_7th_pass_wall",
 "LayeredGround": true,
 "IndependentGround": false,
 "GroundElement": "ice"
@@ -10398,6 +10514,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -11171,11 +11288,28 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B33. Snowbound Path.ogg",
+"Music": "Snowbound Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 1,
 "CharSight": 1,
 "ClampCamera": false
+}
+},
+{
+"Key": {
+"str": [
+-6
+]
+},
+"Value": {
+"$type": "PMDC.LevelGen.DefaultMapStatusStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
+"SetterID": "default_weather",
+"DefaultMapStatus": [
+"snow",
+"clear",
+"clear",
+"clear"
+]
 }
 },
 {
@@ -11356,6 +11490,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -11466,16 +11601,16 @@
 "Value": {
 "$type": "RogueEssence.LevelGen.MapDictTextureStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "TextureMap": {
-"floor": "mt_faraway_2_floor",
-"unbreakable": "mt_faraway_2_wall",
-"wall": "mt_faraway_2_wall",
-"water": "mt_faraway_2_secondary",
-"lava": "mt_faraway_2_secondary",
-"pit": "mt_faraway_2_secondary",
-"water_poison": "mt_faraway_2_secondary",
+"floor": "sky_peak_7th_pass_floor",
+"unbreakable": "sky_peak_7th_pass_wall",
+"wall": "sky_peak_7th_pass_wall",
+"water": "sky_peak_7th_pass_secondary",
+"lava": "sky_peak_7th_pass_secondary",
+"pit": "sky_peak_7th_pass_secondary",
+"water_poison": "sky_peak_7th_pass_secondary",
 "grass": "tall_grass_white"
 },
-"BlankBG": "mt_faraway_2_wall",
+"BlankBG": "sky_peak_7th_pass_wall",
 "LayeredGround": true,
 "IndependentGround": false,
 "GroundElement": "ice"
@@ -11541,6 +11676,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -12314,11 +12450,27 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B33. Snowbound Path.ogg",
+"Music": "Snowbound Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
 "ClampCamera": false
+}
+},
+{
+"Key": {
+"str": [
+-6
+]
+},
+"Value": {
+"$type": "PMDC.LevelGen.DefaultMapStatusStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
+"SetterID": "default_weather",
+"DefaultMapStatus": [
+"snow",
+"clear",
+"clear"
+]
 }
 },
 {
@@ -12945,6 +13097,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -13176,6 +13329,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -14088,11 +14242,27 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B33. Snowbound Path.ogg",
+"Music": "Snowbound Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
 "ClampCamera": false
+}
+},
+{
+"Key": {
+"str": [
+-6
+]
+},
+"Value": {
+"$type": "PMDC.LevelGen.DefaultMapStatusStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
+"SetterID": "default_weather",
+"DefaultMapStatus": [
+"snow",
+"clear",
+"clear"
+]
 }
 },
 {
@@ -14345,6 +14515,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -14530,6 +14701,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -15303,11 +15475,27 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B33. Snowbound Path.ogg",
+"Music": "Snowbound Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
 "ClampCamera": false
+}
+},
+{
+"Key": {
+"str": [
+-6
+]
+},
+"Value": {
+"$type": "PMDC.LevelGen.DefaultMapStatusStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
+"SetterID": "default_weather",
+"DefaultMapStatus": [
+"snow",
+"clear",
+"clear"
+]
 }
 },
 {
@@ -15560,6 +15748,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -15745,6 +15934,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -16518,11 +16708,27 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B33. Snowbound Path.ogg",
+"Music": "Snowbound Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
 "ClampCamera": false
+}
+},
+{
+"Key": {
+"str": [
+-6
+]
+},
+"Value": {
+"$type": "PMDC.LevelGen.DefaultMapStatusStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
+"SetterID": "default_weather",
+"DefaultMapStatus": [
+"snow",
+"clear",
+"clear"
+]
 }
 },
 {
@@ -16775,6 +16981,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -16960,6 +17167,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -17733,11 +17941,27 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B33. Snowbound Path.ogg",
+"Music": "Snowbound Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
 "ClampCamera": false
+}
+},
+{
+"Key": {
+"str": [
+-6
+]
+},
+"Value": {
+"$type": "PMDC.LevelGen.DefaultMapStatusStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
+"SetterID": "default_weather",
+"DefaultMapStatus": [
+"snow",
+"clear",
+"clear"
+]
 }
 },
 {
@@ -17990,6 +18214,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -18175,6 +18400,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -18948,11 +19174,27 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B33. Snowbound Path.ogg",
+"Music": "Snowbound Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
 "ClampCamera": false
+}
+},
+{
+"Key": {
+"str": [
+-6
+]
+},
+"Value": {
+"$type": "PMDC.LevelGen.DefaultMapStatusStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
+"SetterID": "default_weather",
+"DefaultMapStatus": [
+"snow",
+"clear",
+"clear"
+]
 }
 },
 {
@@ -19205,6 +19447,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -19390,6 +19633,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -20163,11 +20407,27 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B33. Snowbound Path.ogg",
+"Music": "Snowbound Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
 "ClampCamera": false
+}
+},
+{
+"Key": {
+"str": [
+-6
+]
+},
+"Value": {
+"$type": "PMDC.LevelGen.DefaultMapStatusStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
+"SetterID": "default_weather",
+"DefaultMapStatus": [
+"snow",
+"clear",
+"clear"
+]
 }
 },
 {
@@ -20420,6 +20680,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -20605,6 +20866,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -21386,13 +21648,8 @@
 ]
 },
 "Name": {
-"DefaultText": "Snowbound Path\\n{0}F",
-"LocalTexts": {
-"de": "Eingeschneiter Pfad\\nE{0}",
-"es": "Paso Helado Errático\\nP{0}",
-"it": "Passo Innevato\\nP{0}",
-"zh-hans": "雪封小径\\n{0}F"
-}
+"DefaultText": "Snowbound Path\n{0}F",
+"LocalTexts": {}
 },
 "Priority": {
 "str": [
@@ -21417,7 +21674,7 @@
 },
 "ModStates": [
 {
-"assembly": "PMDC, Version=0.8.7.0, Culture=neutral, PublicKeyToken=null",
+"assembly": "PMDC, Version=0.8.8.0, Culture=neutral, PublicKeyToken=null",
 "type": "PMDC.Dungeon.CoinModGenState"
 }
 ]
@@ -23074,7 +23331,8 @@
 },
 "SpecifiedSkills": [
 "icicle_spear",
-"mist"
+"mist",
+"icy_wind"
 ],
 "Intrinsic": "snow_cloak",
 "Tactic": "wander_dumb",
@@ -23085,7 +23343,7 @@
 },
 {
 "$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 2,
+"StartAt": 3,
 "Remove": false
 }
 ]
@@ -23484,6 +23742,7 @@
 "Min": 2,
 "Max": 4
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 2,
 "Max": 18
@@ -23669,6 +23928,7 @@
 "Min": 4,
 "Max": 8
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 0,
 "Max": 18
@@ -23724,6 +23984,7 @@
 "Min": 4,
 "Max": 7
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 0,
 "Max": 18
@@ -23779,6 +24040,7 @@
 "Min": 4,
 "Max": 7
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 3,
 "Max": 18
@@ -23863,6 +24125,7 @@
 "Min": 4,
 "Max": 7
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 0,
 "Max": 18
@@ -23918,9 +24181,126 @@
 "Min": 9,
 "Max": 17
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 0,
 "Max": 18
+}
+},
+"ModStates": []
+},
+{
+"$type": "RogueEssence.LevelGen.SpreadStepRangeZoneStep, RogueEssence",
+"StepPriority": {
+"str": [
+6,
+2
+]
+},
+"Spawns": [
+{
+"Spawn": {
+"$type": "RogueEssence.LevelGen.PlaceRandomMobsStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
+"Filters": [],
+"IncludeHalls": false,
+"Spawn": {
+"$type": "RogueEssence.LevelGen.LoopedTeamSpawner`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
+"AmountSpawner": {
+"$type": "RogueElements.RandRange, RogueElements",
+"Min": 1,
+"Max": 1
+},
+"Picker": {
+"$type": "RogueEssence.LevelGen.SpecificTeamSpawner, RogueEssence",
+"Explorer": false,
+"Spawns": [
+{
+"BaseForm": {
+"Species": "glaceon",
+"Form": 0,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 60,
+"Max": 60
+},
+"SpecifiedSkills": [
+"blizzard"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+},
+{
+"$type": "RogueEssence.LevelGen.MobSpawnStatus, RogueEssence",
+"Statuses": [
+{
+"Spawn": {
+"ID": "sleep",
+"StatusStates": [
+{
+"$type": "RogueEssence.Dungeon.CountDownState, RogueEssence",
+"Counter": -1
+}
+]
+},
+"Rate": 10
+}
+]
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnItem, PMDC",
+"Items": [
+{
+"Spawn": {
+"ID": "held_choice_specs",
+"Cursed": false,
+"HiddenValue": "",
+"Amount": 0,
+"Price": 0
+},
+"Rate": 10
+}
+],
+"MapStartOnly": true,
+"Chance": {
+"Numerator": 1,
+"Denominator": 1
+}
+}
+]
+}
+]
+}
+},
+"Ally": false,
+"ClumpFactor": 0
+},
+"Rate": 10,
+"Range": {
+"Min": 0,
+"Max": 18
+}
+}
+],
+"SpreadPlan": {
+"$type": "RogueEssence.LevelGen.SpreadPlanQuota, RogueEssence",
+"Quota": {
+"$type": "RogueEssence.LevelGen.RandDecay, RogueEssence",
+"Min": 0,
+"Max": 1,
+"Rate": 50
+},
+"Replaceable": false,
+"FloorRange": {
+"Min": 0,
+"Max": 17
 }
 },
 "ModStates": []
@@ -25399,7 +25779,7 @@
 "Spawn": {
 "$type": "PMDC.LevelGen.ItemStateType, PMDC",
 "UseType": {
-"assembly": "PMDC, Version=0.8.7.0, Culture=neutral, PublicKeyToken=null",
+"assembly": "PMDC, Version=0.8.8.0, Culture=neutral, PublicKeyToken=null",
 "type": "PMDC.Dungeon.GummiState"
 },
 "UseMapItems": true,
@@ -25419,7 +25799,7 @@
 "Spawn": {
 "$type": "PMDC.LevelGen.ItemStateType, PMDC",
 "UseType": {
-"assembly": "PMDC, Version=0.8.7.0, Culture=neutral, PublicKeyToken=null",
+"assembly": "PMDC, Version=0.8.8.0, Culture=neutral, PublicKeyToken=null",
 "type": "PMDC.Dungeon.RecruitState"
 },
 "UseMapItems": true,
@@ -25805,7 +26185,7 @@
 "Spawn": {
 "$type": "PMDC.LevelGen.ItemStateType, PMDC",
 "UseType": {
-"assembly": "PMDC, Version=0.8.7.0, Culture=neutral, PublicKeyToken=null",
+"assembly": "PMDC, Version=0.8.8.0, Culture=neutral, PublicKeyToken=null",
 "type": "PMDC.Dungeon.EvoState"
 },
 "UseMapItems": false,
@@ -25842,6 +26222,15 @@
 "SpawnConditions": [],
 "SpawnFeatures": [
 {
+"$type": "PMDC.LevelGen.MobSpawnBoost, PMDC",
+"MaxHPBonus": 256,
+"AtkBonus": 256,
+"DefBonus": 256,
+"SpAtkBonus": 256,
+"SpDefBonus": 256,
+"SpeedBonus": 256
+},
+{
 "$type": "PMDC.LevelGen.MobSpawnInv, PMDC",
 "Items": [
 {
@@ -25860,15 +26249,6 @@
 }
 ],
 "MapStartOnly": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnBoost, PMDC",
-"MaxHPBonus": 256,
-"AtkBonus": 256,
-"DefBonus": 256,
-"SpAtkBonus": 256,
-"SpDefBonus": 256,
-"SpeedBonus": 256
 }
 ]
 },
@@ -25897,6 +26277,15 @@
 "SpawnConditions": [],
 "SpawnFeatures": [
 {
+"$type": "PMDC.LevelGen.MobSpawnBoost, PMDC",
+"MaxHPBonus": 256,
+"AtkBonus": 256,
+"DefBonus": 256,
+"SpAtkBonus": 256,
+"SpDefBonus": 256,
+"SpeedBonus": 256
+},
+{
 "$type": "PMDC.LevelGen.MobSpawnInv, PMDC",
 "Items": [
 {
@@ -25915,15 +26304,6 @@
 }
 ],
 "MapStartOnly": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnBoost, PMDC",
-"MaxHPBonus": 256,
-"AtkBonus": 256,
-"DefBonus": 256,
-"SpAtkBonus": 256,
-"SpDefBonus": 256,
-"SpeedBonus": 256
 }
 ]
 },
@@ -25952,6 +26332,15 @@
 "SpawnConditions": [],
 "SpawnFeatures": [
 {
+"$type": "PMDC.LevelGen.MobSpawnBoost, PMDC",
+"MaxHPBonus": 256,
+"AtkBonus": 256,
+"DefBonus": 256,
+"SpAtkBonus": 256,
+"SpDefBonus": 256,
+"SpeedBonus": 256
+},
+{
 "$type": "PMDC.LevelGen.MobSpawnInv, PMDC",
 "Items": [
 {
@@ -25970,15 +26359,6 @@
 }
 ],
 "MapStartOnly": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnBoost, PMDC",
-"MaxHPBonus": 256,
-"AtkBonus": 256,
-"DefBonus": 256,
-"SpAtkBonus": 256,
-"SpDefBonus": 256,
-"SpeedBonus": 256
 }
 ]
 },
@@ -26065,7 +26445,7 @@
 },
 "ModStates": [
 {
-"assembly": "PMDC, Version=0.8.7.0, Culture=neutral, PublicKeyToken=null",
+"assembly": "PMDC, Version=0.8.8.0, Culture=neutral, PublicKeyToken=null",
 "type": "PMDC.Dungeon.ShopModGenState"
 }
 ]
@@ -28865,6 +29245,21 @@
 }
 },
 "Rate": 10
+},
+{
+"Spawn": {
+"IsMoney": false,
+"Cursed": false,
+"Value": "loot_heart_scale",
+"HiddenValue": "",
+"Amount": 0,
+"Price": 0,
+"TileLoc": {
+"X": 0,
+"Y": 0
+}
+},
+"Rate": 10
 }
 ]
 },
@@ -28935,8 +29330,8 @@
 "Gender": -1
 },
 "Level": {
-"Min": 45,
-"Max": 45
+"Min": 1,
+"Max": 1
 },
 "SpecifiedSkills": [
 "leer",
@@ -28951,8 +29346,10 @@
 {
 "$type": "PMDC.LevelGen.MobSpawnLevelScale, PMDC",
 "StartFromID": 0,
+"MinLevel": 45,
 "AddNumerator": 1,
-"AddDenominator": 2
+"AddDenominator": 2,
+"RerollSkills": false
 },
 {
 "$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
@@ -28976,8 +29373,8 @@
 "Gender": -1
 },
 "Level": {
-"Min": 45,
-"Max": 45
+"Min": 1,
+"Max": 1
 },
 "SpecifiedSkills": [
 "dizzy_punch",
@@ -28992,8 +29389,10 @@
 {
 "$type": "PMDC.LevelGen.MobSpawnLevelScale, PMDC",
 "StartFromID": 0,
+"MinLevel": 45,
 "AddNumerator": 1,
-"AddDenominator": 2
+"AddDenominator": 2,
+"RerollSkills": false
 },
 {
 "$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
@@ -29017,8 +29416,8 @@
 "Gender": -1
 },
 "Level": {
-"Min": 45,
-"Max": 45
+"Min": 1,
+"Max": 1
 },
 "SpecifiedSkills": [
 "whirlwind",
@@ -29033,8 +29432,10 @@
 {
 "$type": "PMDC.LevelGen.MobSpawnLevelScale, PMDC",
 "StartFromID": 0,
+"MinLevel": 45,
 "AddNumerator": 1,
-"AddDenominator": 2
+"AddDenominator": 2,
+"RerollSkills": false
 },
 {
 "$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
@@ -29058,8 +29459,8 @@
 "Gender": -1
 },
 "Level": {
-"Min": 45,
-"Max": 45
+"Min": 1,
+"Max": 1
 },
 "SpecifiedSkills": [
 "ice_beam",
@@ -29073,8 +29474,10 @@
 {
 "$type": "PMDC.LevelGen.MobSpawnLevelScale, PMDC",
 "StartFromID": 0,
+"MinLevel": 45,
 "AddNumerator": 1,
-"AddDenominator": 2
+"AddDenominator": 2,
+"RerollSkills": false
 },
 {
 "$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
@@ -29148,10 +29551,16 @@
 {
 "Spawn": {
 "GridOption": {
-"$type": "PMDC.LevelGen.RoomGenEvoSmall`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC"
+"$type": "PMDC.LevelGen.RoomGenLoadEvo`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
+"PreventChanges": 3,
+"TriggerTile": "tile_evo",
+"MapID": "room_evo_altar_small"
 },
 "ListOption": {
-"$type": "PMDC.LevelGen.RoomGenEvoSmall`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC"
+"$type": "PMDC.LevelGen.RoomGenLoadEvo`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
+"PreventChanges": 3,
+"TriggerTile": "tile_evo",
+"MapID": "room_evo_altar_small"
 },
 "Filters": [
 {
@@ -29190,6 +29599,7 @@
 "Min": 3,
 "Max": 7
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 1,
 "Max": 18
@@ -29224,12 +29634,18 @@
 "Min": 2,
 "Max": 4
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 0,
 "Max": 17
 }
 },
 "ModStates": []
+},
+{
+"$type": "RogueEssence.LevelGen.ScriptZoneStep, RogueEssence",
+"Script": "RoamingLegend",
+"ArgTable": "{ FloorNum=12, SaveVar=\"Suicune\", ActionScript=\"AllyInteract\", Species=\"suicune\", Move1=\"hydro_pump\", Move2=\"tailwind\", Move3=\"ice_beam\", Move4=\"roar\", BoostItem=\"xcl_element_water_gem\" }"
 }
 ],
 "IsRelevant": true,
@@ -29249,7 +29665,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B34. Glacial Path.ogg",
+"Music": "Glacial Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 1,
 "CharSight": 1,
@@ -29420,6 +29836,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -29762,7 +30179,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B34. Glacial Path.ogg",
+"Music": "Glacial Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 1,
 "CharSight": 1,
@@ -29933,6 +30350,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -30275,7 +30693,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B34. Glacial Path.ogg",
+"Music": "Glacial Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 1,
 "CharSight": 1,
@@ -30446,6 +30864,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -30788,7 +31207,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B34. Glacial Path.ogg",
+"Music": "Glacial Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 1,
 "CharSight": 1,
@@ -30941,6 +31360,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -31283,7 +31703,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B34. Glacial Path.ogg",
+"Music": "Glacial Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 1,
 "CharSight": 1,
@@ -31436,6 +31856,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -31778,7 +32199,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B34. Glacial Path.ogg",
+"Music": "Glacial Path.ogg",
 "TimeLimit": 1500,
 "TileSight": 1,
 "CharSight": 1,
@@ -31931,6 +32352,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -32281,12 +32703,8 @@
 ]
 },
 "Name": {
-"DefaultText": "Glacial Path\\nB{0}F",
-"LocalTexts": {
-"de": "Gletscherpfad\\nU{0}",
-"it": "Sentiero Glaciale\\nP-{0}",
-"zh-hans": "冰河小径\\nB{0}F"
-}
+"DefaultText": "Glacial Path\nB{0}F",
+"LocalTexts": {}
 },
 "Priority": {
 "str": [
@@ -32311,7 +32729,7 @@
 },
 "ModStates": [
 {
-"assembly": "PMDC, Version=0.8.7.0, Culture=neutral, PublicKeyToken=null",
+"assembly": "PMDC, Version=0.8.8.0, Culture=neutral, PublicKeyToken=null",
 "type": "PMDC.Dungeon.CoinModGenState"
 }
 ]
@@ -34009,6 +34427,7 @@
 "Min": 2,
 "Max": 5
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 2,
 "Max": 6
@@ -34194,6 +34613,7 @@
 "Min": 2,
 "Max": 5
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 0,
 "Max": 6
@@ -34249,6 +34669,7 @@
 "Min": 4,
 "Max": 7
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 0,
 "Max": 6
@@ -34283,17 +34704,20 @@
 "Spawns": [
 {
 "BaseForm": {
-"Species": "glaceon",
+"Species": "luxray",
 "Form": 0,
 "Skin": "",
 "Gender": -1
 },
 "Level": {
-"Min": 60,
-"Max": 60
+"Min": 45,
+"Max": 45
 },
 "SpecifiedSkills": [
-"blizzard"
+"crunch",
+"thunder_fang",
+"leer",
+"roar"
 ],
 "Intrinsic": "",
 "Tactic": "wander_normal",
@@ -34301,7 +34725,7 @@
 "SpawnFeatures": [
 {
 "$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
+"StartAt": 4,
 "Remove": false
 },
 {
@@ -34309,7 +34733,7 @@
 "Statuses": [
 {
 "Spawn": {
-"ID": "sleep",
+"ID": "freeze",
 "StatusStates": [
 {
 "$type": "RogueEssence.Dungeon.CountDownState, RogueEssence",
@@ -34320,26 +34744,428 @@
 "Rate": 10
 }
 ]
+}
+]
 },
 {
-"$type": "PMDC.LevelGen.MobSpawnItem, PMDC",
-"Items": [
+"BaseForm": {
+"Species": "froslass",
+"Form": 0,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 38,
+"Max": 38
+},
+"SpecifiedSkills": [
+"destiny_bond",
+"ice_beam"
+],
+"Intrinsic": "cursed_body",
+"Tactic": "patrol",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 2,
+"Remove": false
+}
+]
+}
+]
+}
+},
+"Ally": false,
+"ClumpFactor": 0
+},
+"Rate": 10,
+"Range": {
+"Min": 0,
+"Max": 6
+}
+},
 {
 "Spawn": {
-"ID": "held_choice_specs",
-"Cursed": false,
-"HiddenValue": "",
-"Amount": 0,
-"Price": 0
+"$type": "RogueEssence.LevelGen.PlaceRandomMobsStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
+"Filters": [],
+"IncludeHalls": false,
+"Spawn": {
+"$type": "RogueEssence.LevelGen.LoopedTeamSpawner`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
+"AmountSpawner": {
+"$type": "RogueElements.RandRange, RogueElements",
+"Min": 1,
+"Max": 1
+},
+"Picker": {
+"$type": "RogueEssence.LevelGen.SpecificTeamSpawner, RogueEssence",
+"Explorer": false,
+"Spawns": [
+{
+"BaseForm": {
+"Species": "slaking",
+"Form": 0,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 45,
+"Max": 45
+},
+"SpecifiedSkills": [
+"hammer_arm",
+"punishment",
+"slack_off",
+"chip_away"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 4,
+"Remove": false
+},
+{
+"$type": "RogueEssence.LevelGen.MobSpawnStatus, RogueEssence",
+"Statuses": [
+{
+"Spawn": {
+"ID": "freeze",
+"StatusStates": [
+{
+"$type": "RogueEssence.Dungeon.CountDownState, RogueEssence",
+"Counter": -1
+}
+]
 },
 "Rate": 10
 }
-],
-"MapStartOnly": true,
-"Chance": {
-"Numerator": 1,
-"Denominator": 1
+]
 }
+]
+},
+{
+"BaseForm": {
+"Species": "froslass",
+"Form": 0,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 38,
+"Max": 38
+},
+"SpecifiedSkills": [
+"destiny_bond",
+"ice_beam"
+],
+"Intrinsic": "cursed_body",
+"Tactic": "patrol",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 2,
+"Remove": false
+}
+]
+}
+]
+}
+},
+"Ally": false,
+"ClumpFactor": 0
+},
+"Rate": 10,
+"Range": {
+"Min": 0,
+"Max": 6
+}
+},
+{
+"Spawn": {
+"$type": "RogueEssence.LevelGen.PlaceRandomMobsStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
+"Filters": [],
+"IncludeHalls": false,
+"Spawn": {
+"$type": "RogueEssence.LevelGen.LoopedTeamSpawner`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
+"AmountSpawner": {
+"$type": "RogueElements.RandRange, RogueElements",
+"Min": 1,
+"Max": 1
+},
+"Picker": {
+"$type": "RogueEssence.LevelGen.SpecificTeamSpawner, RogueEssence",
+"Explorer": false,
+"Spawns": [
+{
+"BaseForm": {
+"Species": "slowbro",
+"Form": 0,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 45,
+"Max": 45
+},
+"SpecifiedSkills": [
+"psychic",
+"water_pulse",
+"disable",
+"amnesia"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 4,
+"Remove": false
+},
+{
+"$type": "RogueEssence.LevelGen.MobSpawnStatus, RogueEssence",
+"Statuses": [
+{
+"Spawn": {
+"ID": "freeze",
+"StatusStates": [
+{
+"$type": "RogueEssence.Dungeon.CountDownState, RogueEssence",
+"Counter": -1
+}
+]
+},
+"Rate": 10
+}
+]
+}
+]
+},
+{
+"BaseForm": {
+"Species": "froslass",
+"Form": 0,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 38,
+"Max": 38
+},
+"SpecifiedSkills": [
+"destiny_bond",
+"ice_beam"
+],
+"Intrinsic": "cursed_body",
+"Tactic": "patrol",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 2,
+"Remove": false
+}
+]
+}
+]
+}
+},
+"Ally": false,
+"ClumpFactor": 0
+},
+"Rate": 10,
+"Range": {
+"Min": 0,
+"Max": 6
+}
+},
+{
+"Spawn": {
+"$type": "RogueEssence.LevelGen.PlaceRandomMobsStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
+"Filters": [],
+"IncludeHalls": false,
+"Spawn": {
+"$type": "RogueEssence.LevelGen.LoopedTeamSpawner`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
+"AmountSpawner": {
+"$type": "RogueElements.RandRange, RogueElements",
+"Min": 1,
+"Max": 1
+},
+"Picker": {
+"$type": "RogueEssence.LevelGen.SpecificTeamSpawner, RogueEssence",
+"Explorer": false,
+"Spawns": [
+{
+"BaseForm": {
+"Species": "hitmontop",
+"Form": 0,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 45,
+"Max": 45
+},
+"SpecifiedSkills": [
+"triple_kick",
+"gyro_ball",
+"wide_guard",
+"endeavor"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 4,
+"Remove": false
+},
+{
+"$type": "RogueEssence.LevelGen.MobSpawnStatus, RogueEssence",
+"Statuses": [
+{
+"Spawn": {
+"ID": "freeze",
+"StatusStates": [
+{
+"$type": "RogueEssence.Dungeon.CountDownState, RogueEssence",
+"Counter": -1
+}
+]
+},
+"Rate": 10
+}
+]
+}
+]
+},
+{
+"BaseForm": {
+"Species": "froslass",
+"Form": 0,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 38,
+"Max": 38
+},
+"SpecifiedSkills": [
+"destiny_bond",
+"ice_beam"
+],
+"Intrinsic": "cursed_body",
+"Tactic": "patrol",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 2,
+"Remove": false
+}
+]
+}
+]
+}
+},
+"Ally": false,
+"ClumpFactor": 0
+},
+"Rate": 10,
+"Range": {
+"Min": 0,
+"Max": 6
+}
+},
+{
+"Spawn": {
+"$type": "RogueEssence.LevelGen.PlaceRandomMobsStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
+"Filters": [],
+"IncludeHalls": false,
+"Spawn": {
+"$type": "RogueEssence.LevelGen.LoopedTeamSpawner`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
+"AmountSpawner": {
+"$type": "RogueElements.RandRange, RogueElements",
+"Min": 1,
+"Max": 1
+},
+"Picker": {
+"$type": "RogueEssence.LevelGen.SpecificTeamSpawner, RogueEssence",
+"Explorer": false,
+"Spawns": [
+{
+"BaseForm": {
+"Species": "forretress",
+"Form": 0,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 45,
+"Max": 45
+},
+"SpecifiedSkills": [
+"heavy_slam",
+"bug_bite",
+"take_down",
+"self_destruct"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 4,
+"Remove": false
+},
+{
+"$type": "RogueEssence.LevelGen.MobSpawnStatus, RogueEssence",
+"Statuses": [
+{
+"Spawn": {
+"ID": "freeze",
+"StatusStates": [
+{
+"$type": "RogueEssence.Dungeon.CountDownState, RogueEssence",
+"Counter": -1
+}
+]
+},
+"Rate": 10
+}
+]
+}
+]
+},
+{
+"BaseForm": {
+"Species": "froslass",
+"Form": 0,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 38,
+"Max": 38
+},
+"SpecifiedSkills": [
+"destiny_bond",
+"ice_beam"
+],
+"Intrinsic": "cursed_body",
+"Tactic": "patrol",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 2,
+"Remove": false
 }
 ]
 }
@@ -34357,17 +35183,15 @@
 }
 ],
 "SpreadPlan": {
-"$type": "RogueEssence.LevelGen.SpreadPlanQuota, RogueEssence",
-"Quota": {
-"$type": "RogueEssence.LevelGen.RandDecay, RogueEssence",
-"Min": 0,
-"Max": 1,
-"Rate": 50
+"$type": "RogueEssence.LevelGen.SpreadPlanSpaced, RogueEssence",
+"FloorSpacing": {
+"Min": 2,
+"Max": 6
 },
-"Replaceable": false,
+"BeginStart": true,
 "FloorRange": {
 "Min": 0,
-"Max": 5
+"Max": 6
 }
 },
 "ModStates": []
@@ -37484,6 +38308,7 @@
 "Min": 2,
 "Max": 4
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 0,
 "Max": 5
@@ -37521,14 +38346,7 @@
 "$type": "RogueEssence.LevelGen.MapNameIDStep`1[[RogueEssence.LevelGen.MapLoadContext, RogueEssence]], RogueEssence",
 "Name": {
 "DefaultText": "Secret Room",
-"LocalTexts": {
-"fr": "Salle secrète",
-"de": "Geheimer Raum",
-"es": "Piso Secreto",
-"pt": "Sala Secreta",
-"it": "Stanza Segreta",
-"zh-hans": "秘密之间"
-}
+"LocalTexts": {}
 },
 "IDOffset": 0
 }
@@ -37835,7 +38653,8 @@
 "TileStates": []
 }
 }
-]
+],
+"Depth": 0
 }
 }
 ],
@@ -37865,14 +38684,7 @@
 "$type": "RogueEssence.LevelGen.MapNameIDStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Name": {
 "DefaultText": "Mysterious Passage",
-"LocalTexts": {
-"fr": "Passage mysterieux",
-"de": "Mysteriöse Passage",
-"es": "Pasaje Misterioso",
-"pt": "Passagem Misteriosa",
-"it": "Passaggio Misterioso",
-"zh-hans": "秘密通道"
-}
+"LocalTexts": {}
 },
 "IDOffset": 0
 }
@@ -37900,7 +38712,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B35. Mysterious Passage.ogg",
+"Music": "Mysterious Passage.ogg",
 "TimeLimit": 800,
 "TileSight": 1,
 "CharSight": 1,
@@ -38214,14 +39026,6 @@
 ]
 },
 "Value": {
-"$type": "RogueElements.RandGenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
-"Spawns": {
-"$type": "RogueElements.LoopedRand`1[[RogueElements.GenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements]], RogueElements",
-"Spawner": {
-"$type": "RogueElements.SpawnList`1[[RogueElements.GenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements]], RogueElements",
-"$values": [
-{
-"Spawn": {
 "$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Spawns": [
 {
@@ -38229,6 +39033,40 @@
 "$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
 "Explorer": false,
 "Spawns": [
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 15,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
 {
 "Spawn": {
 "Spawn": {
@@ -38268,7 +39106,109 @@
 "Spawn": {
 "BaseForm": {
 "Species": "unown",
-"Form": 1,
+"Form": 19,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 8,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 4,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 13,
 "Skin": "",
 "Gender": -1
 },
@@ -38303,40 +39243,6 @@
 "BaseForm": {
 "Species": "unown",
 "Form": 2,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 3,
 "Skin": "",
 "Gender": -1
 },
@@ -38414,839 +39320,6 @@
 "Rate": 100
 }
 ]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 5,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 6,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 7,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 8,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 9,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 10,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 11,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 12,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 13,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 14,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 15,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 16,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 17,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 18,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 19,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 20,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 21,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 22,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 23,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 24,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 25,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-}
-]
-},
-"AmountSpawner": {
-"$type": "RogueElements.RandRange, RogueElements",
-"Min": 1,
-"Max": 1
-}
-}
 }
 },
 {
@@ -39741,6 +39814,71 @@
 "ClumpFactor": 25
 },
 "Rate": 10
+},
+{
+"Spawn": {
+"$type": "RogueEssence.LevelGen.PlaceRandomMobsStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
+"Filters": [],
+"IncludeHalls": false,
+"Spawn": {
+"$type": "RogueEssence.LevelGen.LoopedTeamSpawner`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
+"AmountSpawner": {
+"$type": "RogueElements.RandRange, RogueElements",
+"Min": 2,
+"Max": 2
+},
+"Picker": {
+"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
+"Explorer": false,
+"Spawns": [
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "tyrunt",
+"Form": 0,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 40,
+"Max": 40
+},
+"SpecifiedSkills": [
+"ancient_power",
+"dragon_tail"
+],
+"Intrinsic": "",
+"Tactic": "wander_smart",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 2,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+}
+],
+"TeamSizes": [
+{
+"Spawn": 1,
+"Rate": 12
+}
+]
+}
+},
+"Ally": false,
+"ClumpFactor": 25
+},
+"Rate": 10
 }
 ]
 },
@@ -39760,6 +39898,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 2,
 "Entrances": [
 {
 "Loc": {
@@ -40315,14 +40454,7 @@
 "$type": "RogueEssence.LevelGen.MapNameIDStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Name": {
 "DefaultText": "Mysterious Passage",
-"LocalTexts": {
-"fr": "Passage mysterieux",
-"de": "Mysteriöse Passage",
-"es": "Pasaje Misterioso",
-"pt": "Passagem Misteriosa",
-"it": "Passaggio Misterioso",
-"zh-hans": "秘密通道"
-}
+"LocalTexts": {}
 },
 "IDOffset": 0
 }
@@ -40350,7 +40482,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B35. Mysterious Passage.ogg",
+"Music": "Mysterious Passage.ogg",
 "TimeLimit": 800,
 "TileSight": 1,
 "CharSight": 1,
@@ -40680,14 +40812,6 @@
 ]
 },
 "Value": {
-"$type": "RogueElements.RandGenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
-"Spawns": {
-"$type": "RogueElements.LoopedRand`1[[RogueElements.GenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements]], RogueElements",
-"Spawner": {
-"$type": "RogueElements.SpawnList`1[[RogueElements.GenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements]], RogueElements",
-"$values": [
-{
-"Spawn": {
 "$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Spawns": [
 {
@@ -40695,6 +40819,40 @@
 "$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
 "Explorer": false,
 "Spawns": [
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 15,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
 {
 "Spawn": {
 "Spawn": {
@@ -40734,7 +40892,109 @@
 "Spawn": {
 "BaseForm": {
 "Species": "unown",
-"Form": 1,
+"Form": 19,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 8,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 4,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 13,
 "Skin": "",
 "Gender": -1
 },
@@ -40769,40 +41029,6 @@
 "BaseForm": {
 "Species": "unown",
 "Form": 2,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 3,
 "Skin": "",
 "Gender": -1
 },
@@ -40880,839 +41106,6 @@
 "Rate": 100
 }
 ]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 5,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 6,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 7,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 8,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 9,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 10,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 11,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 12,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 13,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 14,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 15,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 16,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 17,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 18,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 19,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 20,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 21,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 22,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 23,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 24,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 25,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-}
-]
-},
-"AmountSpawner": {
-"$type": "RogueElements.RandRange, RogueElements",
-"Min": 1,
-"Max": 1
-}
-}
 }
 },
 {
@@ -42207,6 +41600,71 @@
 "ClumpFactor": 25
 },
 "Rate": 10
+},
+{
+"Spawn": {
+"$type": "RogueEssence.LevelGen.PlaceRandomMobsStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
+"Filters": [],
+"IncludeHalls": false,
+"Spawn": {
+"$type": "RogueEssence.LevelGen.LoopedTeamSpawner`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
+"AmountSpawner": {
+"$type": "RogueElements.RandRange, RogueElements",
+"Min": 2,
+"Max": 2
+},
+"Picker": {
+"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
+"Explorer": false,
+"Spawns": [
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "tyrunt",
+"Form": 0,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 40,
+"Max": 40
+},
+"SpecifiedSkills": [
+"ancient_power",
+"dragon_tail"
+],
+"Intrinsic": "",
+"Tactic": "wander_smart",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 2,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+}
+],
+"TeamSizes": [
+{
+"Spawn": 1,
+"Rate": 12
+}
+]
+}
+},
+"Ally": false,
+"ClumpFactor": 25
+},
+"Rate": 10
 }
 ]
 },
@@ -42226,6 +41684,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 2,
 "Entrances": [
 {
 "Loc": {
@@ -42781,14 +42240,7 @@
 "$type": "RogueEssence.LevelGen.MapNameIDStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Name": {
 "DefaultText": "Mysterious Passage",
-"LocalTexts": {
-"fr": "Passage mysterieux",
-"de": "Mysteriöse Passage",
-"es": "Pasaje Misterioso",
-"pt": "Passagem Misteriosa",
-"it": "Passaggio Misterioso",
-"zh-hans": "秘密通道"
-}
+"LocalTexts": {}
 },
 "IDOffset": 0
 }
@@ -42816,7 +42268,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B35. Mysterious Passage.ogg",
+"Music": "Mysterious Passage.ogg",
 "TimeLimit": 800,
 "TileSight": 1,
 "CharSight": 1,
@@ -43146,14 +42598,6 @@
 ]
 },
 "Value": {
-"$type": "RogueElements.RandGenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
-"Spawns": {
-"$type": "RogueElements.LoopedRand`1[[RogueElements.GenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements]], RogueElements",
-"Spawner": {
-"$type": "RogueElements.SpawnList`1[[RogueElements.GenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements]], RogueElements",
-"$values": [
-{
-"Spawn": {
 "$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Spawns": [
 {
@@ -43161,6 +42605,40 @@
 "$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
 "Explorer": false,
 "Spawns": [
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 15,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
 {
 "Spawn": {
 "Spawn": {
@@ -43200,7 +42678,109 @@
 "Spawn": {
 "BaseForm": {
 "Species": "unown",
-"Form": 1,
+"Form": 19,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 8,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 4,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 13,
 "Skin": "",
 "Gender": -1
 },
@@ -43235,40 +42815,6 @@
 "BaseForm": {
 "Species": "unown",
 "Form": 2,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 3,
 "Skin": "",
 "Gender": -1
 },
@@ -43346,839 +42892,6 @@
 "Rate": 100
 }
 ]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 5,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 6,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 7,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 8,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 9,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 10,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 11,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 12,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 13,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 14,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 15,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 16,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 17,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 18,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 19,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 20,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 21,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 22,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 23,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 24,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 25,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-}
-]
-},
-"AmountSpawner": {
-"$type": "RogueElements.RandRange, RogueElements",
-"Min": 1,
-"Max": 1
-}
-}
 }
 },
 {
@@ -44673,6 +43386,71 @@
 "ClumpFactor": 25
 },
 "Rate": 10
+},
+{
+"Spawn": {
+"$type": "RogueEssence.LevelGen.PlaceRandomMobsStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
+"Filters": [],
+"IncludeHalls": false,
+"Spawn": {
+"$type": "RogueEssence.LevelGen.LoopedTeamSpawner`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
+"AmountSpawner": {
+"$type": "RogueElements.RandRange, RogueElements",
+"Min": 2,
+"Max": 2
+},
+"Picker": {
+"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
+"Explorer": false,
+"Spawns": [
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "tyrunt",
+"Form": 0,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 40,
+"Max": 40
+},
+"SpecifiedSkills": [
+"ancient_power",
+"dragon_tail"
+],
+"Intrinsic": "",
+"Tactic": "wander_smart",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 2,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+}
+],
+"TeamSizes": [
+{
+"Spawn": 1,
+"Rate": 12
+}
+]
+}
+},
+"Ally": false,
+"ClumpFactor": 25
+},
+"Rate": 10
 }
 ]
 },
@@ -44692,6 +43470,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 2,
 "Entrances": [
 {
 "Loc": {
@@ -45259,14 +44038,7 @@
 "$type": "RogueEssence.LevelGen.MapNameIDStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Name": {
 "DefaultText": "Mysterious Passage",
-"LocalTexts": {
-"fr": "Passage mysterieux",
-"de": "Mysteriöse Passage",
-"es": "Pasaje Misterioso",
-"pt": "Passagem Misteriosa",
-"it": "Passaggio Misterioso",
-"zh-hans": "秘密通道"
-}
+"LocalTexts": {}
 },
 "IDOffset": 0
 }
@@ -45294,7 +44066,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B35. Mysterious Passage.ogg",
+"Music": "Mysterious Passage.ogg",
 "TimeLimit": 800,
 "TileSight": 1,
 "CharSight": 1,
@@ -45608,14 +44380,6 @@
 ]
 },
 "Value": {
-"$type": "RogueElements.RandGenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
-"Spawns": {
-"$type": "RogueElements.LoopedRand`1[[RogueElements.GenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements]], RogueElements",
-"Spawner": {
-"$type": "RogueElements.SpawnList`1[[RogueElements.GenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements]], RogueElements",
-"$values": [
-{
-"Spawn": {
 "$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Spawns": [
 {
@@ -45623,6 +44387,40 @@
 "$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
 "Explorer": false,
 "Spawns": [
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 15,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
 {
 "Spawn": {
 "Spawn": {
@@ -45662,7 +44460,109 @@
 "Spawn": {
 "BaseForm": {
 "Species": "unown",
-"Form": 1,
+"Form": 19,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 8,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 4,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 13,
 "Skin": "",
 "Gender": -1
 },
@@ -45697,40 +44597,6 @@
 "BaseForm": {
 "Species": "unown",
 "Form": 2,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 3,
 "Skin": "",
 "Gender": -1
 },
@@ -45808,839 +44674,6 @@
 "Rate": 100
 }
 ]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 5,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 6,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 7,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 8,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 9,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 10,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 11,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 12,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 13,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 14,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 15,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 16,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 17,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 18,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 19,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 20,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 21,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 22,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 23,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 24,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 25,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-}
-]
-},
-"AmountSpawner": {
-"$type": "RogueElements.RandRange, RogueElements",
-"Min": 1,
-"Max": 1
-}
-}
 }
 },
 {
@@ -47135,6 +45168,71 @@
 "ClumpFactor": 25
 },
 "Rate": 10
+},
+{
+"Spawn": {
+"$type": "RogueEssence.LevelGen.PlaceRandomMobsStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
+"Filters": [],
+"IncludeHalls": false,
+"Spawn": {
+"$type": "RogueEssence.LevelGen.LoopedTeamSpawner`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
+"AmountSpawner": {
+"$type": "RogueElements.RandRange, RogueElements",
+"Min": 2,
+"Max": 2
+},
+"Picker": {
+"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
+"Explorer": false,
+"Spawns": [
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "tyrunt",
+"Form": 0,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 40,
+"Max": 40
+},
+"SpecifiedSkills": [
+"ancient_power",
+"dragon_tail"
+],
+"Intrinsic": "",
+"Tactic": "wander_smart",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 2,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+}
+],
+"TeamSizes": [
+{
+"Spawn": 1,
+"Rate": 12
+}
+]
+}
+},
+"Ally": false,
+"ClumpFactor": 25
+},
+"Rate": 10
 }
 ]
 },
@@ -47154,6 +45252,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 2,
 "Entrances": [
 {
 "Loc": {
@@ -47709,14 +45808,7 @@
 "$type": "RogueEssence.LevelGen.MapNameIDStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Name": {
 "DefaultText": "Mysterious Passage",
-"LocalTexts": {
-"fr": "Passage mysterieux",
-"de": "Mysteriöse Passage",
-"es": "Pasaje Misterioso",
-"pt": "Passagem Misteriosa",
-"it": "Passaggio Misterioso",
-"zh-hans": "秘密通道"
-}
+"LocalTexts": {}
 },
 "IDOffset": 0
 }
@@ -47744,7 +45836,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B35. Mysterious Passage.ogg",
+"Music": "Mysterious Passage.ogg",
 "TimeLimit": 800,
 "TileSight": 1,
 "CharSight": 1,
@@ -48074,14 +46166,6 @@
 ]
 },
 "Value": {
-"$type": "RogueElements.RandGenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
-"Spawns": {
-"$type": "RogueElements.LoopedRand`1[[RogueElements.GenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements]], RogueElements",
-"Spawner": {
-"$type": "RogueElements.SpawnList`1[[RogueElements.GenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements]], RogueElements",
-"$values": [
-{
-"Spawn": {
 "$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Spawns": [
 {
@@ -48089,6 +46173,40 @@
 "$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
 "Explorer": false,
 "Spawns": [
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 15,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
 {
 "Spawn": {
 "Spawn": {
@@ -48128,7 +46246,109 @@
 "Spawn": {
 "BaseForm": {
 "Species": "unown",
-"Form": 1,
+"Form": 19,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 8,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 4,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 13,
 "Skin": "",
 "Gender": -1
 },
@@ -48163,40 +46383,6 @@
 "BaseForm": {
 "Species": "unown",
 "Form": 2,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 3,
 "Skin": "",
 "Gender": -1
 },
@@ -48274,839 +46460,6 @@
 "Rate": 100
 }
 ]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 5,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 6,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 7,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 8,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 9,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 10,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 11,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 12,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 13,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 14,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 15,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 16,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 17,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 18,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 19,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 20,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 21,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 22,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 23,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 24,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 25,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-}
-]
-},
-"AmountSpawner": {
-"$type": "RogueElements.RandRange, RogueElements",
-"Min": 1,
-"Max": 1
-}
-}
 }
 },
 {
@@ -49601,6 +46954,71 @@
 "ClumpFactor": 25
 },
 "Rate": 10
+},
+{
+"Spawn": {
+"$type": "RogueEssence.LevelGen.PlaceRandomMobsStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
+"Filters": [],
+"IncludeHalls": false,
+"Spawn": {
+"$type": "RogueEssence.LevelGen.LoopedTeamSpawner`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
+"AmountSpawner": {
+"$type": "RogueElements.RandRange, RogueElements",
+"Min": 2,
+"Max": 2
+},
+"Picker": {
+"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
+"Explorer": false,
+"Spawns": [
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "tyrunt",
+"Form": 0,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 40,
+"Max": 40
+},
+"SpecifiedSkills": [
+"ancient_power",
+"dragon_tail"
+],
+"Intrinsic": "",
+"Tactic": "wander_smart",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 2,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+}
+],
+"TeamSizes": [
+{
+"Spawn": 1,
+"Rate": 12
+}
+]
+}
+},
+"Ally": false,
+"ClumpFactor": 25
+},
+"Rate": 10
 }
 ]
 },
@@ -49620,6 +47038,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 2,
 "Entrances": [
 {
 "Loc": {
@@ -50175,14 +47594,7 @@
 "$type": "RogueEssence.LevelGen.MapNameIDStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Name": {
 "DefaultText": "Mysterious Passage",
-"LocalTexts": {
-"fr": "Passage mysterieux",
-"de": "Mysteriöse Passage",
-"es": "Pasaje Misterioso",
-"pt": "Passagem Misteriosa",
-"it": "Passaggio Misterioso",
-"zh-hans": "秘密通道"
-}
+"LocalTexts": {}
 },
 "IDOffset": 0
 }
@@ -50210,7 +47622,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B35. Mysterious Passage.ogg",
+"Music": "Mysterious Passage.ogg",
 "TimeLimit": 800,
 "TileSight": 1,
 "CharSight": 1,
@@ -50540,14 +47952,6 @@
 ]
 },
 "Value": {
-"$type": "RogueElements.RandGenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
-"Spawns": {
-"$type": "RogueElements.LoopedRand`1[[RogueElements.GenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements]], RogueElements",
-"Spawner": {
-"$type": "RogueElements.SpawnList`1[[RogueElements.GenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements]], RogueElements",
-"$values": [
-{
-"Spawn": {
 "$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Spawns": [
 {
@@ -50555,6 +47959,40 @@
 "$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
 "Explorer": false,
 "Spawns": [
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 15,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
 {
 "Spawn": {
 "Spawn": {
@@ -50594,7 +48032,109 @@
 "Spawn": {
 "BaseForm": {
 "Species": "unown",
-"Form": 1,
+"Form": 19,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 8,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 4,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 35,
+"Max": 35
+},
+"SpecifiedSkills": [
+"hidden_power"
+],
+"Intrinsic": "",
+"Tactic": "wander_normal",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 1,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+},
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "unown",
+"Form": 13,
 "Skin": "",
 "Gender": -1
 },
@@ -50629,40 +48169,6 @@
 "BaseForm": {
 "Species": "unown",
 "Form": 2,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 3,
 "Skin": "",
 "Gender": -1
 },
@@ -50740,839 +48246,6 @@
 "Rate": 100
 }
 ]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 5,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 6,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 7,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 8,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 9,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 10,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 11,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 12,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 13,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 14,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 15,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 16,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 17,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 18,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 19,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 20,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 21,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 22,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 23,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 24,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 25,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 35,
-"Max": 35
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-}
-]
-},
-"AmountSpawner": {
-"$type": "RogueElements.RandRange, RogueElements",
-"Min": 1,
-"Max": 1
-}
-}
 }
 },
 {
@@ -52067,6 +48740,71 @@
 "ClumpFactor": 25
 },
 "Rate": 10
+},
+{
+"Spawn": {
+"$type": "RogueEssence.LevelGen.PlaceRandomMobsStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
+"Filters": [],
+"IncludeHalls": false,
+"Spawn": {
+"$type": "RogueEssence.LevelGen.LoopedTeamSpawner`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
+"AmountSpawner": {
+"$type": "RogueElements.RandRange, RogueElements",
+"Min": 2,
+"Max": 2
+},
+"Picker": {
+"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
+"Explorer": false,
+"Spawns": [
+{
+"Spawn": {
+"Spawn": {
+"BaseForm": {
+"Species": "tyrunt",
+"Form": 0,
+"Skin": "",
+"Gender": -1
+},
+"Level": {
+"Min": 40,
+"Max": 40
+},
+"SpecifiedSkills": [
+"ancient_power",
+"dragon_tail"
+],
+"Intrinsic": "",
+"Tactic": "wander_smart",
+"SpawnConditions": [],
+"SpawnFeatures": [
+{
+"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
+},
+{
+"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
+"StartAt": 2,
+"Remove": false
+}
+]
+},
+"Role": 0
+},
+"Rate": 10
+}
+],
+"TeamSizes": [
+{
+"Spawn": 1,
+"Rate": 12
+}
+]
+}
+},
+"Ally": false,
+"ClumpFactor": 25
+},
+"Rate": 10
 }
 ]
 },
@@ -52086,6 +48824,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 2,
 "Entrances": [
 {
 "Loc": {

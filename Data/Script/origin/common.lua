@@ -438,6 +438,9 @@ end
 
 
 function COMMON.UnlockWithFanfare(dungeon_id, from_dungeon)
+  if GAME:InRogueMode() then
+    return
+  end
   if not GAME:DungeonUnlocked(dungeon_id) then
 	local orig_settings = UI:ExportSpeakerSettings()
 	
@@ -736,6 +739,41 @@ function COMMON.TriggerAdHocMonsterHouse(owner, ownerChar, target)
 	  local new_context = RogueEssence.Dungeon.SingleCharContext(target)
 	  TASK:WaitTask(monster_event:Apply(owner, ownerChar, new_context))
   
+end
+
+
+
+function COMMON.ProcessOneTimeTreasure(orig_item, result_chest_item, save_var)
+  local got_treasure = false
+  --bag items
+  local inv_count = _DATA.Save.ActiveTeam:GetInvCount() - 1
+  for i = inv_count, 0, -1 do
+  local item = _DATA.Save.ActiveTeam:GetInv(i)
+    if item.ID == "box_deluxe" and item.HiddenValue == "empty" then
+      item.HiddenValue = result_chest_item
+      got_treasure = true
+    end
+    if item.ID == orig_item and item.HiddenValue == "empty" then
+      save_var.TreasureTaken = true
+      got_treasure = true
+    end
+  end
+
+  --equips
+  local player_count = _DATA.Save.ActiveTeam.Players.Count
+  for i = 0, player_count - 1, 1 do 
+    local player = _DATA.Save.ActiveTeam.Players[i]
+    if player.EquippedItem.ID == "box_deluxe" and player.EquippedItem.HiddenValue == "empty" then 
+      player.EquippedItem.HiddenValue = result_chest_item
+      got_treasure = true
+    end
+    if player.EquippedItem.ID == orig_item and player.EquippedItem.HiddenValue == "empty" then 
+      save_var.TreasureTaken = true
+      got_treasure = true
+    end
+  end
+  
+  return got_treasure
 end
 
 function COMMON.CanTalk(chara)
@@ -1041,7 +1079,7 @@ function COMMON.Rescued(zone, name, mail)
     SOUND:PlayBattleSE("EVT_Title_Intro")
     GAME:FadeOut(true, 0)
     GAME:FadeIn(20)
-    SOUND:PlayBGM("C05. Rescue.ogg", true)
+    SOUND:PlayBGM("Rescue.ogg", true)
 	_DUNGEON:LogMsg(STRINGS:FormatKey("MSG_RESCUED_BY", name))
   else
                 --//spawn the rescuers based on mail
@@ -1082,7 +1120,7 @@ function COMMON.Rescued(zone, name, mail)
     GAME:FadeIn(20)
                 --yield return CoroutineManager.Instance.StartCoroutine(GameManager.Instance.FadeIn());
 
-    SOUND:PlayBGM("C05. Rescue.ogg", true)
+    SOUND:PlayBGM("Rescue.ogg", true)
     TASK:WaitTask(_MENU:SetDialogue(STRINGS:FormatKey("MSG_RESCUES_LEFT", _DATA.Save.RescuesLeft)))
     GAME:WaitFrames(10)
   

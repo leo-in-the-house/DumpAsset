@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Ground.GroundMap, RogueEssence",
 "TexSize": 3,
@@ -47805,7 +47805,7 @@
 }
 ],
 "AssetName": "garden_end",
-"Music": "A12. Aftermath 2.ogg",
+"Music": "Aftermath 2.ogg",
 "EdgeView": 1,
 "NoSwitching": false,
 "ViewCenter": null,

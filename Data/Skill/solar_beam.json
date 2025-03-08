@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.SkillData, RogueEssence",
 "Name": {
@@ -67,6 +67,7 @@
 "PreActions": [],
 "ActionFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "DUN_Protect",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -96,6 +97,7 @@
 "IntroFX": [],
 "ExplodeFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -162,6 +164,7 @@
 "PreActions": [],
 "ActionFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "DUN_HP_Drain_2",
 "Emitter": {
 "$type": "RogueEssence.Content.SingleEmitter, RogueEssence",
@@ -255,6 +258,25 @@
 }
 ]
 }
+},
+{
+"Key": {
+"str": [
+0
+]
+},
+"Value": {
+"$type": "PMDC.Dungeon.WeatherNeededEvent, PMDC",
+"WeatherID": "snow",
+"BaseEvents": [
+{
+"$type": "PMDC.Dungeon.MultiplyDamageEvent, PMDC",
+"Numerator": 2,
+"Denominator": 3,
+"Anims": []
+}
+]
+}
 }
 ],
 "BeforeExplosions": [],
@@ -318,6 +340,7 @@
 "IntroFX": [],
 "HitFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",

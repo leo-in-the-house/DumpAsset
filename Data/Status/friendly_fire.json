@@ -1,13 +1,10 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.StatusData, RogueEssence",
 "Name": {
 "DefaultText": "Friendly Fire",
-"LocalTexts": {
-"de": "Teambeschuss",
-"it": "Fuoco Amico"
-}
+"LocalTexts": {}
 },
 "Desc": {
 "DefaultText": "",

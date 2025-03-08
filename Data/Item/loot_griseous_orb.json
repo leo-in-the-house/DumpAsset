@@ -1,36 +1,21 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Griseous Orb",
-"LocalTexts": {
-"fr": "Orbe Platiné",
-"de": "Platinum-Orb",
-"es": "Griseosfera",
-"it": "Grigiosfera",
-"ko": "백금옥",
-"ja": "はっきんだま",
-"ja-jp": "はっきんだま",
-"zh-hans": "白金宝珠",
-"zh-hant": "白金寶珠"
-}
+"LocalTexts": {}
 },
 "Desc": {
 "DefaultText": "A glowing orb can be used on Giratina once per floor to cause a Forme change.",
-"LocalTexts": {
-"fr": "Un orbe éclatant destiné à Giratina. Il lui permet de changer de forme une fois par étage.",
-"de": "Ein glühender Orb. Kann einmal pro Ebene von Giratina verwendet werden um die Form zu wechseln.",
-"it": "Una sfera splendente che può essere usata su Giratina. Può fargli cambiare forma una volta per piano.",
-"zh-hans": "散发着光辉的宝珠。可以改变骑拉帝纳的形态，每层楼都能使用一次。"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
 "Sprite": "Orb_Tan",
 "Icon": -1,
 "SortCategory": 15,
-"Price": 800000,
+"Price": 80000,
 "Rarity": 0,
 "MaxStack": -1,
 "CannotDrop": false,
@@ -52,6 +37,7 @@
 "PreActions": [
 {
 "Delay": 20,
+"AbsoluteDelay": false,
 "Sound": "DUN_Wonder_Tile",
 "Emitter": {
 "$type": "RogueEssence.Content.SingleEmitter, RogueEssence",
@@ -85,6 +71,7 @@
 ],
 "ActionFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -114,6 +101,7 @@
 "IntroFX": [],
 "ExplodeFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -187,6 +175,7 @@
 "IntroFX": [],
 "HitFX": {
 "Delay": 20,
+"AbsoluteDelay": false,
 "Sound": "_UNK_EVT_043",
 "Emitter": {
 "$type": "RogueEssence.Content.SingleEmitter, RogueEssence",

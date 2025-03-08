@@ -1,18 +1,14 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Prison Bottle",
-"LocalTexts": {
-"zh-hans": "惩戒之壶"
-}
+"LocalTexts": {}
 },
 "Desc": {
 "DefaultText": "A bottle believed to have been used to seal away the power of a certain Pokémon long, long ago.",
-"LocalTexts": {
-"zh-hans": "据说在很久以前封印着某只宝可梦力量的壶。"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -41,6 +37,7 @@
 "PreActions": [
 {
 "Delay": 20,
+"AbsoluteDelay": false,
 "Sound": "DUN_Wonder_Tile",
 "Emitter": {
 "$type": "RogueEssence.Content.SingleEmitter, RogueEssence",
@@ -74,6 +71,7 @@
 ],
 "ActionFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -103,6 +101,7 @@
 "IntroFX": [],
 "ExplodeFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -176,6 +175,7 @@
 "IntroFX": [],
 "HitFX": {
 "Delay": 20,
+"AbsoluteDelay": false,
 "Sound": "_UNK_EVT_043",
 "Emitter": {
 "$type": "RogueEssence.Content.SingleEmitter, RogueEssence",

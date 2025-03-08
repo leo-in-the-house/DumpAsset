@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Ground.GroundMap, RogueEssence",
 "TexSize": 3,
@@ -28037,7 +28037,7 @@
 }
 ],
 "AssetName": "end_moonlit_temple",
-"Music": "A10. Luminous Spring.ogg",
+"Music": "Luminous Spring.ogg",
 "EdgeView": 1,
 "NoSwitching": false,
 "ViewCenter": null,

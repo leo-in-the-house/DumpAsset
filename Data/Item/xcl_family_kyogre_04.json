@@ -1,26 +1,14 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Seabed Crest",
-"LocalTexts": {
-"de": "Tiefseekranz",
-"zh-hans": "海底徽章"
-}
+"LocalTexts": {}
 },
 "Desc": {
-"DefaultText": "An exclusive item for Kyogre. ",
-"LocalTexts": {
-"fr": "Un object exclusif pour Kyogre. ",
-"fr-ca": "Un object exclusif pour Kyogre ",
-"de": "Ein exklusives Item für Kyogre. ",
-"es": "Un objeto exclusivo para Kyogre. ",
-"pt": "Um item exclusivo para Kyogre. ",
-"it": "Uno strumento esclusivo per Kyogre. ",
-"ko": "가이오가에게 한정된 아이템. ",
-"zh-hans": "盖欧卡的专属道具。"
-}
+"DefaultText": "A rare treasure for Kyogre. ",
+"LocalTexts": {}
 },
 "Released": false,
 "Comment": "",
@@ -70,6 +58,7 @@
 "PreActions": [],
 "ActionFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -99,6 +88,7 @@
 "IntroFX": [],
 "ExplodeFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -128,6 +118,7 @@
 "IntroFX": [],
 "HitFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",

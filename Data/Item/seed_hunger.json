@@ -1,28 +1,14 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Hunger Seed",
-"LocalTexts": {
-"fr": "Famigraine",
-"de": "Gustosamen",
-"it": "Semevorax",
-"ko": "공복의씨앗",
-"ja": "くうふくのタネ",
-"ja-jp": "くうふくのタネ",
-"zh-hans": "饥饿之种"
-}
+"LocalTexts": {}
 },
 "Desc": {
 "DefaultText": "A seed that makes the Pokémon's belly somewhat emptier.",
-"LocalTexts": {
-"fr": "Vide un peu l'Estomac du Pokémon.",
-"de": "Ein Samen, der den Magen des Pokémon ein wenig leerer macht.",
-"it": "Un seme che rende la pancia del Pokémon un po' più vuota.",
-"ko": "먹으면 약간 배고파지는 씨앗.",
-"zh-hans": "一种种子，食用后少量减少满腹度。"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -58,6 +44,7 @@
 "PreActions": [],
 "ActionFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -87,6 +74,7 @@
 "IntroFX": [],
 "ExplodeFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -132,6 +120,7 @@
 "IntroFX": [],
 "HitFX": {
 "Delay": 15,
+"AbsoluteDelay": false,
 "Sound": "DUN_Berry",
 "Emitter": {
 "$type": "RogueEssence.Content.SingleEmitter, RogueEssence",

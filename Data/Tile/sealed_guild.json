@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.TileData, RogueEssence",
 "Name": {
@@ -61,6 +61,7 @@
 "$type": "PMDC.Dungeon.OpenSelfEvent, PMDC",
 "Anim": {
 "Delay": 156,
+"AbsoluteDelay": true,
 "Sound": "EVT_Seven_Treasures",
 "Emitter": {
 "$type": "RogueEssence.Content.SingleEmitter, RogueEssence",

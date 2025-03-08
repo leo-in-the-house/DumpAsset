@@ -1,15 +1,10 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.ZoneData, RogueEssence",
 "Name": {
 "DefaultText": "Sleeping Caldera",
-"LocalTexts": {
-"de": "Schlafende Caldera",
-"es": "Caldera Durmiente",
-"it": "Caldera Dormiente",
-"zh-hans": "沉睡火山口"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -42,7 +37,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
-"Music": "B17. Muddy Valley.ogg",
+"Music": "Muddy Valley.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -370,6 +365,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 0,
 "Entrances": [
 {
 "Loc": {
@@ -752,19 +748,6 @@
 "Max": 7
 }
 }
-}
-},
-{
-"Key": {
-"str": [
-6,
-1
-]
-},
-"Value": {
-"$type": "RogueEssence.LevelGen.ScriptGenStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
-"Script": "SleepingCalderaRevisit",
-"ArgTable": "{}"
 }
 },
 {
@@ -1545,7 +1528,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
-"Music": "B17. Muddy Valley.ogg",
+"Music": "Muddy Valley.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -1889,6 +1872,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 0,
 "Entrances": [
 {
 "Loc": {
@@ -2271,19 +2255,6 @@
 "Max": 7
 }
 }
-}
-},
-{
-"Key": {
-"str": [
-6,
-1
-]
-},
-"Value": {
-"$type": "RogueEssence.LevelGen.ScriptGenStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
-"Script": "SleepingCalderaRevisit",
-"ArgTable": "{}"
 }
 },
 {
@@ -3000,7 +2971,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
-"Music": "B17. Muddy Valley.ogg",
+"Music": "Muddy Valley.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -3344,6 +3315,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 0,
 "Entrances": [
 {
 "Loc": {
@@ -3726,19 +3698,6 @@
 "Max": 7
 }
 }
-}
-},
-{
-"Key": {
-"str": [
-6,
-1
-]
-},
-"Value": {
-"$type": "RogueEssence.LevelGen.ScriptGenStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
-"Script": "SleepingCalderaRevisit",
-"ArgTable": "{}"
 }
 },
 {
@@ -4455,7 +4414,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
-"Music": "B17. Muddy Valley.ogg",
+"Music": "Muddy Valley.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -4799,6 +4758,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 0,
 "Entrances": [
 {
 "Loc": {
@@ -5181,19 +5141,6 @@
 "Max": 7
 }
 }
-}
-},
-{
-"Key": {
-"str": [
-6,
-1
-]
-},
-"Value": {
-"$type": "RogueEssence.LevelGen.ScriptGenStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
-"Script": "SleepingCalderaRevisit",
-"ArgTable": "{}"
 }
 },
 {
@@ -6001,7 +5948,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
-"Music": "B17. Muddy Valley.ogg",
+"Music": "Muddy Valley.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -6345,6 +6292,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 0,
 "Entrances": [
 {
 "Loc": {
@@ -6727,19 +6675,6 @@
 "Max": 7
 }
 }
-}
-},
-{
-"Key": {
-"str": [
-6,
-1
-]
-},
-"Value": {
-"$type": "RogueEssence.LevelGen.ScriptGenStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
-"Script": "SleepingCalderaRevisit",
-"ArgTable": "{}"
 }
 },
 {
@@ -7456,7 +7391,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
-"Music": "B17. Muddy Valley.ogg",
+"Music": "Muddy Valley.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -7800,6 +7735,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 0,
 "Entrances": [
 {
 "Loc": {
@@ -8182,19 +8118,6 @@
 "Max": 7
 }
 }
-}
-},
-{
-"Key": {
-"str": [
-6,
-1
-]
-},
-"Value": {
-"$type": "RogueEssence.LevelGen.ScriptGenStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
-"Script": "SleepingCalderaRevisit",
-"ArgTable": "{}"
 }
 },
 {
@@ -8911,7 +8834,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
-"Music": "B07. Flyaway Cliffs.ogg",
+"Music": "Flyaway Cliffs.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -9253,6 +9176,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 0,
 "Entrances": [
 {
 "Loc": {
@@ -9635,19 +9559,6 @@
 "Max": 7
 }
 }
-}
-},
-{
-"Key": {
-"str": [
-6,
-1
-]
-},
-"Value": {
-"$type": "RogueEssence.LevelGen.ScriptGenStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
-"Script": "SleepingCalderaRevisit",
-"ArgTable": "{}"
 }
 },
 {
@@ -10571,7 +10482,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
-"Music": "B07. Flyaway Cliffs.ogg",
+"Music": "Flyaway Cliffs.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -10913,6 +10824,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 0,
 "Entrances": [
 {
 "Loc": {
@@ -11295,19 +11207,6 @@
 "Max": 7
 }
 }
-}
-},
-{
-"Key": {
-"str": [
-6,
-1
-]
-},
-"Value": {
-"$type": "RogueEssence.LevelGen.ScriptGenStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
-"Script": "SleepingCalderaRevisit",
-"ArgTable": "{}"
 }
 },
 {
@@ -12322,7 +12221,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
-"Music": "B07. Flyaway Cliffs.ogg",
+"Music": "Flyaway Cliffs.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -12680,6 +12579,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 0,
 "Entrances": [
 {
 "Loc": {
@@ -13062,19 +12962,6 @@
 "Max": 7
 }
 }
-}
-},
-{
-"Key": {
-"str": [
-6,
-1
-]
-},
-"Value": {
-"$type": "RogueEssence.LevelGen.ScriptGenStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
-"Script": "SleepingCalderaRevisit",
-"ArgTable": "{}"
 }
 },
 {
@@ -13998,7 +13885,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
-"Music": "B07. Flyaway Cliffs.ogg",
+"Music": "Flyaway Cliffs.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -14356,6 +14243,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 0,
 "Entrances": [
 {
 "Loc": {
@@ -14738,19 +14626,6 @@
 "Max": 7
 }
 }
-}
-},
-{
-"Key": {
-"str": [
-6,
-1
-]
-},
-"Value": {
-"$type": "RogueEssence.LevelGen.ScriptGenStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
-"Script": "SleepingCalderaRevisit",
-"ArgTable": "{}"
 }
 },
 {
@@ -15674,7 +15549,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
-"Music": "B07. Flyaway Cliffs.ogg",
+"Music": "Flyaway Cliffs.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -16032,6 +15907,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 0,
 "Entrances": [
 {
 "Loc": {
@@ -16414,19 +16290,6 @@
 "Max": 7
 }
 }
-}
-},
-{
-"Key": {
-"str": [
-6,
-1
-]
-},
-"Value": {
-"$type": "RogueEssence.LevelGen.ScriptGenStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
-"Script": "SleepingCalderaRevisit",
-"ArgTable": "{}"
 }
 },
 {
@@ -17143,7 +17006,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
-"Music": "B07. Flyaway Cliffs.ogg",
+"Music": "Flyaway Cliffs.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -17501,6 +17364,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 0,
 "Entrances": [
 {
 "Loc": {
@@ -17883,19 +17747,6 @@
 "Max": 7
 }
 }
-}
-},
-{
-"Key": {
-"str": [
-6,
-1
-]
-},
-"Value": {
-"$type": "RogueEssence.LevelGen.ScriptGenStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
-"Script": "SleepingCalderaRevisit",
-"ArgTable": "{}"
 }
 },
 {
@@ -18703,7 +18554,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
-"Music": "B07. Flyaway Cliffs.ogg",
+"Music": "Flyaway Cliffs.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -19061,6 +18912,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 0,
 "Entrances": [
 {
 "Loc": {
@@ -19443,19 +19295,6 @@
 "Max": 7
 }
 }
-}
-},
-{
-"Key": {
-"str": [
-6,
-1
-]
-},
-"Value": {
-"$type": "RogueEssence.LevelGen.ScriptGenStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
-"Script": "SleepingCalderaRevisit",
-"ArgTable": "{}"
 }
 },
 {
@@ -20172,7 +20011,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
-"Music": "B07. Flyaway Cliffs.ogg",
+"Music": "Flyaway Cliffs.ogg",
 "TimeLimit": 1500,
 "TileSight": 1,
 "CharSight": 1,
@@ -20875,6 +20714,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 0,
 "Entrances": [
 {
 "Loc": {
@@ -22073,7 +21913,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
-"Music": "B07. Flyaway Cliffs.ogg",
+"Music": "Flyaway Cliffs.ogg",
 "TimeLimit": 1500,
 "TileSight": 1,
 "CharSight": 1,
@@ -22419,6 +22259,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 0,
 "Entrances": [
 {
 "Loc": {
@@ -22801,19 +22642,6 @@
 "Max": 7
 }
 }
-}
-},
-{
-"Key": {
-"str": [
-6,
-1
-]
-},
-"Value": {
-"$type": "RogueEssence.LevelGen.ScriptGenStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
-"Script": "SleepingCalderaRevisit",
-"ArgTable": "{}"
 }
 },
 {
@@ -24094,7 +23922,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
-"Music": "B07. Flyaway Cliffs.ogg",
+"Music": "Flyaway Cliffs.ogg",
 "TimeLimit": 1500,
 "TileSight": 1,
 "CharSight": 1,
@@ -24440,6 +24268,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 0,
 "Entrances": [
 {
 "Loc": {
@@ -24822,19 +24651,6 @@
 "Max": 7
 }
 }
-}
-},
-{
-"Key": {
-"str": [
-6,
-1
-]
-},
-"Value": {
-"$type": "RogueEssence.LevelGen.ScriptGenStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
-"Script": "SleepingCalderaRevisit",
-"ArgTable": "{}"
 }
 },
 {
@@ -26115,7 +25931,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
-"Music": "B07. Flyaway Cliffs.ogg",
+"Music": "Flyaway Cliffs.ogg",
 "TimeLimit": 1500,
 "TileSight": 1,
 "CharSight": 1,
@@ -26461,6 +26277,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 0,
 "Entrances": [
 {
 "Loc": {
@@ -26843,19 +26660,6 @@
 "Max": 7
 }
 }
-}
-},
-{
-"Key": {
-"str": [
-6,
-1
-]
-},
-"Value": {
-"$type": "RogueEssence.LevelGen.ScriptGenStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
-"Script": "SleepingCalderaRevisit",
-"ArgTable": "{}"
 }
 },
 {
@@ -28136,7 +27940,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
-"Music": "B07. Flyaway Cliffs.ogg",
+"Music": "Flyaway Cliffs.ogg",
 "TimeLimit": 1500,
 "TileSight": 1,
 "CharSight": 1,
@@ -28482,6 +28286,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 0,
 "Entrances": [
 {
 "Loc": {
@@ -28848,19 +28653,6 @@
 "Max": 7
 }
 }
-}
-},
-{
-"Key": {
-"str": [
-6,
-1
-]
-},
-"Value": {
-"$type": "RogueEssence.LevelGen.ScriptGenStep`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueEssence",
-"Script": "SleepingCalderaRevisit",
-"ArgTable": "{}"
 }
 },
 {
@@ -30120,13 +29912,8 @@
 ]
 },
 "Name": {
-"DefaultText": "Sleeping Caldera\\nB{0}F",
-"LocalTexts": {
-"de": "Schlafende Caldera\\nU{0}",
-"es": "Caldera Durmiente\\nP-{0}",
-"it": "Caldera Dormiente\\nP-{0}",
-"zh-hans": "沉睡火山口\\nB{0}F"
-}
+"DefaultText": "Sleeping Caldera\nB{0}F",
+"LocalTexts": {}
 },
 "Priority": {
 "str": [
@@ -30151,7 +29938,7 @@
 },
 "ModStates": [
 {
-"assembly": "PMDC, Version=0.8.7.0, Culture=neutral, PublicKeyToken=null",
+"assembly": "PMDC, Version=0.8.8.0, Culture=neutral, PublicKeyToken=null",
 "type": "PMDC.Dungeon.CoinModGenState"
 }
 ]
@@ -33709,6 +33496,7 @@
 "Min": 3,
 "Max": 5
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 0,
 "Max": 18
@@ -33764,6 +33552,7 @@
 "Min": 4,
 "Max": 7
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 0,
 "Max": 18
@@ -33877,6 +33666,7 @@
 "Min": 2,
 "Max": 17
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 8,
 "Max": 18
@@ -37097,6 +36887,21 @@
 }
 },
 "Rate": 10
+},
+{
+"Spawn": {
+"IsMoney": false,
+"Cursed": false,
+"Value": "loot_heart_scale",
+"HiddenValue": "",
+"Amount": 0,
+"Price": 0,
+"TileLoc": {
+"X": 0,
+"Y": 0
+}
+},
+"Rate": 10
 }
 ]
 },
@@ -37788,10 +37593,16 @@
 {
 "Spawn": {
 "GridOption": {
-"$type": "PMDC.LevelGen.RoomGenEvo`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC"
+"$type": "PMDC.LevelGen.RoomGenLoadEvo`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
+"PreventChanges": 3,
+"TriggerTile": "tile_evo",
+"MapID": "room_evo_altar_normal"
 },
 "ListOption": {
-"$type": "PMDC.LevelGen.RoomGenEvo`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC"
+"$type": "PMDC.LevelGen.RoomGenLoadEvo`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], PMDC",
+"PreventChanges": 3,
+"TriggerTile": "tile_evo",
+"MapID": "room_evo_altar_normal"
 },
 "Filters": [
 {
@@ -37830,6 +37641,7 @@
 "Min": 3,
 "Max": 6
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 1,
 "Max": 17

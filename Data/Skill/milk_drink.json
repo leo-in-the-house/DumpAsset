@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.SkillData, RogueEssence",
 "Name": {
@@ -17,7 +17,7 @@
 }
 },
 "Desc": {
-"DefaultText": "The user restores the party's HP by up to a half of its max HP",
+"DefaultText": "The user restores the party's HP by up to a half of its max HP.",
 "LocalTexts": {
 "de": "KP des Anwenders werden um bis zur Hälfte der maximalen KP aufgefüllt.",
 "it": "Il Pokémon ripristina i PS di un alleato utilizzando metà dei suoi PS massimi.",
@@ -53,6 +53,7 @@
 "PreActions": [],
 "ActionFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -82,6 +83,7 @@
 "IntroFX": [],
 "ExplodeFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -129,6 +131,7 @@
 "IntroFX": [],
 "HitFX": {
 "Delay": 20,
+"AbsoluteDelay": false,
 "Sound": "DUN_Milk_Drink",
 "Emitter": {
 "$type": "RogueEssence.Content.SingleEmitter, RogueEssence",

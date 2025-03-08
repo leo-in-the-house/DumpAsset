@@ -1,24 +1,14 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Recall Box",
-"LocalTexts": {
-"de": "Abrufbox",
-"it": "Tecaricordo",
-"zh-hans": "招式回忆箱"
-}
+"LocalTexts": {}
 },
 "Desc": {
 "DefaultText": "A marvelous box that lets the user recall any move they've learned in the past.",
-"LocalTexts": {
-"fr": "Une boîte merveilleuse qui permet à l'utilisateur de se souvenir de n'importe quelle capacité apprise auparavant.",
-"de": "Diese fabelhafte Box erlaubt dem Nutzer sich an jegliche Attacken, die er in seiner Vergangenheit erlernt hat, zu erinnern.",
-"it": "Un magnifico forziere che permette all'utilizzatore di ricordare qualsiasi mossa abbia imparato in passato.",
-"ko": "예전에 습득한 기술을 다시 배울 수 있게 하는 환상적인 상자.",
-"zh-hans": "不可思议的箱子。能够让宝可梦回忆起过去学过的任何招式。"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -58,6 +48,7 @@
 "PreActions": [
 {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "DUN_TM",
 "Emitter": {
 "$type": "RogueEssence.Content.SingleEmitter, RogueEssence",
@@ -91,6 +82,7 @@
 ],
 "ActionFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -120,6 +112,7 @@
 "IntroFX": [],
 "ExplodeFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -182,6 +175,7 @@
 "IntroFX": [],
 "HitFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",

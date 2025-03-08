@@ -1,17 +1,10 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.ZoneData, RogueEssence",
 "Name": {
 "DefaultText": "Champion's Road",
-"LocalTexts": {
-"de": "Pass des Champions",
-"es": "Ruta del Campeón",
-"it": "Percorso dei Campioni",
-"ja": "コパニンロード",
-"ja-jp": "コパニンロード",
-"zh-hans": "冠军之路"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -44,7 +37,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -357,6 +350,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -539,6 +533,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -1305,7 +1300,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -1618,6 +1613,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -1800,6 +1796,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -2566,7 +2563,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -2879,6 +2876,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -3061,6 +3059,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -3827,7 +3826,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -4140,6 +4139,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -4322,6 +4322,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -5088,7 +5089,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -5401,6 +5402,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -5644,6 +5646,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -6410,7 +6413,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -6723,6 +6726,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -6966,6 +6970,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -7732,7 +7737,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -8045,6 +8050,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -8288,6 +8294,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -9054,7 +9061,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -9367,6 +9374,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -9610,6 +9618,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -10376,7 +10385,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -10688,6 +10697,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -11073,6 +11083,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -11839,7 +11850,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -12151,6 +12162,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -12536,6 +12548,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -13302,7 +13315,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -13614,6 +13627,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -13999,6 +14013,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -14765,7 +14780,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -15077,6 +15092,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -15462,6 +15478,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -16228,7 +16245,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -16556,6 +16573,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -16941,6 +16959,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -17707,7 +17726,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -18035,6 +18054,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -18420,6 +18440,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -19186,7 +19207,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -19514,6 +19535,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -19899,6 +19921,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -20665,7 +20688,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -20993,6 +21016,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -21378,6 +21402,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -22144,7 +22169,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -22472,6 +22497,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -22857,6 +22883,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -23623,7 +23650,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -24013,6 +24040,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -24398,6 +24426,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -25175,7 +25204,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -25503,6 +25532,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -25888,6 +25918,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -26654,7 +26685,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -26982,6 +27013,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -27367,6 +27399,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -28133,7 +28166,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -28618,6 +28651,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -29003,6 +29037,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -29769,7 +29804,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -30254,6 +30289,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -30639,6 +30675,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -31405,7 +31442,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B14. Champion Road.ogg",
+"Music": "Champion Road.ogg",
 "TimeLimit": 1500,
 "TileSight": 0,
 "CharSight": 1,
@@ -31890,6 +31927,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -32275,6 +32313,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
@@ -33093,15 +33132,8 @@
 ]
 },
 "Name": {
-"DefaultText": "Champion's Road\\n{0}F",
-"LocalTexts": {
-"de": "Pass des Champions\\nE{0}",
-"es": "Ruta del Campeón\\nP{0}",
-"it": "Percorso dei Campioni\\nP{0}",
-"ja": "コパニンロード\\n{0}かい",
-"ja-jp": "コパニンロード\\n{0}階",
-"zh-hans": "冠军之路\\n{0}F"
-}
+"DefaultText": "Champion's Road\n{0}F",
+"LocalTexts": {}
 },
 "Priority": {
 "str": [
@@ -33126,7 +33158,7 @@
 },
 "ModStates": [
 {
-"assembly": "PMDC, Version=0.8.7.0, Culture=neutral, PublicKeyToken=null",
+"assembly": "PMDC, Version=0.8.8.0, Culture=neutral, PublicKeyToken=null",
 "type": "PMDC.Dungeon.CoinModGenState"
 }
 ]
@@ -37614,6 +37646,7 @@
 "Min": 1,
 "Max": 4
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 2,
 "Max": 23
@@ -37884,6 +37917,7 @@
 "Min": 6,
 "Max": 10
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 0,
 "Max": 23
@@ -37939,6 +37973,7 @@
 "Min": 4,
 "Max": 7
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 0,
 "Max": 23
@@ -37994,6 +38029,7 @@
 "Min": 3,
 "Max": 6
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 0,
 "Max": 23
@@ -38049,6 +38085,7 @@
 "Min": 2,
 "Max": 4
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 10,
 "Max": 23
@@ -38104,6 +38141,7 @@
 "Min": 5,
 "Max": 22
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 0,
 "Max": 23
@@ -40326,7 +40364,7 @@
 "Spawn": {
 "$type": "PMDC.LevelGen.ItemStateType, PMDC",
 "UseType": {
-"assembly": "PMDC, Version=0.8.7.0, Culture=neutral, PublicKeyToken=null",
+"assembly": "PMDC, Version=0.8.8.0, Culture=neutral, PublicKeyToken=null",
 "type": "PMDC.Dungeon.GummiState"
 },
 "UseMapItems": true,
@@ -41225,7 +41263,7 @@
 {
 "$type": "PMDC.LevelGen.ItemStateType, PMDC",
 "UseType": {
-"assembly": "PMDC, Version=0.8.7.0, Culture=neutral, PublicKeyToken=null",
+"assembly": "PMDC, Version=0.8.8.0, Culture=neutral, PublicKeyToken=null",
 "type": "PMDC.Dungeon.GummiState"
 },
 "UseMapItems": true,
@@ -41329,7 +41367,7 @@
 },
 "ModStates": [
 {
-"assembly": "PMDC, Version=0.8.7.0, Culture=neutral, PublicKeyToken=null",
+"assembly": "PMDC, Version=0.8.8.0, Culture=neutral, PublicKeyToken=null",
 "type": "PMDC.Dungeon.ChestModGenState"
 }
 ]
@@ -44550,7 +44588,7 @@
 {
 "$type": "PMDC.LevelGen.ItemStateType, PMDC",
 "UseType": {
-"assembly": "PMDC, Version=0.8.7.0, Culture=neutral, PublicKeyToken=null",
+"assembly": "PMDC, Version=0.8.8.0, Culture=neutral, PublicKeyToken=null",
 "type": "PMDC.Dungeon.EvoState"
 },
 "UseMapItems": true,
@@ -44600,7 +44638,7 @@
 {
 "$type": "PMDC.LevelGen.ItemStateType, PMDC",
 "UseType": {
-"assembly": "PMDC, Version=0.8.7.0, Culture=neutral, PublicKeyToken=null",
+"assembly": "PMDC, Version=0.8.8.0, Culture=neutral, PublicKeyToken=null",
 "type": "PMDC.Dungeon.EvoState"
 },
 "UseMapItems": true,
@@ -45340,6 +45378,7 @@
 "Min": 2,
 "Max": 4
 },
+"BeginStart": false,
 "FloorRange": {
 "Min": 0,
 "Max": 22
@@ -45569,6 +45608,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -45878,6 +45918,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueElements",
@@ -46279,6 +46320,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -46588,6 +46630,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueElements",
@@ -46989,6 +47032,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -47436,6 +47480,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueElements",
@@ -47837,6 +47882,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 3,
 "Entrances": [
 {
 "Loc": {
@@ -48284,6 +48330,7 @@
 "Connection": 1
 }
 ],
+"IncludeHalls": false,
 "AllowTerminal": false,
 "TerrainStencil": {
 "$type": "RogueElements.MultiTerrainStencil`1[[RogueEssence.LevelGen.ListMapGenContext, RogueEssence]], RogueElements",
@@ -48501,15 +48548,8 @@
 ]
 },
 "Name": {
-"DefaultText": "Clouded Road\\n{0}F",
-"LocalTexts": {
-"de": "Bewölkter Pass\\nE{0}",
-"es": "Camino Nublado\\nP{0}",
-"it": "Cammino Nuvoloso\\nP{0}",
-"ja": "クラウデロード\\n{0}かい",
-"ja-jp": "クラウデロード\\n{0}階",
-"zh-hans": "阴云之路\\n{0}F"
-}
+"DefaultText": "Clouded Road\n{0}F",
+"LocalTexts": {}
 },
 "Priority": {
 "str": [
@@ -48534,7 +48574,7 @@
 },
 "ModStates": [
 {
-"assembly": "PMDC, Version=0.8.7.0, Culture=neutral, PublicKeyToken=null",
+"assembly": "PMDC, Version=0.8.8.0, Culture=neutral, PublicKeyToken=null",
 "type": "PMDC.Dungeon.CoinModGenState"
 }
 ]
@@ -48808,14 +48848,7 @@
 "$type": "RogueEssence.LevelGen.MapNameIDStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Name": {
 "DefaultText": "Mysterious Passage",
-"LocalTexts": {
-"fr": "Passage mysterieux",
-"de": "Mysteriöse Passage",
-"es": "Pasaje Misterioso",
-"pt": "Passagem Misteriosa",
-"it": "Passaggio Misterioso",
-"zh-hans": "秘密通道"
-}
+"LocalTexts": {}
 },
 "IDOffset": 0
 }
@@ -48843,7 +48876,7 @@
 },
 "Value": {
 "$type": "PMDC.LevelGen.MapDataStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], PMDC",
-"Music": "B35. Mysterious Passage.ogg",
+"Music": "Mysterious Passage.ogg",
 "TimeLimit": 800,
 "TileSight": 1,
 "CharSight": 1,
@@ -49157,226 +49190,6 @@
 ]
 },
 "Value": {
-"$type": "RogueElements.RandGenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements",
-"Spawns": {
-"$type": "RogueElements.LoopedRand`1[[RogueElements.GenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements]], RogueElements",
-"Spawner": {
-"$type": "RogueElements.SpawnList`1[[RogueElements.GenStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueElements]], RogueElements",
-"$values": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 0,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 1,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 2,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 3,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 4,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
 "$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
 "Spawns": [
 {
@@ -49390,80 +49203,6 @@
 "BaseForm": {
 "Species": "unown",
 "Form": 5,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 6,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 7,
 "Skin": "",
 "Gender": -1
 },
@@ -49537,7 +49276,7 @@
 "Spawn": {
 "BaseForm": {
 "Species": "unown",
-"Form": 9,
+"Form": 13,
 "Skin": "",
 "Gender": -1
 },
@@ -49568,40 +49307,13 @@
 "Role": 0
 },
 "Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
 },
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
 {
 "Spawn": {
 "Spawn": {
 "BaseForm": {
 "Species": "unown",
-"Form": 10,
+"Form": 0,
 "Skin": "",
 "Gender": -1
 },
@@ -49669,117 +49381,6 @@
 "Role": 0
 },
 "Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 12,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 13,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 14,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
 }
 ],
 "TeamSizes": [
@@ -49796,478 +49397,6 @@
 "Rate": 100
 }
 ]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 15,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 16,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 17,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 18,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 19,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.MobSpawnStep`1[[RogueEssence.LevelGen.MapGenContext, RogueEssence]], RogueEssence",
-"Spawns": [
-{
-"Spawn": {
-"$type": "RogueEssence.LevelGen.PoolTeamSpawner, RogueEssence",
-"Explorer": false,
-"Spawns": [
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 20,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 21,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 22,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 23,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 24,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-},
-{
-"Spawn": {
-"Spawn": {
-"BaseForm": {
-"Species": "unown",
-"Form": 25,
-"Skin": "",
-"Gender": -1
-},
-"Level": {
-"Min": 45,
-"Max": 45
-},
-"SpecifiedSkills": [
-"hidden_power"
-],
-"Intrinsic": "",
-"Tactic": "wander_normal",
-"SpawnConditions": [],
-"SpawnFeatures": [
-{
-"$type": "PMDC.LevelGen.MobSpawnWeak, PMDC"
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnMovesOff, PMDC",
-"StartAt": 1,
-"Remove": false
-},
-{
-"$type": "PMDC.LevelGen.MobSpawnUnrecruitable, PMDC"
-}
-]
-},
-"Role": 0
-},
-"Rate": 10
-}
-],
-"TeamSizes": [
-{
-"Spawn": 1,
-"Rate": 12
-},
-{
-"Spawn": 2,
-"Rate": 6
-}
-]
-},
-"Rate": 100
-}
-]
-},
-"Rate": 10
-}
-]
-},
-"AmountSpawner": {
-"$type": "RogueElements.RandRange, RogueElements",
-"Min": 1,
-"Max": 1
-}
-}
 }
 },
 {
@@ -50301,6 +49430,7 @@
 },
 "Value": {
 "$type": "RogueElements.FloorStairsStep`3[[RogueEssence.LevelGen.MapGenContext, RogueEssence],[RogueEssence.LevelGen.MapGenEntrance, RogueEssence],[RogueEssence.LevelGen.MapGenExit, RogueEssence]], RogueElements",
+"MinDistance": 2,
 "Entrances": [
 {
 "Loc": {

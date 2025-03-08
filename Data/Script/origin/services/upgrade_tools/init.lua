@@ -105,17 +105,21 @@ function UpgradeTools:OnUpgrade()
   if SV.castaway_cave == nil then
     SV.castaway_cave = 
     {
-      TookTreasure  = false
+      TookTreasure  = false,
+      TreasureTaken  = false
     }
   end
   
   if SV.manaphy_egg == nil then
     SV.manaphy_egg = 
     {
-      Taken = false,
       ExpositionComplete = false,
       Hatched = false
     }
+  end
+  
+  if SV.castaway_cave.TreasureTaken == nil and SV.manaphy_egg.Taken ~= nil then
+    SV.castaway_cave.TreasureTaken = SV.manaphy_egg.Taken
   end
   
   if SV.roaming_legends == nil then
@@ -124,10 +128,26 @@ function UpgradeTools:OnUpgrade()
       Raikou = false,
       Entei = false,
       Suicune = false,
-      Celebi = false,
+      Latios = false,
+      Latias = false,
       Darkrai = false
     }
   end
+  if SV.roaming_legends.Latios == nil then
+    SV.roaming_legends.Latios = false
+    SV.roaming_legends.Latias = false
+  end
+  
+  
+  if SV.secret == nil then
+    SV.secret =
+    {
+      New = false,
+      Time = false,
+      Wish = false
+    }
+  end
+  
   
   if SV.sleeping_caldera == nil then
     SV.sleeping_caldera = 
@@ -135,6 +155,13 @@ function UpgradeTools:OnUpgrade()
       TookTreasure  = false,
       TreasureTaken  = false,
       GotHeatran = false
+    }
+  end
+  
+  if SV.geode_crevice == nil then
+    SV.geode_crevice = 
+    {
+      TreasureTaken  = false
     }
   end
   

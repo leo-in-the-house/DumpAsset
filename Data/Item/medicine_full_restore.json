@@ -1,20 +1,10 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Full Restore",
-"LocalTexts": {
-"fr": "Guérison",
-"de": "Top-Genesung",
-"es": "Restaurar Todo",
-"it": "Ricarica Totale",
-"ko": "회복약",
-"ja": "かいふくのくすり",
-"ja-jp": "かいふくのくすり",
-"zh-hans": "全复药",
-"zh-hant": "全復藥"
-}
+"LocalTexts": {}
 },
 "Desc": {
 "DefaultText": "",
@@ -54,6 +44,7 @@
 "PreActions": [
 {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "DUN_Wonder_Tile",
 "Emitter": {
 "$type": "RogueEssence.Content.SingleEmitter, RogueEssence",
@@ -87,6 +78,7 @@
 ],
 "ActionFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -116,6 +108,7 @@
 "IntroFX": [],
 "ExplodeFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -145,6 +138,7 @@
 "IntroFX": [],
 "HitFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",

@@ -1,21 +1,10 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Persim Berry",
-"LocalTexts": {
-"fr": "Baie Kika",
-"de": "Persimbeere",
-"es": "Baya Caquic",
-"pt": "Fruta Persim",
-"it": "Baccaki",
-"ko": "시몬열매",
-"ja": "キーのみ",
-"ja-jp": "キーのみ",
-"zh-hans": "柿仔果",
-"zh-hant": "柿仔果"
-}
+"LocalTexts": {}
 },
 "Desc": {
 "DefaultText": "",
@@ -55,6 +44,7 @@
 "PreActions": [],
 "ActionFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -84,6 +74,7 @@
 "IntroFX": [],
 "ExplodeFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -129,6 +120,7 @@
 "IntroFX": [],
 "HitFX": {
 "Delay": 15,
+"AbsoluteDelay": false,
 "Sound": "DUN_Berry",
 "Emitter": {
 "$type": "RogueEssence.Content.SingleEmitter, RogueEssence",

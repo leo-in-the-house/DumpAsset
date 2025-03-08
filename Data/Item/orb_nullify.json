@@ -1,23 +1,14 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Nullify Orb",
-"LocalTexts": {
-"fr": "Orbe AntiCapSpé",
-"de": "Fähigkeitensperrorb",
-"it": "Neutralisfera",
-"ko": "무효구슬",
-"zh-hans": "特性消除之玉"
-}
+"LocalTexts": {}
 },
 "Desc": {
 "DefaultText": "An orb that nullifies the Abilities of all enemies on the floor.",
-"LocalTexts": {
-"de": "Ein Orb, der die Fähigkeiten von allen Gegnern auf der Ebene deaktiviert.",
-"zh-hans": "一种不可思议之玉，使用后能够消除全层对手的特性。"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -59,6 +50,7 @@
 "PreActions": [
 {
 "Delay": 10,
+"AbsoluteDelay": false,
 "Sound": "DUN_Move_Start",
 "Emitter": {
 "$type": "RogueEssence.Content.SingleEmitter, RogueEssence",
@@ -92,6 +84,7 @@
 ],
 "ActionFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "DUN_Disable",
 "Emitter": {
 "$type": "RogueEssence.Content.SingleEmitter, RogueEssence",
@@ -140,6 +133,7 @@
 "IntroFX": [],
 "ExplodeFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -183,6 +177,7 @@
 "IntroFX": [],
 "HitFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "DUN_Switcher",
 "Emitter": {
 "$type": "RogueEssence.Content.SingleEmitter, RogueEssence",

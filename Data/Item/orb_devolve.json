@@ -1,26 +1,14 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Devolve Orb",
-"LocalTexts": {
-"fr": "Rembobinorbe",
-"de": "Rückspulorb",
-"it": "Invertisfera",
-"ko": "퇴화구슬",
-"zh-hans": "退化之玉"
-}
+"LocalTexts": {}
 },
 "Desc": {
 "DefaultText": "An orb that devolves all enemies up to 5 tiles away.",
-"LocalTexts": {
-"fr": "Dé-évolue tout les ennemis sur un rayon de 5 cases.",
-"de": "Ein Orb, welcher alle Gegner in 5 Felder Entfernung zurückentwickelt.",
-"it": "Una sfera che riporta tutti i nemici nel raggio di 5 caselle allo stato preevolutivo.  ",
-"ko": "5칸 범위 내의 적을 모두 퇴화시킨다.",
-"zh-hans": "一种不可思议之玉，使用后使周围5格范围内的对手退化至上一形态。"
-}
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -62,6 +50,7 @@
 "PreActions": [
 {
 "Delay": 10,
+"AbsoluteDelay": false,
 "Sound": "DUN_Move_Start",
 "Emitter": {
 "$type": "RogueEssence.Content.SingleEmitter, RogueEssence",
@@ -95,6 +84,7 @@
 ],
 "ActionFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "DUN_Stat_Down_2",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -124,6 +114,7 @@
 "IntroFX": [],
 "ExplodeFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -168,6 +159,7 @@
 "IntroFX": [],
 "HitFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "DUN_Transform",
 "Emitter": {
 "$type": "RogueEssence.Content.SingleEmitter, RogueEssence",

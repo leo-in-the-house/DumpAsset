@@ -1,20 +1,10 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Chestnut",
-"LocalTexts": {
-"fr": "Châtaigne",
-"de": "Kastanie",
-"es": "Castaña",
-"pt": "Castanha",
-"it": "Castagna",
-"ko": "밤송이",
-"ja": "イガぐり",
-"ja-jp": "イガぐり",
-"zh-hans": "刺栗"
-}
+"LocalTexts": {}
 },
 "Desc": {
 "DefaultText": "",
@@ -61,6 +51,7 @@
 "PreActions": [],
 "ActionFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -90,6 +81,7 @@
 "IntroFX": [],
 "ExplodeFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -119,6 +111,7 @@
 "IntroFX": [],
 "HitFX": {
 "Delay": 15,
+"AbsoluteDelay": false,
 "Sound": "DUN_Seed",
 "Emitter": {
 "$type": "RogueEssence.Content.SingleEmitter, RogueEssence",

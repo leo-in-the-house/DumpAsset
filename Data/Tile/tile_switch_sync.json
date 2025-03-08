@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.TileData, RogueEssence",
 "Name": {
@@ -121,7 +121,7 @@
 "StartDistance": 32,
 "Layer": 3
 },
-"WarningBGM": "C04. Wind.ogg",
+"WarningBGM": "Wind.ogg",
 "Warning": {
 "Key": "MSG_TIME_WARNING_1"
 },

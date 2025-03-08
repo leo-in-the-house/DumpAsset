@@ -1,29 +1,14 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Servine Brooch",
-"LocalTexts": {
-"fr": "Broche de Lianaja",
-"de": "Efoserp Brosche",
-"es": "Broche Servine",
-"it": "Spilla Servine",
-"zh-hans": "青藤蛇胸针"
-}
+"LocalTexts": {}
 },
 "Desc": {
-"DefaultText": "An exclusive item for the Servine family. When kept in the bag, the Pokémon is more likely to evade attacks from close up.",
-"LocalTexts": {
-"fr": "Un objet exclusif pour la famille de Lianaja. When kept in the bag, the Pokémon is more likely to evade attacks from close up.",
-"fr-ca": "Un objet exclusif pour la famille de Servine. When kept in the bag, the Pokémon is more likely to evade attacks from close up.",
-"de": "Ein exklusives Item für die Efoserp Familie. Wenn es innerhalb des Beutels getragen wird, wird das Pokémon Attacken aus kurzer Reichweite leichter ausweichen können.",
-"es": "Un objeto exclusivo para la familia Servine. Al llevarlo en la bolsa es más probable para el Pokémon esquivar ataques cercanos.",
-"pt": "Um item exclusivo para a familia Servine. When kept in the bag, the Pokémon is more likely to evade attacks from close up.",
-"it": "Uno strumento esclusivo per la famiglia di Servine. When kept in the bag, the Pokémon is more likely to evade attacks from close up.",
-"ko": "샤비 라인에게 한정된 아이템. When kept in the bag, the Pokémon is more likely to evade attacks from close up.",
-"zh-hans": "青藤蛇一家的专属道具。放在包里时，可以更容易躲避近距离攻击。"
-}
+"DefaultText": "A rare treasure for the Servine family. When kept in the bag, it changes the Pokémon's regular attack into a dash.",
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -75,6 +60,7 @@
 "PreActions": [],
 "ActionFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -104,6 +90,7 @@
 "IntroFX": [],
 "ExplodeFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -133,6 +120,7 @@
 "IntroFX": [],
 "HitFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -212,23 +200,102 @@
 "OnRefresh": [],
 "BeforeTryActions": [],
 "BeforeActions": [],
-"OnActions": [],
-"BeforeHittings": [],
-"BeforeBeingHits": [
+"OnActions": [
 {
 "Key": {
 "str": [
-0
+-3
 ]
 },
 "Value": {
 "$type": "PMDC.Dungeon.FamilyBattleEvent, PMDC",
 "BaseEvent": {
-"$type": "PMDC.Dungeon.EvasiveCloseUpEvent, PMDC"
+"$type": "PMDC.Dungeon.RegularAttackNeededEvent, PMDC",
+"BaseEvent": {
+"$type": "PMDC.Dungeon.ChangeActionEvent, PMDC",
+"NewAction": {
+"$type": "RogueEssence.Dungeon.DashAction, RogueEssence",
+"Anim": {
+"AnimIndex": "",
+"FrameTime": 1,
+"StartFrame": -1,
+"EndFrame": -1,
+"AnimDir": -1,
+"Alpha": 255,
+"AnimFlip": 0
+},
+"AnimOffset": 0,
+"Emitter": {
+"$type": "RogueEssence.Content.EmptyAttachEmitter, RogueEssence"
+},
+"WideAngle": 0,
+"SnapBack": false,
+"CharAnim": 5,
+"AppearanceMod": 0,
+"HitTiles": true,
+"Range": 2,
+"StopAtHit": true,
+"StopAtWall": true,
+"TargetAlignments": 4,
+"TileEmitter": {
+"$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
+"LocHeight": 0
+},
+"PreActions": [
+{
+"Delay": 0,
+"AbsoluteDelay": false,
+"Sound": "DUN_Attack",
+"Emitter": {
+"$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
+"LocHeight": 0
+},
+"ScreenMovement": {
+"MinShake": 0,
+"MaxShake": 0,
+"MaxShakeTime": 0
+}
+}
+],
+"ActionFX": {
+"Delay": 0,
+"AbsoluteDelay": false,
+"Sound": "",
+"Emitter": {
+"$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
+"LocHeight": 0
+},
+"ScreenMovement": {
+"MinShake": 0,
+"MaxShake": 0,
+"MaxShakeTime": 0
+}
+},
+"LagBehindTime": 0
+}
+}
+}
+}
+},
+{
+"Key": {
+"str": [
+-3
+]
+},
+"Value": {
+"$type": "PMDC.Dungeon.FamilyBattleEvent, PMDC",
+"BaseEvent": {
+"$type": "PMDC.Dungeon.RegularAttackNeededEvent, PMDC",
+"BaseEvent": {
+"$type": "PMDC.Dungeon.TraitorEvent, PMDC"
+}
 }
 }
 }
 ],
+"BeforeHittings": [],
+"BeforeBeingHits": [],
 "AfterHittings": [],
 "AfterBeingHits": [],
 "OnHitTiles": [],

@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Dungeon.Map, RogueEssence",
 "Name": {
@@ -24,7 +24,7 @@
 },
 "AssetName": "end_sickly_hollow",
 "ScriptEvents": {},
-"Music": "A10. Luminous Spring.ogg",
+"Music": "Luminous Spring.ogg",
 "TileSight": 1,
 "CharSight": 1,
 "Status": {},

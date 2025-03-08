@@ -1,29 +1,14 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Deoxys Jewel",
-"LocalTexts": {
-"fr": "Joyeau de Deoxys",
-"de": "Deoxys Juwel",
-"es": "Gema Deoxys",
-"it": "Gioiello Deoxys",
-"zh-hans": "代欧奇希斯宝石"
-}
+"LocalTexts": {}
 },
 "Desc": {
-"DefaultText": "An exclusive item for Deoxys. When kept in the bag, the Pokémon will raise the PP usage of opponents that attack it.",
-"LocalTexts": {
-"fr": "Un object exclusif pour Deoxys. When kept in the bag, the Pokémon will raise the PP usage of opponents that attack it.",
-"fr-ca": "Un object exclusif pour Deoxys When kept in the bag, the Pokémon will raise the PP usage of opponents that attack it.",
-"de": "Ein exklusives Item für Deoxys. Wenn es innerhalb des Beutels getragen wird, erhöht das Pokémon den AP-Verbrauch von Gegnern, die es angreifen.",
-"es": "Un objeto exclusivo para Deoxys. Al llevarlo en la bolsa, el Pokémon aumentará el uso de PP de los oponentes que ataquen.",
-"pt": "Um item exclusivo para Deoxys. When kept in the bag, the Pokémon will raise the PP usage of opponents that attack it.",
-"it": "Uno strumento esclusivo per Deoxys. When kept in the bag, the Pokémon will raise the PP usage of opponents that attack it.",
-"ko": "테오키스에게 한정된 아이템. When kept in the bag, the Pokémon will raise the PP usage of opponents that attack it.",
-"zh-hans": "代欧奇希斯的专属道具。放在包里时，攻击自己的对手会消耗更多PP。"
-}
+"DefaultText": "A rare treasure for Deoxys. When kept in the bag, it changes the Pokémon's regular attack into a dash.",
+"LocalTexts": {}
 },
 "Released": true,
 "Comment": "",
@@ -73,6 +58,7 @@
 "PreActions": [],
 "ActionFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -102,6 +88,7 @@
 "IntroFX": [],
 "ExplodeFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -131,6 +118,7 @@
 "IntroFX": [],
 "HitFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -210,44 +198,104 @@
 "OnRefresh": [],
 "BeforeTryActions": [],
 "BeforeActions": [],
-"OnActions": [],
+"OnActions": [
+{
+"Key": {
+"str": [
+-3
+]
+},
+"Value": {
+"$type": "PMDC.Dungeon.FamilyBattleEvent, PMDC",
+"BaseEvent": {
+"$type": "PMDC.Dungeon.RegularAttackNeededEvent, PMDC",
+"BaseEvent": {
+"$type": "PMDC.Dungeon.ChangeActionEvent, PMDC",
+"NewAction": {
+"$type": "RogueEssence.Dungeon.DashAction, RogueEssence",
+"Anim": {
+"AnimIndex": "",
+"FrameTime": 1,
+"StartFrame": -1,
+"EndFrame": -1,
+"AnimDir": -1,
+"Alpha": 255,
+"AnimFlip": 0
+},
+"AnimOffset": 0,
+"Emitter": {
+"$type": "RogueEssence.Content.EmptyAttachEmitter, RogueEssence"
+},
+"WideAngle": 0,
+"SnapBack": false,
+"CharAnim": 5,
+"AppearanceMod": 0,
+"HitTiles": true,
+"Range": 2,
+"StopAtHit": true,
+"StopAtWall": true,
+"TargetAlignments": 4,
+"TileEmitter": {
+"$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
+"LocHeight": 0
+},
+"PreActions": [
+{
+"Delay": 0,
+"AbsoluteDelay": false,
+"Sound": "DUN_Attack",
+"Emitter": {
+"$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
+"LocHeight": 0
+},
+"ScreenMovement": {
+"MinShake": 0,
+"MaxShake": 0,
+"MaxShakeTime": 0
+}
+}
+],
+"ActionFX": {
+"Delay": 0,
+"AbsoluteDelay": false,
+"Sound": "",
+"Emitter": {
+"$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
+"LocHeight": 0
+},
+"ScreenMovement": {
+"MinShake": 0,
+"MaxShake": 0,
+"MaxShakeTime": 0
+}
+},
+"LagBehindTime": 0
+}
+}
+}
+}
+},
+{
+"Key": {
+"str": [
+-3
+]
+},
+"Value": {
+"$type": "PMDC.Dungeon.FamilyBattleEvent, PMDC",
+"BaseEvent": {
+"$type": "PMDC.Dungeon.RegularAttackNeededEvent, PMDC",
+"BaseEvent": {
+"$type": "PMDC.Dungeon.TraitorEvent, PMDC"
+}
+}
+}
+}
+],
 "BeforeHittings": [],
-"BeforeBeingHits": [
-{
-"Key": {
-"str": [
-0
-]
-},
-"Value": {
-"$type": "PMDC.Dungeon.FamilyBattleEvent, PMDC",
-"BaseEvent": {
-"$type": "PMDC.Dungeon.AddContextStateEvent, PMDC",
-"AddedState": {
-"$type": "PMDC.Dungeon.PressurePlus, PMDC"
-},
-"Global": false
-}
-}
-}
-],
+"BeforeBeingHits": [],
 "AfterHittings": [],
-"AfterBeingHits": [
-{
-"Key": {
-"str": [
-0
-]
-},
-"Value": {
-"$type": "PMDC.Dungeon.FamilyBattleEvent, PMDC",
-"BaseEvent": {
-"$type": "PMDC.Dungeon.PressureEvent, PMDC",
-"Amount": 0
-}
-}
-}
-],
+"AfterBeingHits": [],
 "OnHitTiles": [],
 "AfterActions": [],
 "UserElementEffects": [],

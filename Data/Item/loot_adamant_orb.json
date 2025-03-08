@@ -1,20 +1,10 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.ItemData, RogueEssence",
 "Name": {
 "DefaultText": "Adamant Orb",
-"LocalTexts": {
-"fr": "Orbe Adamant",
-"de": "Adamant-Orb",
-"es": "Diamansfera",
-"it": "Adamasfera",
-"ko": "금강옥",
-"ja": "こんごうだま",
-"ja-jp": "こんごうだま",
-"zh-hans": "金刚宝珠",
-"zh-hant": "金剛寶珠"
-}
+"LocalTexts": {}
 },
 "Desc": {
 "DefaultText": "",
@@ -54,6 +44,7 @@
 "PreActions": [],
 "ActionFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -83,6 +74,7 @@
 "IntroFX": [],
 "ExplodeFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
@@ -112,6 +104,7 @@
 "IntroFX": [],
 "HitFX": {
 "Delay": 0,
+"AbsoluteDelay": false,
 "Sound": "",
 "Emitter": {
 "$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",

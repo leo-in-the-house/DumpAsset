@@ -59,7 +59,7 @@ function ITEM_SCRIPT.CastawayCaveShift(owner, ownerChar, context, args)
     if (context.Item.Value == "egg_mystery" or context.Item.Value == "box_deluxe") and context.Item.HiddenValue == "empty" then
 	  SV.castaway_cave.TookTreasure = true
 	  GAME:WaitFrames(60)
-	  _ZONE.CurrentMap.Music = "B24. Castaway Cave 2.ogg"
+	  _ZONE.CurrentMap.Music = "Castaway Cave 2.ogg"
 	  SOUND:PlayBGM(_ZONE.CurrentMap.Music, true)
 	  _ZONE.CurrentMap.MapEffect.OnMapTurnEnds:Add(RogueElements.Priority(15), PMDC.Dungeon.RespawnFromEligibleEvent(9, 50))
 	  for ii = 1, 3, 1 do
@@ -93,7 +93,7 @@ function ITEM_SCRIPT.SleepingCalderaShift(owner, ownerChar, context, args)
 	  GAME:FadeOut(true, 30)
 	  --set name to enraged caldera
 	  _ZONE.CurrentMap.Name = RogueEssence.LocalText(STRINGS:Format(RogueEssence.StringKey("TITLE_ENRAGED_CALDERA"):ToLocal(), _ZONE.CurrentMap.ID + 1))
-	  _ZONE.CurrentMap.Music = "B11. Enraged Caldera.ogg"
+	  _ZONE.CurrentMap.Music = "Enraged Caldera.ogg"
 	  
 	  --set all water tiles to lava
 	  for xx = 0, _ZONE.CurrentMap.Width - 1, 1 do
@@ -143,6 +143,35 @@ function ITEM_SCRIPT.SleepingCalderaShift(owner, ownerChar, context, args)
 	  GAME:FadeIn(60)
 	end
   end
+end
+
+function GROUND_ITEM_EVENT_SCRIPT.GroundSlabEvent(context, args)
+  
+  local chara = CH("PLAYER")
+  SOUND:PlayBattleSE("EVT_Emote_Confused")
+  GROUND:CharSetEmote(chara, "question", 1)
+  GAME:WaitFrames(60)
+  
+  local total_str = ""
+  
+  local current_ground = GAME:GetCurrentGround()
+  if current_ground.AssetName == "guildmaster_summit" and SV.secret.New == false then
+    total_str = total_str .. STRINGS:Format(RogueEssence.StringKey("SIGN_SLAB_MYTH_NEW"):ToLocal()) .. "\n"
+  end
+  
+  if current_ground.AssetName == "luminous_spring" and SV.secret.Time == false then
+    total_str = total_str .. STRINGS:Format(RogueEssence.StringKey("SIGN_SLAB_MYTH_TIME"):ToLocal()) .. "\n"
+  end
+  
+  if current_ground.AssetName == "rest_stop" and SV.secret.Wish == false then
+    total_str = total_str .. STRINGS:Format(RogueEssence.StringKey("SIGN_SLAB_MYTH_WISH"):ToLocal()) .. "\n"
+  end
+  
+  total_str = STRINGS:ShiftString(total_str, 57344)
+  
+  SOUND:PlaySE("Menu/Skip")
+  UI:SetCustomMenu(_MENU:CreateNotice(context.Item:GetDisplayName(), total_str))
+  UI:WaitForChoice()
 end
 
 function REFRESH_SCRIPT.Test(owner, ownerChar, character, args)

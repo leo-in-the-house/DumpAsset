@@ -610,14 +610,23 @@ SV.roaming_legends =
   Raikou = false,
   Entei = false,
   Suicune = false,
-  Celebi = false,
+  Latios = false,
+  Latias = false,
   Darkrai = false
+}
+
+SV.secret =
+{
+  New = false,
+  Time = false,
+  Wish = false
 }
 
 
 SV.castaway_cave = 
 {
-  TookTreasure  = false
+  TookTreasure  = false,
+  TreasureTaken  = false
 }
 
 SV.ambush_forest = 
@@ -646,6 +655,11 @@ SV.sleeping_caldera =
   GotHeatran = false
 }
 
+SV.geode_crevice = 
+{
+  TreasureTaken  = false
+}
+
 SV.base_camp = 
 {
   IntroComplete    = false,
@@ -661,7 +675,7 @@ SV.base_camp =
 
 SV.base_town = 
 {
-  Song    = "A02. Base Town.ogg",
+  Song    = "Base Town.ogg",
   ValueTradeItem = "",
   ValueTraded = false,
   FreeRelearn = false,

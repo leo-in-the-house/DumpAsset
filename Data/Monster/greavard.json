@@ -1,5 +1,5 @@
 ﻿{
-"Version": "0.8.7.0",
+"Version": "0.8.8.0",
 "Object": {
 "$type": "RogueEssence.Data.MonsterData, RogueEssence",
 "Name": {
@@ -14,7 +14,7 @@
 "zh-hans": "墓仔狗"
 }
 },
-"Released": false,
+"Released": true,
 "Comment": "",
 "Title": {
 "DefaultText": "Ghost Dog Pokémon",
@@ -32,7 +32,7 @@
 "EXPTable": "medium_slow",
 "SkillGroup1": "field",
 "SkillGroup2": "",
-"JoinRate": 20,
+"JoinRate": 40,
 "PromoteFrom": "",
 "Promotions": [
 {
@@ -52,7 +52,7 @@
 "Forms": [
 {
 "$type": "PMDC.Data.MonsterFormData, PMDC",
-"Released": false,
+"Released": true,
 "Generation": 9,
 "GenderlessWeight": 0,
 "MaleWeight": 4,
