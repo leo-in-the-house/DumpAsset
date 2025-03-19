@@ -1,16 +1,26 @@
 ﻿{
-"Version": "0.8.8.0",
+"Version": "0.8.9.0",
 "Object": {
 "$type": "RogueEssence.Data.IntrinsicData, RogueEssence",
 "Name": {
 "DefaultText": "Emergency Exit",
-"LocalTexts": {}
+"LocalTexts": {
+"fr": "Repli Tactique",
+"de": "Rückzug",
+"es": "Retirada",
+"it": "Passoindietro",
+"ko": "위기회피",
+"ja": "ききかいひ",
+"ja-jp": "ききかいひ",
+"zh-hans": "危险回避",
+"zh-hant": "危險迴避"
+}
 },
 "Desc": {
-"DefaultText": "The Pokémon, sensing danger, switches out when its HP becomes half or less.",
+"DefaultText": "The Pokémon jumps back when its HP becomes half or less.",
 "LocalTexts": {}
 },
-"Released": false,
+"Released": true,
 "Comment": "",
 "IndexNum": 194,
 "ProximityEvent": {
@@ -67,7 +77,38 @@
 "BeforeHittings": [],
 "BeforeBeingHits": [],
 "AfterHittings": [],
-"AfterBeingHits": [],
+"AfterBeingHits": [
+{
+"Key": {
+"str": [
+1
+]
+},
+"Value": {
+"$type": "PMDC.Dungeon.PinchNeededEvent, PMDC",
+"Denominator": 2,
+"AffectTarget": true,
+"BaseEvents": [
+{
+"$type": "PMDC.Dungeon.HitCounterEvent, PMDC",
+"BaseEvents": [
+{
+"$type": "PMDC.Dungeon.HopEvent, PMDC",
+"Distance": 5,
+"Reverse": true,
+"AffectTarget": true
+}
+],
+"Targets": 4,
+"RequireDamage": true,
+"RequireContact": false,
+"RequireSurvive": true,
+"Chance": 100
+}
+]
+}
+}
+],
 "OnHitTiles": [],
 "AfterActions": [],
 "UserElementEffects": [],
